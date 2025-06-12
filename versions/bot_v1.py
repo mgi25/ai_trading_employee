@@ -866,22 +866,30 @@ def calculate_cumulative_hedge_lot(entry_sequence):
     base_lot = Decimal("0.01")
     hedge_lots = next_hedge_lot = round(LOT_SIZE * (current_leg + 1), 2)
     return round(base_lot + sum(hedge_lots), 2) if hedge_lots else base_lot * 2
+# ─────────────────────────────────────────────────────────────
+# RESET STATE – drop this in place of your old one
+# ─────────────────────────────────────────────────────────────
 def reset_state():
     global entry_sequence, locked_active, locked_loss, post_lock_recovery, recovery_attempts
     global base_entry_price, current_leg, post_lock_recovery_pnl
-    global recovery_snipers_fired, recovery_hedge_count
+    global recovery_snipers_fired, recovery_hedge_count, recovery_sniper_count
+    global restacked_snipers, recovery_hedged_tickets, hedged_tickets
 
-    post_lock_recovery_pnl = 0.0
-    entry_sequence = []
-    locked_active = False
-    locked_loss = 0.0
-    post_lock_recovery = False
-    recovery_attempts = 0
-    base_entry_price = None
-    current_leg = 0
-    recovery_snipers_fired = 0
-    recovery_hedge_count = 0
-    recovery_sniper_count = 0
+    post_lock_recovery_pnl   = 0.0
+    entry_sequence           = []
+    locked_active            = False
+    locked_loss              = 0.0
+    post_lock_recovery       = False
+    recovery_attempts        = 0
+    base_entry_price         = None
+    current_leg              = 0
+    recovery_snipers_fired   = 0
+    recovery_hedge_count     = 0
+    recovery_sniper_count    = 0
+    restacked_snipers.clear()
+    recovery_hedged_tickets.clear()
+    hedged_tickets.clear()
+
 
 
 
@@ -926,247 +934,288 @@ def get_last_position():
     pos = mt5.positions_get(symbol=SYMBOL)
     return pos[-1] if pos else None
 
+# ─────────────────────────────────────────────────────────────
+# MAIN – full, corrected version (no emoji + no undefined vars)
+# ─────────────────────────────────────────────────────────────
 def main():
+    # ——— GLOBAL HANDLES ————————————————————————————————
     global current_leg, entry_sequence, hedge_mode, last_price_snapshot, last_entry_side, price_left_zone
     global last_sniper_time, recovery_snipers_fired, locked_active, locked_loss
     global recovery_attempts, post_lock_recovery, recovery_hedge_count, hedge_price_levels, base_entry_price
-    global recovery_hedged_tickets, hedged_tickets
-    global recovery_sniper_count, recovery_hedge_count
+    global recovery_hedged_tickets, hedged_tickets, restacked_snipers
+    global recovery_sniper_count, recovery_hedge_count, post_lock_recovery_pnl
 
+    # ——— INIT ——————————————————————————————————————————————
     initialize()
     init_csv_file()
     rebuild_state()
 
-    current_leg = 0
-    recovery_hedge_count = 0
-    hedge_price_levels = []
-    base_entry_price = None
-    recovery_hedged_tickets = set()
-    hedged_tickets = set()
-    post_lock_recovery_pnl = 0.0
-    recovery_sniper_count = 0
-    recovery_hedge_count = 0
+    current_leg              = 0
+    recovery_hedge_count     = 0
+    hedge_price_levels       = []
+    base_entry_price         = None
+    recovery_hedged_tickets  = set()
+    hedged_tickets           = set()
+    restacked_snipers        = set()
+    post_lock_recovery_pnl   = 0.0
+    recovery_sniper_count    = 0
+    recovery_hedge_count     = 0
 
     logging.info("Bot initialized")
 
+    # ——— HOT LOOP ————————————————————————————————————————————
     while True:
         tick = mt5.symbol_info_tick(SYMBOL)
         if not tick:
             ptime.sleep(1)
             continue
 
+        # —— Session / spread gates
         now = datetime.now(timezone.utc).time()
         if now < SESSION_START or now > SESSION_END:
-            ptime.sleep(1)
-            continue
+            ptime.sleep(1);  continue
 
         spread = tick.ask - tick.bid
         if spread > SPREAD_LIMIT:
-            ptime.sleep(1)
-            continue
+            ptime.sleep(1);  continue
 
-        price = tick.ask
+        price     = tick.ask
         positions = mt5.positions_get(symbol=SYMBOL) or []
         total_pnl = sum(p.profit for p in positions)
 
+        # —— Bars
         bars = mt5.copy_rates_from_pos(SYMBOL, TIMEFRAME, 0, 600)
         if bars is None or len(bars) < 100:
-            ptime.sleep(1)
-            continue
+            ptime.sleep(1);  continue
 
-        df_bars = pd.DataFrame(bars)
+        df_bars         = pd.DataFrame(bars)
         df_bars['time'] = pd.to_datetime(df_bars['time'], unit='s')
-        closes = df_bars['close'].tolist()
-        time_now = df_bars['time'].iloc[-1].to_pydatetime().replace(tzinfo=timezone.utc)
+        closes          = df_bars['close'].tolist()
+        time_now        = df_bars['time'].iloc[-1].to_pydatetime().replace(tzinfo=timezone.utc)
 
-        locked_ranges = get_lux_ranges(df_bars)
-        active_range = next((r for r in locked_ranges if r['start'] <= time_now <= r['end']), None)
+        # —— LuxAlgo range
+        locked_ranges  = get_lux_ranges(df_bars)
+        active_range   = next((r for r in locked_ranges if r['start'] <= time_now <= r['end']), None)
         in_active_range = bool(active_range and active_range['bottom'] <= price <= active_range['top'])
 
-        # replace your dynamic price‐check lock block with this
+        # ————————————————————————————————————————————————
+        # 1) AUTO-LOCK after 3rd leg
+        # ————————————————————————————————————————————————
         if not locked_active and current_leg >= 3:
-            # just lock right here, no price condition
             buy_lots  = sum(p.volume for p in positions if p.type == mt5.POSITION_TYPE_BUY)
             sell_lots = sum(p.volume for p in positions if p.type == mt5.POSITION_TYPE_SELL)
-            diff = round(abs(buy_lots - sell_lots), 2)
-            if diff > 0:
+            diff      = round(abs(buy_lots - sell_lots), 2)
+            if diff:
                 lock_side  = 'SELL' if buy_lots > sell_lots else 'BUY'
                 lock_price = tick.bid if lock_side == 'SELL' else tick.ask
-                result     = place_entry(lock_side, lock_price, diff, comment='AUTO_LOCK_4TH_ENTRY')
-                if result.retcode == mt5.TRADE_RETCODE_DONE:
+                res = place_entry(lock_side, lock_price, diff, comment='AUTO_LOCK_4TH_ENTRY')
+                if res.retcode == mt5.TRADE_RETCODE_DONE:
                     entry_sequence.append((lock_price, lock_side, diff, "AUTO_LOCK_4TH_ENTRY"))
-                    locked_active       = True
-                    locked_loss         = abs(total_pnl)
-                    post_lock_recovery  = True
-                    # reset for recovery
-                    current_leg         = 0
-                    recovery_hedge_count= 0
+                    locked_active, post_lock_recovery = True, True
+                    locked_loss   = abs(total_pnl)
+                    current_leg   = 0
+                    recovery_hedge_count = 0
                     continue
 
+        # 2) scalp-exit if flat stack is in profit
         if positions and not locked_active and total_pnl >= PROFIT_SCALP_TARGET:
             log_trade(entry_sequence)
             close_all_positions()
             reset_state()
             continue
 
+        # 3) Lock when price drifts back into Lux range
         if positions and not locked_active and in_active_range:
-            buy_lots = sum(p.volume for p in positions if p.type == mt5.POSITION_TYPE_BUY)
+            buy_lots  = sum(p.volume for p in positions if p.type == mt5.POSITION_TYPE_BUY)
             sell_lots = sum(p.volume for p in positions if p.type == mt5.POSITION_TYPE_SELL)
-            diff = round(abs(buy_lots - sell_lots), 2)
-            if diff > 0:
-                lock_side = 'SELL' if buy_lots > sell_lots else 'BUY'
+            diff      = round(abs(buy_lots - sell_lots), 2)
+            if diff:
+                lock_side  = 'SELL' if buy_lots > sell_lots else 'BUY'
                 lock_price = tick.bid if lock_side == 'SELL' else tick.ask
-                result = place_entry(lock_side, lock_price, diff, comment='LOCK_INTO_RANGE')
-                if result.retcode == mt5.TRADE_RETCODE_DONE:
+                res = place_entry(lock_side, lock_price, diff, comment='LOCK_INTO_RANGE')
+                if res.retcode == mt5.TRADE_RETCODE_DONE:
                     entry_sequence.append((lock_price, lock_side, diff, "LOCK_INTO_RANGE"))
-                    locked_active = True
-                    locked_loss = abs(total_pnl)
-                    post_lock_recovery = True
-                    current_leg = 0
+                    locked_active, post_lock_recovery = True, True
+                    locked_loss   = abs(total_pnl)
+                    current_leg   = 0
                     recovery_hedge_count = 0
                     continue
 
+        # ————————————————————————————————————————————————
+        # 4) RECOVERY MODE
+        # ————————————————————————————————————————————————
         if locked_active and post_lock_recovery:
+
             snipers = [p for p in positions if p.comment == "RECOVERY_SNIPER"]
-            hedges = [p for p in positions if p.comment == "RECOVERY_HEDGE"]
+            hedges  = [p for p in positions if p.comment == "RECOVERY_HEDGE"]
             total_recovery_trades = len(snipers) + len(hedges)
 
+            logging.info(f"[DBG] Snipers={len(snipers)} Hedges={len(hedges)} Restacked={bool(restacked_snipers)}")
+
+            # 4-A: hard-cap safety
             if total_recovery_trades >= 4:
-                logging.warning("[LIMIT] 4 recovery trades reached, closing all")
+                logging.warning("[LIMIT] 4 recovery trades reached ➜ closing stack")
                 log_trade(entry_sequence)
                 close_all_positions()
                 reset_state()
                 continue
 
+            # 4-B: GROUP-TP  + individual sniper-TP
             for sniper in snipers:
+
+                # —— group TP (sniper + matching hedges)
                 group_hedges = [h for h in hedges if h.type != sniper.type and h.volume >= sniper.volume]
                 combined_pnl = sniper.profit + sum(h.profit for h in group_hedges)
 
                 if combined_pnl >= PROFIT_SCALP_TARGET and group_hedges:
-                    if combined_pnl > 0:
-                        close_position(sniper, comment="[GROUP TP - SNIPER]")
-                        for h in group_hedges:
-                            close_position(h, comment="[GROUP TP - HEDGE]")
-                        locked_loss -= combined_pnl
-                        logging.info(f"[RECOVERY] Group TP hit. Recovered: {combined_pnl:.2f}, Remaining Locked Loss: {locked_loss:.2f}")
-                        recovery_sniper_count = 0
-                        recovery_hedge_count = 0
-                    else:
-                        logging.warning(f"[RECOVERY] Group TP hit but NEGATIVE PnL: {combined_pnl:.2f} -> No locked_loss update")
+                    close_position(sniper, comment="[GROUP TP - SNIPER]")
+                    for h in group_hedges:
+                        close_position(h, comment="[GROUP TP - HEDGE]")
+                    locked_loss -= combined_pnl
+                    logging.info(f"[RECOVERY] Group TP +{combined_pnl:.2f}$ • Remaining lock {locked_loss:.2f}")
+                    recovery_sniper_count = recovery_hedge_count = 0
+                    continue
 
-
-                elif sniper.profit >= PROFIT_SCALP_TARGET:
-                    target_lot = round(sniper.volume + 0.01, 2)
-                    matched_hedges = [h for h in hedges if h.type != sniper.type and abs(h.volume - target_lot) < 1e-8]
-                    hedge_pnl = sum(h.profit for h in matched_hedges)
-                    total_recovered = sniper.profit + hedge_pnl
-
-                    if total_recovered > 0:
+                # —— solo sniper TP
+                if sniper.profit >= PROFIT_SCALP_TARGET:
+                    target_vol     = round(sniper.volume + 0.01, 2)
+                    matched_hedges = [h for h in hedges if h.type != sniper.type and abs(h.volume - target_vol) < 1e-8]
+                    hedge_pnl      = sum(h.profit for h in matched_hedges)
+                    total_gain     = sniper.profit + hedge_pnl
+                    if total_gain > 0:
                         close_position(sniper, comment="[SNIPER TP]")
                         for h in matched_hedges:
                             close_position(h, comment="[PAIR HEDGE TP]")
-                        locked_loss -= total_recovered
-                        logging.info(f"[RECOVERY] Sniper TP hit. Recovered: {total_recovered:.2f}, Remaining Locked Loss: {locked_loss:.2f}")
-                        recovery_sniper_count = 0
-                        recovery_hedge_count = 0
-                    else:
-                        logging.warning(f"[RECOVERY] Skipped closing sniper+hedge due to NEGATIVE PnL: {total_recovered:.2f} → Waiting for recovery stack")
+                        locked_loss -= total_gain
+                        logging.info(f"[RECOVERY] Sniper TP +{total_gain:.2f}$ • Remaining lock {locked_loss:.2f}")
+                        recovery_sniper_count = recovery_hedge_count = 0
 
-                    logging.info(f"[RECOVERY] Sniper TP hit. Recovered: {total_recovered:.2f}, Remaining Locked Loss: {locked_loss:.2f}")
-                    recovery_sniper_count = 0
-                    recovery_hedge_count = 0
+            # 4-C: check if full loss recovered
+            acc = mt5.account_info()
+            if acc and (acc.balance - acc.equity) <= 0:
+                log_trade(entry_sequence)
+                close_all_positions()
+                reset_state()
+                continue
 
+            # 4-C-ii: FIRST RECOVERY SNIPER
+            if not snipers and not in_active_range:
+                from_time = datetime.now(timezone.utc) - timedelta(minutes=5)
+                ticks = mt5.copy_ticks_from(SYMBOL, from_time, 3000, mt5.COPY_TICKS_ALL)
+                df_ticks = pd.DataFrame(ticks)
 
+                if not df_ticks.empty:
+                    skew, _, poc_drift = calc_skew(df_ticks, return_poc=True)
+                    vol_ok   = df_bars['tick_volume'].iloc[-1] > df_bars['tick_volume'].mean()
+                    mom_ok   = is_momentum_candle(closes, df_bars['high'], df_bars['low'], df_bars['tick_volume'])
+                    strong   = is_strong_candle(closes, df_bars['high'], df_bars['low'])
+                    score    = get_confirmation_score(skew, spread, vol_ok, mom_ok, False, strong, poc_drift)
 
-            account = mt5.account_info()
-            if account:
-                locked_loss_now = account.balance - account.equity
-                if locked_loss_now <= 0:
+                    logging.info(f"[SNIPER_CHECK] Score={score} in_range={in_active_range}")
+
+                    if score >= 4:
+                        side = 'BUY' if skew > 0 else 'SELL'
+                        res  = place_entry(side, price, 0.01, comment="RECOVERY_SNIPER")
+                        if res.retcode == mt5.TRADE_RETCODE_DONE:
+                            entry_sequence.append((price, side, 0.01, "RECOVERY_SNIPER"))
+                            current_leg += 1
+                            recovery_sniper_count += 1
+                            logging.info(f"[RECOVERY_SNIPER] {side} 0.01 @ {price:.3f}")
+
+            # 4-D: RESTACK (3rd leg)
+            pip_tol   = 0.05                                      # 5-pip tolerance
+            mid_price = (tick.bid + tick.ask) / 2
+
+            for sniper in snipers:
+                if sniper.ticket in restacked_snipers:
+                    continue
+                opp = [h for h in hedges if h.type != sniper.type]
+                if len(opp) != 1:
+                    continue
+
+                logging.info(f"[RESTACK_CHECK] sniper={sniper.price_open:.3f} mid={mid_price:.3f} Δ={abs(mid_price-sniper.price_open):.3f}")
+
+                if abs(mid_price - sniper.price_open) <= pip_tol:
+                    lot  = round(sniper.volume + opp[0].volume, 2)
+                    side = 'BUY' if sniper.type == mt5.POSITION_TYPE_BUY else 'SELL'
+                    res  = place_entry(side, mid_price, lot, comment="RECOVERY_RESTACK")
+                    if res.retcode == mt5.TRADE_RETCODE_DONE:
+                        entry_sequence.append((mid_price, side, lot, "RECOVERY_RESTACK"))
+                        current_leg += 1
+                        restacked_snipers.add(sniper.ticket)
+                        logging.info(f"[RE-STACK] {side} {lot:.2f} @ {mid_price:.3f}")
+
+            # 4-E: extreme revisit ➜ close all
+            if restacked_snipers and len(snipers) >= 1 and len(hedges) == 1:
+                hedge_price = hedges[0].price_open
+                tick_price  = tick.bid if hedges[0].type == mt5.POSITION_TYPE_SELL else tick.ask
+                if abs(tick_price - hedge_price) <= pip_tol:
+                    logging.warning("[EXIT] Hit hedge extreme ➜ closing stack")
                     log_trade(entry_sequence)
                     close_all_positions()
                     reset_state()
                     continue
 
-
-            if not snipers and not in_active_range:
-                from_time = datetime.now(timezone.utc) - timedelta(minutes=5)
-                ticks = mt5.copy_ticks_from(SYMBOL, from_time, 3000, mt5.COPY_TICKS_ALL)
-                df_ticks = pd.DataFrame(ticks)
-                if not df_ticks.empty:
-                    skew, poc, poc_drift = calc_skew(df_ticks, return_poc=True)
-                    vol_ok = df_bars['tick_volume'].iloc[-1] > df_bars['tick_volume'].mean()
-                    momentum_ok = is_momentum_candle(closes, df_bars['high'], df_bars['low'], df_bars['tick_volume'])
-                    strong = is_strong_candle(closes, df_bars['high'], df_bars['low'])
-                    confidence = get_confirmation_score(skew, spread, vol_ok, momentum_ok, False, strong, poc_drift)
-                    if confidence >= 4:
-                        side = get_trade_direction_based_on_skew_or_momentum(skew, closes)
-                        lot = round(0.01 * (recovery_sniper_count + 1), 2)
-                        result = place_entry(side, price, lot, comment="RECOVERY_SNIPER")
-                        if result.retcode == mt5.TRADE_RETCODE_DONE:
-                            entry_sequence.append((price, side, lot, "RECOVERY_SNIPER"))
-                            current_leg += 1
-                            recovery_sniper_count += 1
-
+            # 4-F  ── single recovery hedge (always 10 pips away)
+            pip_tol_h = 0.03   # 3-pip tolerance
 
             for sniper in snipers:
                 if sniper.ticket in recovery_hedged_tickets:
                     continue
-
-                hedge_count_for_sniper = sum(1 for h in hedges if h.type != sniper.type and abs(h.price_open - sniper.price_open) >= 0.0001)
-                if hedge_count_for_sniper >= 3:
-                    loss_pips = (sniper.price_open - tick.bid) * 100 if sniper.type == mt5.POSITION_TYPE_BUY else (tick.ask - sniper.price_open) * 100
-                    if loss_pips >= HEDGE_TRIGGER_PIPS:
-                        logging.warning("[FINAL LIMIT] About to place 4th hedge → closing ALL trades including locked ones")
-                        log_trade(entry_sequence)
-                        close_all_positions()
-                        reset_state()
-                        continue
-                    else:
-                        continue
-
-
-                loss_pips = (sniper.price_open - tick.bid) * 100 if sniper.type == mt5.POSITION_TYPE_BUY else (tick.ask - sniper.price_open) * 100
-                sniper_price = sniper.price_open
-                hedge_side = 'SELL' if sniper.type == mt5.POSITION_TYPE_BUY else 'BUY'
-                pip_shift = HEDGE_TRIGGER_PIPS / 100
-
-                # 💥 Add this check to avoid placing multiple hedges near same price
-                hedge_price = tick.bid if hedge_side == 'SELL' else tick.ask
-                existing_hedges = [h for h in hedges if h.type == hedge_side and abs(h.price_open - hedge_price) < 0.01]
-                if existing_hedges:
-                    logging.warning(f"[SKIPPED] Already hedged near {hedge_price}")
+                # already has a hedge? skip
+                if any(h for h in hedges if h.type != sniper.type):
                     continue
 
-                if loss_pips >= HEDGE_TRIGGER_PIPS:
-                    lot   = round(sniper.volume + 0.01, 2)
-                    # tag this as a RECOVERY_HEDGE so the group-TP logic sees it
-                    result = place_entry(hedge_side, hedge_price, lot, comment="RECOVERY_HEDGE")
-                    if result.retcode == mt5.TRADE_RETCODE_DONE:
-                        entry_sequence.append((hedge_price, hedge_side, lot, "RECOVERY_HEDGE"))
+                step = HEDGE_TRIGGER_PIPS / 100        # fixed 0.10
+
+                if sniper.type == mt5.POSITION_TYPE_BUY:
+                    expected_price = sniper.price_open - step
+                    price_now      = tick.bid
+                    side           = 'SELL'
+                    loss_pips      = (sniper.price_open - price_now) * 100
+                else:
+                    expected_price = sniper.price_open + step
+                    price_now      = tick.ask
+                    side           = 'BUY'
+                    loss_pips      = (price_now - sniper.price_open) * 100
+
+                logging.info(
+                    f"[HEDGE_CHECK] target={expected_price:.3f} now={price_now:.3f} "
+                    f"diff={abs(price_now-expected_price):.3f} loss={loss_pips:.1f}"
+                )
+
+                if loss_pips >= HEDGE_TRIGGER_PIPS and abs(price_now - expected_price) <= pip_tol_h:
+                    res = place_entry(side, price_now, 0.02, comment="RECOVERY_HEDGE")  # always 0.02 lot
+                    if res.retcode == mt5.TRADE_RETCODE_DONE:
+                        entry_sequence.append((price_now, side, 0.02, "RECOVERY_HEDGE"))
                         recovery_hedged_tickets.add(sniper.ticket)
                         current_leg += 1
+                        logging.info(f"[RECOVERY_HEDGE] {side} 0.02 @ {price_now:.3f}")
 
+                ptime.sleep(0.3)
+                continue  # back to loop top
 
-            ptime.sleep(0.3)
-            continue
-
+        # ————————————————————————————————————————————————
+        # 5) normal hedge pre-lock
+        # ————————————————————————————————————————————————
         if not locked_active and positions:
             for p in positions:
                 if p.ticket in hedged_tickets:
                     continue
-                hedge_side = 'SELL' if p.type == mt5.POSITION_TYPE_BUY else 'BUY'
                 loss_pips = (p.price_open - tick.bid) * 100 if p.type == mt5.POSITION_TYPE_BUY else (tick.ask - p.price_open) * 100
                 if loss_pips >= HEDGE_TRIGGER_PIPS:
+                    hedge_side  = 'SELL' if p.type == mt5.POSITION_TYPE_BUY else 'BUY'
                     hedge_price = tick.bid if hedge_side == 'SELL' else tick.ask
-                    lot = round(p.volume + 0.01, 2)
-                    # regular hedge, not recovery
-                    result = place_entry(hedge_side, hedge_price, lot, comment="HEDGE_LAYER")
-                    if result.retcode == mt5.TRADE_RETCODE_DONE:
+                    lot         = round(p.volume + 0.01, 2)
+                    res = place_entry(hedge_side, hedge_price, lot, comment="HEDGE_LAYER")
+                    if res.retcode == mt5.TRADE_RETCODE_DONE:
                         entry_sequence.append((hedge_price, hedge_side, lot, "HEDGE_LAYER"))
                         hedged_tickets.add(p.ticket)
                         current_leg += 1
 
-
+        # ————————————————————————————————————————————————
+        # 6) fresh VP entry when flat
+        # ————————————————————————————————————————————————
         if not positions and not locked_active and not in_active_range:
             from_time = datetime.now(timezone.utc) - timedelta(minutes=5)
             ticks = mt5.copy_ticks_from(SYMBOL, from_time, 3000, mt5.COPY_TICKS_ALL)
@@ -1175,24 +1224,26 @@ def main():
                 ptime.sleep(1)
                 continue
 
-            skew, poc, poc_drift = calc_skew(df_ticks, return_poc=True)
-            vol_ok = df_bars['tick_volume'].iloc[-1] > df_bars['tick_volume'].mean()
-            momentum_ok = is_momentum_candle(closes, df_bars['high'], df_bars['low'], df_bars['tick_volume'])
-            strong = is_strong_candle(closes, df_bars['high'], df_bars['low'])
+            skew, _, poc_drift = calc_skew(df_ticks, return_poc=True)
+            vol_ok   = df_bars['tick_volume'].iloc[-1] > df_bars['tick_volume'].mean()
+            mom_ok   = is_momentum_candle(closes, df_bars['high'], df_bars['low'], df_bars['tick_volume'])
+            strong   = is_strong_candle(closes, df_bars['high'], df_bars['low'])
 
-            if is_high_confidence_entry(skew, spread, vol_ok, momentum_ok, False, strong, poc_drift):
-                side = "BUY" if skew > 0 else "SELL"
-                entry_price = tick.ask if side == "BUY" else tick.bid
-                lot = 0.01
-                result = place_entry(side, entry_price, lot, comment="VP_ENTRY")
-                if result.retcode == mt5.TRADE_RETCODE_DONE:
-                    entry_sequence.append((entry_price, side, lot, "VP_ENTRY"))
+            if is_high_confidence_entry(skew, spread, vol_ok, mom_ok, False, strong, poc_drift):
+                side        = 'BUY' if skew > 0 else 'SELL'
+                entry_price = tick.ask if side == 'BUY' else tick.bid
+                res = place_entry(side, entry_price, 0.01, comment="VP_ENTRY")
+                if res.retcode == mt5.TRADE_RETCODE_DONE:
+                    entry_sequence.append((entry_price, side, 0.01, "VP_ENTRY"))
                     base_entry_price = entry_price
-                    last_entry_side = side
-                    current_leg = 1
+                    last_entry_side  = side
+                    current_leg      = 1
                     continue
 
-        ptime.sleep(1)
+        ptime.sleep(1)  # idle gap
+
+
+
 
 
 if __name__ == '__main__':
