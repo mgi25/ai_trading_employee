@@ -1184,7 +1184,7 @@ def main():
                     f"diff={abs(price_now-expected_price):.3f} loss={loss_pips:.1f}"
                 )
 
-                if loss_pips >= HEDGE_TRIGGER_PIPS and abs(price_now - expected_price) <= pip_tol_h:
+                if loss_pips >= HEDGE_TRIGGER_PIPS:
                     res = place_entry(side, price_now, 0.02, comment="RECOVERY_HEDGE")  # always 0.02 lot
                     if res.retcode == mt5.TRADE_RETCODE_DONE:
                         entry_sequence.append((price_now, side, 0.02, "RECOVERY_HEDGE"))
