@@ -1,0 +1,15 @@
+2025-07-04 18:50:26,072 INFO Executor up
+2025-07-04 18:50:45,760 INFO Executor up
+2025-07-04 18:56:26,519 INFO MT5 re-connect OK
+2025-07-04 18:56:26,520 INFO Executor started – waiting for signals
+2025-07-04 19:09:53,456 INFO MT5 re-connect OK
+2025-07-04 19:09:53,456 INFO Executor started – waiting for signals
+2025-07-04 19:09:55,484 INFO Redis connected
+2025-07-04 19:10:11,956 INFO MT5 re-connect OK
+2025-07-04 19:10:11,956 INFO Executor started – waiting for signals
+2025-07-04 19:10:13,995 INFO Redis connected
+2025-07-04 20:01:08,047 INFO Interrupted by user
+2025-07-04 20:01:28,070 INFO Interrupted by user
+2025-07-04 20:01:33,609 INFO MT5 re-connect OK
+2025-07-04 20:01:33,610 INFO Executor started – waiting for signals
+2025-07-04 20:01:35,654 INFO Redis connected

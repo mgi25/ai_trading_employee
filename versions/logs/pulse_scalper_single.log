@@ -1,0 +1,1282 @@
+2025-07-02 16:09:56,051 INFO    [CORE]  Re-connected to MT5
+2025-07-02 16:09:56,051 INFO    [CORE]  Pulse-Scalper single-pos started
+2025-07-02 16:09:56,055 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.652
+2025-07-02 16:10:02,067 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.623
+2025-07-02 16:11:02,181 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.632
+2025-07-02 16:12:01,292 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.629
+2025-07-02 16:13:01,408 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.643
+2025-07-02 16:14:01,520 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.627
+2025-07-02 16:15:01,623 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.663
+2025-07-02 16:15:01,892 INFO    [ENTRY] PULSE SELL 0.05@3343.833 SL3344.827 TP3341.844 → 10009
+2025-07-02 16:15:01,892 ERROR   Fatal
+Traceback (most recent call last):
+  File "C:\Users\mgial\OneDrive\Documents\ai_trading_employee\versions\bot_v3.py", line 494, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\mgial\OneDrive\Documents\ai_trading_employee\versions\bot_v3.py", line 456, in main
+    pos = mt5.position_get(ticket=trade_lock)
+          ^^^^^^^^^^^^^^^^
+AttributeError: module 'MetaTrader5' has no attribute 'position_get'. Did you mean: 'positions_get'?
+2025-07-02 16:16:58,745 INFO    [CORE]  Re-connected to MT5
+2025-07-02 16:16:58,745 INFO    [CORE]  Pulse-Scalper single-pos started
+2025-07-02 16:16:58,759 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.705
+2025-07-02 16:17:00,764 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.658
+2025-07-02 16:17:00,977 INFO    [ENTRY] PULSE BUY 0.05@3344.237 SL3343.250 TP3346.211 → 10009
+2025-07-02 16:17:07,189 INFO    TP/SL trailed further
+2025-07-02 16:17:56,666 INFO    TP/SL trailed further
+2025-07-02 16:18:00,678 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.590
+2025-07-02 16:18:00,886 INFO    TP/SL trailed further
+2025-07-02 16:18:05,103 INFO    TP/SL trailed further
+2025-07-02 16:18:11,320 INFO    TP/SL trailed further
+2025-07-02 16:18:20,352 INFO    TP/SL trailed further
+2025-07-02 16:19:02,440 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.562
+2025-07-02 16:20:00,557 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.612
+2025-07-02 16:21:00,676 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.607
+2025-07-02 16:21:00,899 INFO    [ENTRY] PULSE SELL 0.05@3343.639 SL3344.549 TP3341.818 → 10009
+2025-07-02 16:21:11,133 INFO    TP/SL trailed further
+2025-07-02 16:21:38,467 INFO    TP/SL trailed further
+2025-07-02 16:22:02,540 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.610
+2025-07-02 16:22:10,568 INFO    TP/SL trailed further
+2025-07-02 16:23:00,664 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.595
+2025-07-02 16:24:01,789 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.625
+2025-07-02 16:25:00,910 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.621
+2025-07-02 16:26:01,030 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.598
+2025-07-02 16:27:01,140 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.578
+2025-07-02 16:28:01,256 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.543
+2025-07-02 16:28:01,529 INFO    [ENTRY] PULSE BUY 0.06@3344.952 SL3344.138 TP3346.580 → 10009
+2025-07-02 16:28:03,743 INFO    SL → BE+trail
+2025-07-02 16:28:03,980 INFO    TP/SL trailed further
+2025-07-02 16:28:05,740 INFO    SL → BE+trail
+2025-07-02 16:28:06,947 INFO    TP/SL trailed further
+2025-07-02 16:28:12,966 INFO    TP/SL trailed further
+2025-07-02 16:29:01,059 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.584
+2025-07-02 16:30:01,176 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.596
+2025-07-02 16:31:01,288 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.641
+2025-07-02 16:31:01,531 INFO    [ENTRY] PULSE BUY 0.05@3345.024 SL3344.062 TP3346.947 → 10009
+2025-07-02 16:31:05,839 INFO    TP/SL trailed further
+2025-07-02 16:31:07,106 INFO    SL → BE+trail
+2025-07-02 16:31:12,336 INFO    TP/SL trailed further
+2025-07-02 16:31:22,571 INFO    TP/SL trailed further
+2025-07-02 16:31:24,795 INFO    TP/SL trailed further
+2025-07-02 16:31:32,025 INFO    TP/SL trailed further
+2025-07-02 16:31:36,036 INFO    TP/SL trailed further
+2025-07-02 16:32:01,082 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.757
+2025-07-02 16:32:01,380 INFO    [ENTRY] PULSE BUY 0.04@3346.724 SL3345.589 TP3348.995 → 10009
+2025-07-02 16:32:02,604 INFO    TP/SL trailed further
+2025-07-02 16:32:04,820 INFO    TP/SL trailed further
+2025-07-02 16:32:07,061 INFO    TP/SL trailed further
+2025-07-02 16:32:08,288 INFO    TP/SL trailed further
+2025-07-02 16:32:24,524 INFO    TP/SL trailed further
+2025-07-02 16:33:00,597 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.713
+2025-07-02 16:33:00,805 INFO    [ENTRY] PULSE BUY 0.04@3346.811 SL3345.742 TP3348.949 → 10009
+2025-07-02 16:33:05,090 INFO    TP/SL trailed further
+2025-07-02 16:33:06,284 INFO    SL → BE+trail
+2025-07-02 16:33:06,503 INFO    TP/SL trailed further
+2025-07-02 16:33:08,732 INFO    SL → BE+trail
+2025-07-02 16:33:24,778 INFO    TP/SL trailed further
+2025-07-02 16:34:01,849 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.691
+2025-07-02 16:34:02,060 INFO    [ENTRY] PULSE BUY 0.05@3347.261 SL3346.225 TP3349.334 → 10009
+2025-07-02 16:34:16,308 INFO    TP/SL trailed further
+2025-07-02 16:34:19,533 INFO    TP/SL trailed further
+2025-07-02 16:34:22,808 INFO    TP/SL trailed further
+2025-07-02 16:34:28,160 INFO    TP/SL trailed further
+2025-07-02 16:34:30,369 INFO    TP/SL trailed further
+2025-07-02 16:34:31,373 INFO    TP/SL trailed further
+2025-07-02 16:34:32,599 INFO    TP/SL trailed further
+2025-07-02 16:34:34,868 INFO    TP/SL trailed further
+2025-07-02 16:35:00,912 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.742
+2025-07-02 16:36:02,013 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.812
+2025-07-02 16:36:02,225 INFO    [ENTRY] PULSE BUY 0.04@3346.084 SL3344.866 TP3348.520 → 10009
+2025-07-02 16:36:04,490 INFO    TP/SL trailed further
+2025-07-02 16:36:09,727 INFO    TP/SL trailed further
+2025-07-02 16:36:12,949 INFO    TP/SL trailed further
+2025-07-02 16:37:01,053 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.838
+2025-07-02 16:37:01,668 INFO    [ENTRY] PULSE SELL 0.04@3345.353 SL3346.610 TP3342.839 → 10009
+2025-07-02 16:37:05,051 INFO    TP/SL trailed further
+2025-07-02 16:37:06,293 INFO    SL → BE+trail
+2025-07-02 16:37:06,510 INFO    TP/SL trailed further
+2025-07-02 16:37:07,877 INFO    SL → BE+trail
+2025-07-02 16:37:10,885 INFO    TP/SL trailed further
+2025-07-02 16:38:00,969 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.859
+2025-07-02 16:38:01,186 INFO    [ENTRY] PULSE SELL 0.04@3344.789 SL3346.078 TP3342.211 → 10009
+2025-07-02 16:38:16,521 INFO    TP/SL trailed further
+2025-07-02 16:38:24,802 INFO    TP/SL trailed further
+2025-07-02 16:38:38,106 INFO    TP/SL trailed further
+2025-07-02 16:40:03,133 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.858
+2025-07-02 18:10:14,968 INFO    [CORE]  Re-connected to MT5
+2025-07-02 18:10:14,968 INFO    [CORE]  Pulse-Scalper single-pos started
+2025-07-02 18:30:56,574 INFO    [CORE]  Re-connected to MT5
+2025-07-02 18:30:56,574 INFO    [CORE]  Pulse-Scalper single-pos started
+2025-07-02 18:51:14,890 INFO    [CORE]  Re-connected to MT5
+2025-07-02 18:51:14,891 INFO    [CORE]  Pulse-Scalper single-pos started
+2025-07-02 19:18:33,711 INFO    [CORE]  Re-connected to MT5
+2025-07-02 19:35:37,391 INFO    [CORE]  Re-connected to MT5
+2025-07-02 19:35:37,391 INFO    [CORE]  Pulse-Scalper single-pos started
+2025-07-02 20:09:01,077 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.982
+2025-07-02 20:10:01,199 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.911
+2025-07-02 20:11:00,300 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.944
+2025-07-02 20:11:00,508 INFO    [ENTRY] PULSE SELL 0.03@3338.208 SL3339.624 TP3335.375 → 10009
+2025-07-02 20:11:02,706 INFO    TP/SL trailed further
+2025-07-02 20:11:09,918 INFO    SL → BE+trail
+2025-07-02 20:11:10,116 INFO    TP/SL trailed further
+2025-07-02 20:11:11,307 INFO    SL → BE+trail
+2025-07-02 20:11:14,527 INFO    TP/SL trailed further
+2025-07-02 20:11:27,759 INFO    TP/SL trailed further
+2025-07-02 20:12:01,835 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.957
+2025-07-02 20:13:00,945 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.992
+2025-07-02 20:14:01,059 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.896
+2025-07-02 20:15:01,180 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.986
+2025-07-02 20:15:01,389 INFO    [ENTRY] PULSE BUY 0.03@3340.563 SL3339.084 TP3343.521 → 10009
+2025-07-02 20:15:02,695 INFO    TP/SL trailed further
+2025-07-02 20:15:04,905 INFO    TP/SL trailed further
+2025-07-02 20:15:16,129 INFO    TP/SL trailed further
+2025-07-02 20:15:26,343 INFO    SL → BE+trail
+2025-07-02 20:15:37,562 INFO    TP/SL trailed further
+2025-07-02 20:15:41,770 INFO    TP/SL trailed further
+2025-07-02 20:15:55,040 INFO    TP/SL trailed further
+2025-07-02 20:16:01,058 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.991
+2025-07-02 20:16:04,334 INFO    TP/SL trailed further
+2025-07-02 20:16:06,341 INFO    TP/SL trailed further
+2025-07-02 20:34:01,327 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.925
+2025-07-02 20:35:01,432 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.831
+2025-07-02 20:36:00,544 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.826
+2025-07-02 20:37:01,662 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.819
+2025-07-02 20:38:00,766 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.827
+2025-07-02 20:39:00,881 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.810
+2025-07-02 20:40:01,997 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.840
+2025-07-02 20:41:01,106 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.843
+2025-07-02 20:41:01,310 INFO    [ENTRY] PULSE SELL 0.04@3340.644 SL3341.909 TP3338.114 → 10009
+2025-07-02 20:41:10,537 INFO    TP/SL trailed further
+2025-07-02 20:41:13,763 INFO    TP/SL trailed further
+2025-07-02 20:41:14,976 INFO    TP/SL trailed further
+2025-07-02 20:41:32,020 INFO    TP/SL trailed further
+2025-07-02 20:41:43,257 INFO    TP/SL trailed further
+2025-07-02 20:44:35,471 INFO    [CORE]  Re-connected to MT5
+2025-07-02 20:44:35,471 INFO    [CORE]  Pulse-Scalper single-pos started
+2025-07-02 20:45:00,532 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.988
+2025-07-02 21:05:01,950 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.960
+2025-07-02 21:06:01,106 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.931
+2025-07-02 21:07:01,237 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.945
+2025-07-02 21:08:01,377 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.866
+2025-07-02 21:09:00,513 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.883
+2025-07-02 21:10:01,645 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.867
+2025-07-02 21:11:00,761 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.901
+2025-07-02 21:11:00,776 INFO    [ENTRY] PULSE SELL 0.01@3341.217 SL3342.569 TP3338.514 → 10027
+2025-07-02 21:12:01,912 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.881
+2025-07-02 21:13:01,025 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.900
+2025-07-02 21:14:01,160 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.854
+2025-07-02 21:15:01,298 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.826
+2025-07-02 21:16:01,430 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.845
+2025-07-02 21:17:01,552 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.864
+2025-07-02 21:18:01,706 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.853
+2025-07-02 21:19:00,836 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.879
+2025-07-02 21:20:01,967 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.868
+2025-07-02 21:21:01,087 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.912
+2025-07-02 21:22:01,221 DEBUG   [BAR] body_ok=True vol_ok=True side=None ATR=0.914
+2025-07-02 21:23:00,337 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.937
+2025-07-02 21:24:00,477 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.919
+2025-07-02 21:25:01,599 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.904
+2025-07-02 21:26:00,725 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.889
+2025-07-02 21:26:00,733 INFO    [ENTRY] PULSE SELL 0.01@3339.957 SL3341.290 TP3337.291 → 10027
+2025-07-02 21:27:02,085 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.932
+2025-07-02 21:28:01,205 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.974
+2025-07-02 21:28:01,206 INFO    [ENTRY] PULSE SELL 0.01@3340.318 SL3341.779 TP3337.396 → 10027
+2025-07-02 21:29:01,333 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.919
+2025-07-02 21:30:01,461 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.876
+2025-07-02 21:31:00,587 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.931
+2025-07-02 21:31:00,594 INFO    [ENTRY] PULSE BUY 0.01@3341.686 SL3340.290 TP3344.478 → 10027
+2025-07-02 21:32:00,724 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.917
+2025-07-02 21:33:00,840 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.917
+2025-07-02 21:34:00,967 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.912
+2025-07-02 21:35:01,082 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.984
+2025-07-02 21:35:01,084 INFO    [ENTRY] PULSE BUY 0.01@3344.546 SL3343.069 TP3347.499 → 10027
+2025-07-02 21:36:01,205 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.932
+2025-07-02 21:37:01,333 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.879
+2025-07-02 21:38:01,459 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.937
+2025-07-02 21:38:01,461 INFO    [ENTRY] PULSE BUY 0.01@3346.258 SL3344.852 TP3349.070 → 10027
+2025-07-02 21:39:01,588 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.934
+2025-07-02 21:40:00,720 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.911
+2025-07-02 21:41:00,842 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.937
+2025-07-02 21:41:00,850 INFO    [ENTRY] PULSE BUY 0.01@3345.989 SL3344.583 TP3348.800 → 10027
+2025-07-02 21:42:01,977 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.945
+2025-07-02 21:43:01,092 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.931
+2025-07-02 21:44:01,216 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.912
+2025-07-02 21:44:01,217 INFO    [ENTRY] PULSE BUY 0.01@3346.422 SL3345.054 TP3349.158 → 10027
+2025-07-02 21:45:01,350 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.913
+2025-07-02 21:46:01,484 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.945
+2025-07-02 21:46:01,485 INFO    [ENTRY] PULSE BUY 0.01@3346.638 SL3345.221 TP3349.473 → 10027
+2025-07-02 21:47:00,597 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.920
+2025-07-02 21:48:01,727 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.915
+2025-07-02 21:48:01,728 INFO    [ENTRY] PULSE BUY 0.01@3347.585 SL3346.213 TP3350.330 → 10027
+2025-07-02 21:49:00,854 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.936
+2025-07-02 21:50:01,983 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.973
+2025-07-02 21:51:01,106 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.890
+2025-07-02 21:51:01,107 INFO    [ENTRY] PULSE BUY 0.01@3347.929 SL3346.595 TP3350.598 → 10027
+2025-07-02 21:52:02,237 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.900
+2025-07-02 21:53:00,355 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.870
+2025-07-02 21:54:01,476 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.831
+2025-07-02 21:55:00,607 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.834
+2025-07-02 21:55:00,608 INFO    [ENTRY] PULSE SELL 0.01@3346.790 SL3348.041 TP3344.288 → 10027
+2025-07-02 21:56:00,732 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.874
+2025-07-02 21:56:00,732 INFO    [ENTRY] PULSE SELL 0.01@3346.103 SL3347.413 TP3343.482 → 10027
+2025-07-02 21:57:00,849 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.842
+2025-07-02 21:58:01,964 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.817
+2025-07-02 21:59:01,075 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.760
+2025-07-02 22:00:01,195 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.732
+2025-07-02 22:01:01,306 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.671
+2025-07-02 22:02:00,421 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.653
+2025-07-02 22:03:01,535 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.661
+2025-07-02 22:04:01,642 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.644
+2025-07-02 22:05:01,776 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.634
+2025-07-02 22:06:00,893 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.670
+2025-07-02 22:07:00,996 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.752
+2025-07-02 22:07:01,221 INFO    [ENTRY] PULSE SELL 0.01@3344.552 SL3345.680 TP3342.296 → 10009
+2025-07-02 22:07:34,530 INFO    TP/SL trailed further
+2025-07-02 22:07:36,824 INFO    TP/SL trailed further
+2025-07-02 22:08:00,891 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.760
+2025-07-02 22:09:01,008 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.820
+2025-07-02 22:09:01,243 INFO    [ENTRY] PULSE BUY 0.01@3346.504 SL3345.274 TP3348.964 → 10009
+2025-07-02 22:09:41,610 INFO    TP/SL trailed further
+2025-07-02 22:09:42,827 INFO    SL → BE+trail
+2025-07-02 22:09:43,026 INFO    TP/SL trailed further
+2025-07-02 22:09:51,251 INFO    SL → BE+trail
+2025-07-02 22:10:01,280 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.830
+2025-07-02 22:10:06,547 INFO    TP/SL trailed further
+2025-07-02 22:10:29,816 INFO    TP/SL trailed further
+2025-07-02 22:10:35,074 INFO    TP/SL trailed further
+2025-07-02 22:10:38,342 INFO    TP/SL trailed further
+2025-07-02 22:11:01,389 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.911
+2025-07-02 22:11:01,637 INFO    [ENTRY] PULSE BUY 0.01@3348.159 SL3346.793 TP3350.891 → 10009
+2025-07-02 22:11:09,902 INFO    TP/SL trailed further
+2025-07-02 22:11:26,176 INFO    TP/SL trailed further
+2025-07-02 22:11:27,182 INFO    TP/SL trailed further
+2025-07-02 22:11:31,412 INFO    TP/SL trailed further
+2025-07-02 22:12:01,473 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.959
+2025-07-02 22:12:01,732 INFO    [ENTRY] PULSE BUY 0.01@3347.531 SL3346.092 TP3350.408 → 10009
+2025-07-02 22:12:06,954 INFO    TP/SL trailed further
+2025-07-02 22:12:19,612 INFO    TP/SL trailed further
+2025-07-02 22:12:28,347 INFO    TP/SL trailed further
+2025-07-02 22:13:02,416 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.980
+2025-07-02 22:14:01,509 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.951
+2025-07-02 22:15:00,596 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.949
+2025-07-02 22:16:01,689 DEBUG   [BAR] body_ok=True vol_ok=True side=None ATR=0.901
+2025-07-02 22:17:00,786 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.896
+2025-07-02 22:18:01,907 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.881
+2025-07-02 22:19:01,023 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.894
+2025-07-02 22:19:01,287 INFO    [ENTRY] PULSE BUY 0.01@3348.011 SL3346.670 TP3350.694 → 10009
+2025-07-02 22:19:10,741 INFO    TP/SL trailed further
+2025-07-02 22:19:16,961 INFO    TP/SL trailed further
+2025-07-02 22:19:20,183 INFO    TP/SL trailed further
+2025-07-02 22:20:01,312 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.818
+2025-07-02 22:20:07,531 INFO    TP/SL trailed further
+2025-07-02 22:20:29,762 INFO    TP/SL trailed further
+2025-07-02 22:20:37,993 INFO    TP/SL trailed further
+2025-07-02 22:21:02,036 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.810
+2025-07-02 22:21:02,308 INFO    [ENTRY] PULSE BUY 0.01@3347.693 SL3346.479 TP3350.122 → 10009
+2025-07-02 22:21:05,528 INFO    TP/SL trailed further
+2025-07-02 22:21:09,816 INFO    TP/SL trailed further
+2025-07-02 22:21:23,051 INFO    TP/SL trailed further
+2025-07-02 22:21:37,296 INFO    TP/SL trailed further
+2025-07-02 22:21:41,488 INFO    SL → BE+trail
+2025-07-02 22:22:00,523 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.765
+2025-07-02 22:23:00,619 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.745
+2025-07-02 22:23:00,848 INFO    [ENTRY] PULSE SELL 0.01@3347.406 SL3348.524 TP3345.169 → 10009
+2025-07-02 22:23:02,051 INFO    TP/SL trailed further
+2025-07-02 22:23:08,274 INFO    TP/SL trailed further
+2025-07-02 22:23:20,499 INFO    TP/SL trailed further
+2025-07-02 22:23:45,760 INFO    TP/SL trailed further
+2025-07-02 22:23:53,974 INFO    TP/SL trailed further
+2025-07-02 22:24:01,992 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.697
+2025-07-02 22:24:02,266 INFO    TP/SL trailed further
+2025-07-02 22:25:01,363 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.667
+2025-07-02 22:26:00,458 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.679
+2025-07-02 22:27:01,552 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.692
+2025-07-02 22:28:00,635 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.667
+2025-07-02 22:29:02,722 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.687
+2025-07-02 22:30:00,806 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.708
+2025-07-02 22:31:00,892 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.748
+2025-07-02 22:31:01,116 INFO    [ENTRY] PULSE BUY 0.01@3349.688 SL3348.566 TP3351.932 → 10009
+2025-07-02 22:31:02,432 INFO    TP/SL trailed further
+2025-07-02 22:31:20,211 INFO    TP/SL trailed further
+2025-07-02 22:32:01,306 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.733
+2025-07-02 22:32:06,515 INFO    TP/SL trailed further
+2025-07-02 22:33:00,644 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.699
+2025-07-02 22:33:16,867 INFO    TP/SL trailed further
+2025-07-02 22:33:29,898 INFO    TP/SL trailed further
+2025-07-02 22:33:36,108 INFO    TP/SL trailed further
+2025-07-02 22:34:03,170 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.675
+2025-07-02 22:34:13,484 INFO    TP/SL trailed further
+2025-07-02 22:34:17,822 INFO    SL → BE+trail
+2025-07-02 22:34:18,049 INFO    TP/SL trailed further
+2025-07-02 22:34:19,053 INFO    TP/SL trailed further
+2025-07-02 22:35:01,114 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.656
+2025-07-02 22:36:01,202 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.635
+2025-07-02 22:37:01,291 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.635
+2025-07-02 22:38:01,381 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.668
+2025-07-02 22:39:00,471 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.653
+2025-07-02 22:40:00,561 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.672
+2025-07-02 22:40:00,787 INFO    [ENTRY] PULSE SELL 0.01@3349.101 SL3350.110 TP3347.084 → 10009
+2025-07-02 22:40:03,033 INFO    TP/SL trailed further
+2025-07-02 22:40:07,348 INFO    TP/SL trailed further
+2025-07-02 22:40:43,675 INFO    TP/SL trailed further
+2025-07-02 22:40:44,680 INFO    TP/SL trailed further
+2025-07-02 22:41:00,709 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.676
+2025-07-02 22:42:01,795 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.665
+2025-07-02 22:43:01,877 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.669
+2025-07-02 22:44:00,959 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.605
+2025-07-02 22:45:01,052 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.596
+2025-07-02 22:46:02,133 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.648
+2025-07-02 22:47:01,216 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.635
+2025-07-02 22:48:01,304 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.610
+2025-07-02 22:49:00,389 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.609
+2025-07-02 22:50:00,471 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.591
+2025-07-02 22:51:00,553 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.556
+2025-07-02 22:51:00,816 INFO    [ENTRY] PULSE SELL 0.01@3348.674 SL3349.508 TP3347.005 → 10009
+2025-07-02 22:51:01,057 INFO    TP/SL trailed further
+2025-07-02 22:51:02,377 INFO    TP/SL trailed further
+2025-07-02 22:51:03,586 INFO    TP/SL trailed further
+2025-07-02 22:51:05,866 INFO    TP/SL trailed further
+2025-07-02 22:51:20,900 INFO    TP/SL trailed further
+2025-07-02 22:51:29,133 INFO    TP/SL trailed further
+2025-07-02 22:51:34,144 INFO    TP/SL trailed further
+2025-07-02 22:52:01,202 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.545
+2025-07-02 22:53:00,298 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.510
+2025-07-02 22:53:00,496 INFO    [ENTRY] PULSE BUY 0.01@3349.301 SL3348.535 TP3350.832 → 10009
+2025-07-02 22:53:00,724 INFO    TP/SL trailed further
+2025-07-02 22:53:02,043 INFO    TP/SL trailed further
+2025-07-02 22:53:23,086 INFO    TP/SL trailed further
+2025-07-02 22:54:01,143 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.514
+2025-07-02 22:55:01,241 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.507
+2025-07-02 22:56:00,342 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.519
+2025-07-02 22:56:00,560 INFO    [ENTRY] PULSE SELL 0.01@3348.224 SL3349.002 TP3346.668 → 10009
+2025-07-02 22:56:00,800 INFO    TP/SL trailed further
+2025-07-02 22:56:05,013 INFO    TP/SL trailed further
+2025-07-02 22:56:15,259 INFO    TP/SL trailed further
+2025-07-02 22:56:27,287 INFO    TP/SL trailed further
+2025-07-02 22:56:28,292 INFO    TP/SL trailed further
+2025-07-02 22:57:00,342 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.525
+2025-07-02 22:58:00,435 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.547
+2025-07-02 22:59:01,526 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.571
+2025-07-02 23:00:00,608 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.617
+2025-07-02 23:00:00,828 INFO    [ENTRY] PULSE BUY 0.01@3348.895 SL3347.970 TP3350.745 → 10009
+2025-07-02 23:00:01,051 INFO    TP/SL trailed further
+2025-07-02 23:00:02,253 INFO    TP/SL trailed further
+2025-07-02 23:00:03,465 INFO    TP/SL trailed further
+2025-07-02 23:00:04,775 INFO    SL → BE+trail
+2025-07-02 23:00:05,014 INFO    TP/SL trailed further
+2025-07-02 23:00:06,235 INFO    SL → BE+trail
+2025-07-02 23:00:07,473 INFO    TP/SL trailed further
+2025-07-02 23:00:13,800 INFO    TP/SL trailed further
+2025-07-02 23:01:01,883 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.646
+2025-07-02 23:02:00,973 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.696
+2025-07-02 23:02:01,221 INFO    [ENTRY] PULSE SELL 0.01@3348.122 SL3349.167 TP3346.033 → 10009
+2025-07-02 23:02:17,471 INFO    TP/SL trailed further
+2025-07-02 23:02:19,678 INFO    SL → BE+trail
+2025-07-02 23:03:00,747 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.712
+2025-07-02 23:04:01,838 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.693
+2025-07-02 23:05:00,927 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.707
+2025-07-02 23:06:01,016 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.701
+2025-07-02 23:07:01,111 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.697
+2025-07-02 23:08:02,193 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.721
+2025-07-02 23:09:00,287 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.673
+2025-07-02 23:10:02,382 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.653
+2025-07-02 23:11:00,502 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.615
+2025-07-03 08:22:53,363 INFO    [CORE]  Re-connected to MT5
+2025-07-03 08:22:53,364 INFO    [CORE]  Pulse-Scalper single-pos started
+2025-07-03 08:22:53,387 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.615
+2025-07-03 08:22:54,391 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.813
+2025-07-03 08:22:54,679 INFO    [ENTRY] PULSE BUY 0.01@3350.272 SL3349.053 TP3352.711 → 10009
+2025-07-03 08:23:01,718 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.765
+2025-07-03 08:23:18,087 INFO    TP/SL trailed further
+2025-07-03 08:23:29,322 INFO    TP/SL trailed further
+2025-07-03 08:23:39,573 INFO    TP/SL trailed further
+2025-07-03 08:23:41,787 INFO    TP/SL trailed further
+2025-07-03 08:23:58,196 INFO    TP/SL trailed further
+2025-07-03 08:24:01,218 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.710
+2025-07-03 08:24:07,471 INFO    SL → BE+trail
+2025-07-03 08:24:22,749 INFO    TP/SL trailed further
+2025-07-03 08:25:02,061 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.682
+2025-07-03 08:25:04,568 INFO    [ENTRY] PULSE BUY 0.01@3350.666 SL3349.717 TP3352.786 → 10009
+2025-07-03 08:25:18,145 INFO    TP/SL trailed further
+2025-07-03 08:25:23,378 INFO    TP/SL trailed further
+2025-07-03 08:25:30,636 INFO    TP/SL trailed further
+2025-07-03 08:25:39,784 INFO    TP/SL trailed further
+2025-07-03 08:26:01,867 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.679
+2025-07-03 08:27:01,071 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.714
+2025-07-03 08:27:01,437 INFO    [ENTRY] PULSE BUY 0.01@3350.997 SL3349.926 TP3353.139 → 10009
+2025-07-03 08:27:02,638 INFO    TP/SL trailed further
+2025-07-03 08:27:44,094 INFO    TP/SL trailed further
+2025-07-03 08:27:46,428 INFO    TP/SL trailed further
+2025-07-03 08:27:51,674 INFO    TP/SL trailed further
+2025-07-03 08:27:55,929 INFO    TP/SL trailed further
+2025-07-03 08:28:01,958 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.704
+2025-07-03 08:29:02,135 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.714
+2025-07-03 08:29:02,364 INFO    [ENTRY] PULSE BUY 0.01@3351.437 SL3350.367 TP3353.578 → 10009
+2025-07-03 08:29:12,654 INFO    TP/SL trailed further
+2025-07-03 08:29:13,854 INFO    TP/SL trailed further
+2025-07-03 08:29:33,168 INFO    TP/SL trailed further
+2025-07-03 08:30:01,285 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.700
+2025-07-03 08:31:01,511 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.652
+2025-07-03 08:32:01,711 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.631
+2025-07-03 08:33:01,925 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.623
+2025-07-03 08:34:01,125 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.602
+2025-07-03 08:35:02,337 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.595
+2025-07-03 08:36:01,555 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.618
+2025-07-03 08:37:01,774 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.621
+2025-07-03 08:38:01,001 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.635
+2025-07-03 08:39:01,204 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.632
+2025-07-03 08:40:02,451 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.594
+2025-07-03 08:40:02,788 INFO    [ENTRY] PULSE SELL 0.01@3349.740 SL3350.630 TP3347.959 → 10009
+2025-07-03 08:40:03,022 INFO    TP/SL trailed further
+2025-07-03 08:40:24,358 INFO    TP/SL trailed further
+2025-07-03 08:40:33,638 INFO    SL → BE+trail
+2025-07-03 08:40:33,870 INFO    TP/SL trailed further
+2025-07-03 08:40:37,096 INFO    SL → BE+trail
+2025-07-03 08:41:02,201 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.604
+2025-07-03 08:41:02,430 INFO    [ENTRY] PULSE SELL 0.01@3349.132 SL3350.038 TP3347.321 → 10009
+2025-07-03 08:41:02,665 INFO    TP/SL trailed further
+2025-07-03 08:41:05,912 INFO    TP/SL trailed further
+2025-07-03 08:41:17,988 INFO    TP/SL trailed further
+2025-07-03 08:42:01,137 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.598
+2025-07-03 08:42:01,363 INFO    [ENTRY] PULSE SELL 0.01@3349.405 SL3350.302 TP3347.610 → 10009
+2025-07-03 08:42:01,568 INFO    TP/SL trailed further
+2025-07-03 08:42:16,898 INFO    TP/SL trailed further
+2025-07-03 08:42:29,154 INFO    TP/SL trailed further
+2025-07-03 08:42:35,380 INFO    TP/SL trailed further
+2025-07-03 08:42:44,634 INFO    TP/SL trailed further
+2025-07-03 08:43:02,737 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.604
+2025-07-03 08:43:05,989 INFO    TP/SL trailed further
+2025-07-03 08:44:01,203 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.592
+2025-07-03 08:45:01,423 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.579
+2025-07-03 08:46:01,653 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.571
+2025-07-03 08:47:01,878 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.687
+2025-07-03 08:47:02,195 INFO    [ENTRY] PULSE SELL 0.01@3347.322 SL3348.352 TP3345.262 → 10009
+2025-07-03 08:47:03,416 INFO    TP/SL trailed further
+2025-07-03 08:47:22,747 INFO    TP/SL trailed further
+2025-07-03 08:47:33,061 INFO    SL → BE+trail
+2025-07-03 08:47:33,300 INFO    TP/SL trailed further
+2025-07-03 08:47:34,508 INFO    TP/SL trailed further
+2025-07-03 08:47:39,537 INFO    TP/SL trailed further
+2025-07-03 08:48:01,627 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.716
+2025-07-03 08:48:01,902 INFO    [ENTRY] PULSE SELL 0.01@3347.987 SL3349.062 TP3345.838 → 10009
+2025-07-03 08:49:00,428 INFO    TP/SL trailed further
+2025-07-03 08:49:02,446 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.688
+2025-07-03 08:49:20,773 INFO    TP/SL trailed further
+2025-07-03 08:49:25,018 INFO    TP/SL trailed further
+2025-07-03 08:49:54,405 INFO    TP/SL trailed further
+2025-07-03 08:50:01,450 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.701
+2025-07-03 08:50:01,663 INFO    SL → BE+trail
+2025-07-03 08:50:02,860 INFO    TP/SL trailed further
+2025-07-03 08:51:01,085 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.695
+2025-07-03 08:52:01,315 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.718
+2025-07-03 08:53:01,536 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.746
+2025-07-03 08:53:01,763 INFO    [ENTRY] PULSE SELL 0.01@3346.503 SL3347.622 TP3344.264 → 10009
+2025-07-03 08:53:13,021 INFO    TP/SL trailed further
+2025-07-03 08:53:14,270 INFO    TP/SL trailed further
+2025-07-03 08:53:37,626 INFO    TP/SL trailed further
+2025-07-03 08:53:46,889 INFO    TP/SL trailed further
+2025-07-03 08:54:00,968 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.721
+2025-07-03 08:54:06,296 INFO    TP/SL trailed further
+2025-07-03 08:54:09,537 INFO    SL → BE+trail
+2025-07-03 08:54:09,786 INFO    TP/SL trailed further
+2025-07-03 08:54:20,846 INFO    TP/SL trailed further
+2025-07-03 08:55:00,989 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.760
+2025-07-03 08:55:01,211 INFO    [ENTRY] PULSE SELL 0.01@3347.050 SL3348.190 TP3344.770 → 10009
+2025-07-03 08:55:17,580 INFO    SL → BE+trail
+2025-07-03 08:55:17,859 INFO    TP/SL trailed further
+2025-07-03 08:55:19,066 INFO    SL → BE+trail
+2025-07-03 08:55:30,128 INFO    TP/SL trailed further
+2025-07-03 08:56:01,242 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.778
+2025-07-03 08:57:02,485 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.818
+2025-07-03 08:57:02,752 INFO    [ENTRY] PULSE SELL 0.01@3346.505 SL3347.732 TP3344.051 → 10009
+2025-07-03 08:57:30,140 INFO    TP/SL trailed further
+2025-07-03 08:58:01,336 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.844
+2025-07-03 08:58:07,693 INFO    TP/SL trailed further
+2025-07-03 08:58:25,000 INFO    TP/SL trailed further
+2025-07-03 08:58:43,331 INFO    TP/SL trailed further
+2025-07-03 08:58:52,384 INFO    TP/SL trailed further
+2025-07-03 08:59:01,425 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.858
+2025-07-03 09:00:01,651 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.800
+2025-07-03 09:01:00,892 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.749
+2025-07-03 09:02:03,138 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.766
+2025-07-03 09:03:02,368 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.763
+2025-07-03 09:04:02,602 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.749
+2025-07-03 09:05:01,824 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.725
+2025-07-03 09:06:01,053 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.714
+2025-07-03 09:07:01,289 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.710
+2025-07-03 09:08:01,524 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.661
+2025-07-03 09:09:01,763 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.634
+2025-07-03 09:10:05,004 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.612
+2025-07-03 09:11:01,210 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.622
+2025-07-03 09:12:01,426 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.613
+2025-07-03 09:13:01,658 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.576
+2025-07-03 09:14:01,883 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.551
+2025-07-03 09:15:02,118 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.531
+2025-07-03 09:16:01,349 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.520
+2025-07-03 09:17:06,590 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.518
+2025-07-03 09:18:01,785 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.508
+2025-07-03 09:19:00,991 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.508
+2025-07-03 09:20:01,212 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.508
+2025-07-03 09:21:01,416 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.527
+2025-07-03 09:22:01,638 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.536
+2025-07-03 09:22:01,855 INFO    [ENTRY] PULSE SELL 0.01@3345.674 SL3346.478 TP3344.066 → 10009
+2025-07-03 09:22:02,082 INFO    TP/SL trailed further
+2025-07-03 09:22:03,282 INFO    TP/SL trailed further
+2025-07-03 09:22:07,512 INFO    TP/SL trailed further
+2025-07-03 09:22:17,562 INFO    TP/SL trailed further
+2025-07-03 09:23:01,721 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.555
+2025-07-03 09:24:01,945 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.571
+2025-07-03 09:24:02,144 INFO    [ENTRY] PULSE SELL 0.01@3346.387 SL3347.243 TP3344.674 → 10009
+2025-07-03 09:24:02,342 INFO    TP/SL trailed further
+2025-07-03 09:24:19,634 INFO    TP/SL trailed further
+2025-07-03 09:24:36,740 INFO    TP/SL trailed further
+2025-07-03 09:25:01,866 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.568
+2025-07-03 09:25:02,305 INFO    [ENTRY] PULSE BUY 0.01@3347.224 SL3346.372 TP3348.928 → 10009
+2025-07-03 09:25:02,594 INFO    TP/SL trailed further
+2025-07-03 09:25:09,638 INFO    TP/SL trailed further
+2025-07-03 09:25:12,985 INFO    TP/SL trailed further
+2025-07-03 09:26:02,166 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.587
+2025-07-03 09:26:03,326 INFO    [ENTRY] PULSE BUY 0.01@3346.872 SL3345.992 TP3348.632 → 10009
+2025-07-03 09:26:03,569 INFO    TP/SL trailed further
+2025-07-03 09:26:05,002 INFO    TP/SL trailed further
+2025-07-03 09:26:10,272 INFO    TP/SL trailed further
+2025-07-03 09:26:12,556 INFO    TP/SL trailed further
+2025-07-03 09:26:29,390 INFO    TP/SL trailed further
+2025-07-03 09:26:30,637 INFO    SL → BE+trail
+2025-07-03 09:26:43,924 INFO    TP/SL trailed further
+2025-07-03 09:27:02,015 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.624
+2025-07-03 09:27:07,045 INFO    TP/SL trailed further
+2025-07-03 09:27:22,393 INFO    TP/SL trailed further
+2025-07-03 09:27:33,694 INFO    TP/SL trailed further
+2025-07-03 09:27:55,077 INFO    TP/SL trailed further
+2025-07-03 09:27:57,092 INFO    TP/SL trailed further
+2025-07-03 09:28:02,117 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.645
+2025-07-03 09:28:02,353 INFO    [ENTRY] PULSE BUY 0.01@3348.023 SL3347.056 TP3349.958 → 10009
+2025-07-03 09:28:03,748 INFO    TP/SL trailed further
+2025-07-03 09:28:09,036 INFO    TP/SL trailed further
+2025-07-03 09:28:18,677 INFO    TP/SL trailed further
+2025-07-03 09:28:26,729 INFO    TP/SL trailed further
+2025-07-03 09:29:00,860 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.651
+2025-07-03 09:30:01,084 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.675
+2025-07-03 09:30:01,316 INFO    [ENTRY] PULSE BUY 0.01@3347.644 SL3346.631 TP3349.670 → 10009
+2025-07-03 09:30:08,558 INFO    TP/SL trailed further
+2025-07-03 09:30:14,799 INFO    TP/SL trailed further
+2025-07-03 09:30:17,061 INFO    TP/SL trailed further
+2025-07-03 09:30:32,357 INFO    SL → BE+trail
+2025-07-03 09:30:47,642 INFO    TP/SL trailed further
+2025-07-03 09:31:02,694 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.695
+2025-07-03 09:31:02,909 INFO    [ENTRY] PULSE BUY 0.01@3348.191 SL3347.149 TP3350.275 → 10009
+2025-07-03 09:31:04,115 INFO    TP/SL trailed further
+2025-07-03 09:31:13,485 INFO    TP/SL trailed further
+2025-07-03 09:31:16,711 INFO    TP/SL trailed further
+2025-07-03 09:32:01,900 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.668
+2025-07-03 09:33:01,117 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.695
+2025-07-03 09:34:01,345 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.677
+2025-07-03 09:35:01,562 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.641
+2025-07-03 09:36:02,795 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.644
+2025-07-03 09:37:03,021 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.598
+2025-07-03 09:38:01,244 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.568
+2025-07-03 09:39:02,464 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.553
+2025-07-03 09:40:01,688 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.550
+2025-07-03 09:41:01,899 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.527
+2025-07-03 09:42:02,111 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.500
+2025-07-03 09:43:02,338 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.479
+2025-07-03 09:44:02,563 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.489
+2025-07-03 09:45:01,779 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.481
+2025-07-03 09:45:02,075 INFO    [ENTRY] PULSE BUY 0.01@3349.249 SL3348.527 TP3350.692 → 10009
+2025-07-03 09:45:02,347 INFO    TP/SL trailed further
+2025-07-03 09:45:03,559 INFO    TP/SL trailed further
+2025-07-03 09:45:09,801 INFO    TP/SL trailed further
+2025-07-03 09:45:19,059 INFO    TP/SL trailed further
+2025-07-03 09:45:28,323 INFO    TP/SL trailed further
+2025-07-03 09:45:31,533 INFO    TP/SL trailed further
+2025-07-03 09:46:01,639 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.456
+2025-07-03 09:47:01,863 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.459
+2025-07-03 09:48:01,084 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.470
+2025-07-03 09:49:03,321 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.469
+2025-07-03 09:49:03,552 INFO    [ENTRY] PULSE BUY 0.01@3349.960 SL3349.257 TP3351.366 → 10009
+2025-07-03 09:49:03,776 INFO    TP/SL trailed further
+2025-07-03 09:49:19,345 INFO    TP/SL trailed further
+2025-07-03 09:49:54,751 INFO    TP/SL trailed further
+2025-07-03 09:50:01,793 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.485
+2025-07-03 09:50:09,211 INFO    TP/SL trailed further
+2025-07-03 09:50:38,589 INFO    TP/SL trailed further
+2025-07-03 09:50:39,832 INFO    SL → BE+trail
+2025-07-03 09:51:01,969 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.499
+2025-07-03 09:51:02,272 INFO    TP/SL trailed further
+2025-07-03 09:51:08,311 INFO    TP/SL trailed further
+2025-07-03 09:52:03,535 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.475
+2025-07-03 09:53:01,763 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.441
+2025-07-03 09:54:03,982 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.448
+2025-07-03 09:55:02,199 DEBUG   [BAR] body_ok=True vol_ok=True side=None ATR=0.487
+2025-07-03 09:56:01,415 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.501
+2025-07-03 09:57:01,635 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.502
+2025-07-03 09:58:01,845 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.489
+2025-07-03 09:58:02,112 INFO    [ENTRY] PULSE SELL 0.01@3349.224 SL3349.957 TP3347.757 → 10009
+2025-07-03 09:58:02,324 INFO    TP/SL trailed further
+2025-07-03 09:58:12,618 INFO    TP/SL trailed further
+2025-07-03 09:58:43,997 INFO    TP/SL trailed further
+2025-07-03 09:58:45,260 INFO    TP/SL trailed further
+2025-07-03 09:58:51,293 INFO    TP/SL trailed further
+2025-07-03 09:59:01,345 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.497
+2025-07-03 10:00:01,573 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.488
+2025-07-03 10:01:01,796 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.501
+2025-07-03 10:02:03,031 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.459
+2025-07-03 10:03:02,269 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.463
+2025-07-03 10:04:01,505 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.476
+2025-07-03 10:04:01,715 INFO    [ENTRY] PULSE SELL 0.01@3349.081 SL3349.795 TP3347.653 → 10009
+2025-07-03 10:04:01,955 INFO    TP/SL trailed further
+2025-07-03 10:04:23,335 INFO    TP/SL trailed further
+2025-07-03 10:04:38,608 INFO    TP/SL trailed further
+2025-07-03 10:05:01,749 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.486
+2025-07-03 10:06:02,004 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.473
+2025-07-03 10:07:04,233 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.503
+2025-07-03 10:07:04,442 INFO    [ENTRY] PULSE BUY 0.01@3349.630 SL3348.875 TP3351.139 → 10009
+2025-07-03 10:07:04,677 INFO    TP/SL trailed further
+2025-07-03 10:07:15,936 INFO    TP/SL trailed further
+2025-07-03 10:07:37,056 INFO    TP/SL trailed further
+2025-07-03 10:08:02,150 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.489
+2025-07-03 10:09:02,388 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.483
+2025-07-03 10:10:01,613 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.501
+2025-07-03 10:11:01,830 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.471
+2025-07-03 10:12:01,036 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.454
+2025-07-03 10:13:03,253 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.478
+2025-07-03 10:14:03,441 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.453
+2025-07-03 10:15:01,612 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.462
+2025-07-03 10:16:01,833 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.431
+2025-07-03 10:17:02,065 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.408
+2025-07-03 10:18:01,283 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.437
+2025-07-03 10:19:01,485 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.511
+2025-07-03 10:19:01,704 INFO    [ENTRY] PULSE BUY 0.01@3350.867 SL3350.101 TP3352.399 → 10009
+2025-07-03 10:19:01,945 INFO    TP/SL trailed further
+2025-07-03 10:19:03,188 INFO    TP/SL trailed further
+2025-07-03 10:19:06,399 INFO    TP/SL trailed further
+2025-07-03 10:19:11,435 INFO    TP/SL trailed further
+2025-07-03 10:19:18,668 INFO    TP/SL trailed further
+2025-07-03 10:19:28,047 INFO    SL → BE+trail
+2025-07-03 10:19:28,284 INFO    TP/SL trailed further
+2025-07-03 10:19:33,529 INFO    TP/SL trailed further
+2025-07-03 10:20:01,636 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.494
+2025-07-03 10:21:01,864 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.528
+2025-07-03 10:21:02,073 INFO    [ENTRY] PULSE BUY 0.01@3351.499 SL3350.707 TP3353.084 → 10009
+2025-07-03 10:21:02,259 INFO    TP/SL trailed further
+2025-07-03 10:21:03,443 INFO    TP/SL trailed further
+2025-07-03 10:21:07,690 INFO    TP/SL trailed further
+2025-07-03 10:21:08,883 INFO    TP/SL trailed further
+2025-07-03 10:21:10,069 INFO    TP/SL trailed further
+2025-07-03 10:21:14,282 INFO    TP/SL trailed further
+2025-07-03 10:22:01,424 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.550
+2025-07-03 10:23:07,296 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.591
+2025-07-03 10:24:01,587 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.680
+2025-07-03 10:24:01,886 INFO    [ENTRY] PULSE SELL 0.01@3350.142 SL3351.163 TP3348.101 → 10009
+2025-07-03 10:24:16,202 INFO    TP/SL trailed further
+2025-07-03 10:24:54,650 INFO    TP/SL trailed further
+2025-07-03 10:25:01,679 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.721
+2025-07-03 10:26:00,893 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.730
+2025-07-03 10:27:02,100 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.752
+2025-07-03 10:28:02,311 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.768
+2025-07-03 10:29:01,536 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.781
+2025-07-03 10:30:01,777 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.808
+2025-07-03 10:31:01,995 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.810
+2025-07-03 10:32:02,229 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.753
+2025-07-03 10:33:01,451 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.722
+2025-07-03 10:34:01,684 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.674
+2025-07-03 10:35:01,909 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.658
+2025-07-03 10:36:01,107 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.601
+2025-07-03 10:37:02,331 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.512
+2025-07-03 10:38:01,539 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.503
+2025-07-03 10:39:01,746 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.510
+2025-07-03 10:39:01,997 INFO    [ENTRY] PULSE BUY 0.01@3352.087 SL3351.322 TP3353.617 → 10009
+2025-07-03 10:39:02,235 INFO    TP/SL trailed further
+2025-07-03 10:39:15,500 INFO    TP/SL trailed further
+2025-07-03 10:39:17,518 INFO    TP/SL trailed further
+2025-07-03 10:39:26,804 INFO    TP/SL trailed further
+2025-07-03 10:39:37,870 INFO    TP/SL trailed further
+2025-07-03 10:40:01,987 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.498
+2025-07-03 10:41:01,189 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.506
+2025-07-03 10:42:01,406 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.535
+2025-07-03 10:43:01,639 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.524
+2025-07-03 10:44:01,858 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.525
+2025-07-03 10:45:02,056 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.538
+2025-07-03 10:45:02,268 INFO    [ENTRY] PULSE BUY 0.01@3352.993 SL3352.185 TP3354.608 → 10009
+2025-07-03 10:45:02,491 INFO    TP/SL trailed further
+2025-07-03 10:45:06,715 INFO    TP/SL trailed further
+2025-07-03 10:45:08,042 INFO    TP/SL trailed further
+2025-07-03 10:45:16,317 INFO    TP/SL trailed further
+2025-07-03 10:45:29,588 INFO    TP/SL trailed further
+2025-07-03 10:45:30,897 INFO    TP/SL trailed further
+2025-07-03 10:45:33,194 INFO    TP/SL trailed further
+2025-07-03 10:45:35,204 INFO    TP/SL trailed further
+2025-07-03 10:46:01,307 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.553
+2025-07-03 10:46:01,538 INFO    [ENTRY] PULSE BUY 0.01@3353.423 SL3352.593 TP3355.082 → 10009
+2025-07-03 10:46:01,753 INFO    TP/SL trailed further
+2025-07-03 10:46:03,089 INFO    TP/SL trailed further
+2025-07-03 10:46:04,382 INFO    TP/SL trailed further
+2025-07-03 10:46:08,435 INFO    TP/SL trailed further
+2025-07-03 10:47:01,637 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.554
+2025-07-03 10:47:01,897 INFO    [ENTRY] PULSE BUY 0.01@3353.247 SL3352.415 TP3354.910 → 10009
+2025-07-03 10:47:02,129 INFO    TP/SL trailed further
+2025-07-03 10:47:06,453 INFO    TP/SL trailed further
+2025-07-03 10:47:11,732 INFO    SL → BE+trail
+2025-07-03 10:47:15,247 INFO    TP/SL trailed further
+2025-07-03 10:48:01,414 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.587
+2025-07-03 10:48:01,642 INFO    [ENTRY] PULSE BUY 0.01@3353.920 SL3353.039 TP3355.681 → 10009
+2025-07-03 10:48:01,838 INFO    TP/SL trailed further
+2025-07-03 10:48:03,044 INFO    TP/SL trailed further
+2025-07-03 10:48:19,395 INFO    TP/SL trailed further
+2025-07-03 10:48:22,411 INFO    TP/SL trailed further
+2025-07-03 10:48:35,716 INFO    TP/SL trailed further
+2025-07-03 10:49:01,809 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.582
+2025-07-03 10:50:01,998 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.577
+2025-07-03 10:51:01,223 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.590
+2025-07-03 10:52:01,428 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.595
+2025-07-03 10:53:01,648 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.619
+2025-07-03 10:54:01,853 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.608
+2025-07-03 10:55:02,049 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.599
+2025-07-03 10:56:01,257 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.596
+2025-07-03 10:57:02,474 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.599
+2025-07-03 10:57:02,745 INFO    [ENTRY] PULSE SELL 0.01@3353.272 SL3354.170 TP3351.475 → 10009
+2025-07-03 10:57:02,931 INFO    TP/SL trailed further
+2025-07-03 10:57:07,161 INFO    TP/SL trailed further
+2025-07-03 10:58:01,465 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.583
+2025-07-03 10:58:54,966 INFO    TP/SL trailed further
+2025-07-03 10:59:00,997 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.553
+2025-07-03 10:59:25,324 INFO    TP/SL trailed further
+2025-07-03 10:59:40,617 INFO    TP/SL trailed further
+2025-07-03 10:59:50,875 INFO    SL → BE+trail
+2025-07-03 11:00:00,911 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.564
+2025-07-03 11:01:01,126 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.649
+2025-07-03 11:01:01,415 INFO    [ENTRY] PULSE SELL 0.01@3351.886 SL3352.860 TP3349.938 → 10009
+2025-07-03 11:01:02,687 INFO    TP/SL trailed further
+2025-07-03 11:01:04,697 INFO    TP/SL trailed further
+2025-07-03 11:02:01,892 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.718
+2025-07-03 11:02:02,181 INFO    [ENTRY] PULSE SELL 0.01@3351.068 SL3352.146 TP3348.913 → 10009
+2025-07-03 11:02:03,382 INFO    TP/SL trailed further
+2025-07-03 11:02:05,613 INFO    TP/SL trailed further
+2025-07-03 11:02:06,620 INFO    TP/SL trailed further
+2025-07-03 11:03:01,819 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.805
+2025-07-03 11:03:02,055 INFO    [ENTRY] PULSE SELL 0.01@3352.540 SL3353.747 TP3350.126 → 10009
+2025-07-03 11:03:03,281 INFO    TP/SL trailed further
+2025-07-03 11:03:06,536 INFO    TP/SL trailed further
+2025-07-03 11:03:08,821 INFO    TP/SL trailed further
+2025-07-03 11:03:10,832 INFO    TP/SL trailed further
+2025-07-03 11:04:00,980 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.858
+2025-07-03 11:05:01,183 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.829
+2025-07-03 11:05:01,405 INFO    [ENTRY] PULSE SELL 0.01@3352.305 SL3353.549 TP3349.817 → 10009
+2025-07-03 11:05:03,613 INFO    TP/SL trailed further
+2025-07-03 11:05:12,872 INFO    SL → BE+trail
+2025-07-03 11:05:13,113 INFO    TP/SL trailed further
+2025-07-03 11:05:14,309 INFO    TP/SL trailed further
+2025-07-03 11:05:36,621 INFO    TP/SL trailed further
+2025-07-03 11:05:37,633 INFO    TP/SL trailed further
+2025-07-03 11:06:01,728 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.842
+2025-07-03 11:06:01,915 INFO    [ENTRY] PULSE SELL 0.01@3351.896 SL3353.158 TP3349.371 → 10009
+2025-07-03 11:06:08,160 INFO    TP/SL trailed further
+2025-07-03 11:06:34,606 INFO    TP/SL trailed further
+2025-07-03 11:06:53,924 INFO    TP/SL trailed further
+2025-07-03 11:06:57,166 INFO    TP/SL trailed further
+2025-07-03 11:07:01,187 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.849
+2025-07-03 11:08:04,432 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.859
+2025-07-03 11:09:01,640 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.865
+2025-07-03 11:10:01,855 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.889
+2025-07-03 11:10:02,053 INFO    [ENTRY] PULSE SELL 0.01@3351.881 SL3353.214 TP3349.214 → 10009
+2025-07-03 11:10:29,409 INFO    TP/SL trailed further
+2025-07-03 11:10:55,737 INFO    TP/SL trailed further
+2025-07-03 11:11:01,769 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.923
+2025-07-03 11:11:03,087 INFO    TP/SL trailed further
+2025-07-03 11:11:13,338 INFO    TP/SL trailed further
+2025-07-03 11:11:19,559 INFO    TP/SL trailed further
+2025-07-03 11:12:01,720 DEBUG   [BAR] body_ok=True vol_ok=True side=None ATR=0.945
+2025-07-03 11:13:00,933 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.979
+2025-07-03 11:14:01,145 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.871
+2025-07-03 11:15:01,350 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.808
+2025-07-03 11:16:01,572 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.787
+2025-07-03 11:17:00,793 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.752
+2025-07-03 11:18:01,994 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.760
+2025-07-03 11:19:01,208 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.729
+2025-07-03 11:20:01,437 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.738
+2025-07-03 11:21:01,637 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.804
+2025-07-03 11:21:01,848 INFO    [ENTRY] PULSE BUY 0.01@3356.084 SL3354.878 TP3358.496 → 10009
+2025-07-03 11:21:12,150 INFO    TP/SL trailed further
+2025-07-03 11:21:21,416 INFO    TP/SL trailed further
+2025-07-03 11:21:22,698 INFO    TP/SL trailed further
+2025-07-03 11:21:37,029 INFO    TP/SL trailed further
+2025-07-03 11:22:02,130 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.806
+2025-07-03 11:22:05,367 INFO    TP/SL trailed further
+2025-07-03 11:22:06,582 INFO    SL → BE+trail
+2025-07-03 11:23:01,752 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.841
+2025-07-03 11:23:02,002 INFO    [ENTRY] PULSE BUY 0.01@3357.515 SL3356.253 TP3360.038 → 10009
+2025-07-03 11:23:04,397 INFO    TP/SL trailed further
+2025-07-03 11:23:10,671 INFO    SL → BE+trail
+2025-07-03 11:23:10,877 INFO    TP/SL trailed further
+2025-07-03 11:23:12,192 INFO    SL → BE+trail
+2025-07-03 11:23:14,469 INFO    TP/SL trailed further
+2025-07-03 11:23:17,058 INFO    TP/SL trailed further
+2025-07-03 11:23:20,080 INFO    TP/SL trailed further
+2025-07-03 11:23:24,344 INFO    TP/SL trailed further
+2025-07-03 11:23:27,592 INFO    TP/SL trailed further
+2025-07-03 11:24:00,704 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.926
+2025-07-03 11:24:00,968 INFO    [ENTRY] PULSE BUY 0.01@3359.506 SL3358.116 TP3362.285 → 10009
+2025-07-03 11:24:03,255 INFO    TP/SL trailed further
+2025-07-03 11:24:07,458 INFO    TP/SL trailed further
+2025-07-03 11:24:10,473 INFO    TP/SL trailed further
+2025-07-03 11:24:12,687 INFO    TP/SL trailed further
+2025-07-03 11:24:13,903 INFO    TP/SL trailed further
+2025-07-03 11:24:23,187 INFO    TP/SL trailed further
+2025-07-03 11:24:37,802 INFO    SL → BE+trail
+2025-07-03 11:24:38,020 INFO    TP/SL trailed further
+2025-07-03 11:24:45,050 INFO    TP/SL trailed further
+2025-07-03 11:24:48,807 INFO    TP/SL trailed further
+2025-07-03 11:25:01,868 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.986
+2025-07-03 11:25:05,354 INFO    TP/SL trailed further
+2025-07-03 11:25:10,379 INFO    TP/SL trailed further
+2025-07-03 11:52:01,320 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.966
+2025-07-03 11:53:02,581 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.952
+2025-07-03 11:54:01,829 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.910
+2025-07-03 11:55:02,073 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.882
+2025-07-03 11:56:02,311 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.879
+2025-07-03 11:57:01,549 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.846
+2025-07-03 11:58:00,782 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.915
+2025-07-03 11:58:00,999 INFO    [ENTRY] PULSE BUY 0.01@3360.443 SL3359.071 TP3363.187 → 10009
+2025-07-03 11:58:27,369 INFO    TP/SL trailed further
+2025-07-03 11:58:44,687 INFO    TP/SL trailed further
+2025-07-03 11:59:00,789 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.881
+2025-07-03 11:59:01,006 INFO    TP/SL trailed further
+2025-07-03 11:59:04,228 INFO    TP/SL trailed further
+2025-07-03 11:59:09,260 INFO    TP/SL trailed further
+2025-07-03 12:00:01,609 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.842
+2025-07-03 12:00:04,835 INFO    TP/SL trailed further
+2025-07-03 12:01:02,023 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.807
+2025-07-03 12:02:02,252 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.763
+2025-07-03 12:03:02,492 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.729
+2025-07-03 12:04:01,769 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.696
+2025-07-03 12:05:02,015 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.678
+2025-07-03 12:06:02,285 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.679
+2025-07-03 12:07:01,527 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.729
+2025-07-03 12:07:01,800 INFO    [ENTRY] PULSE SELL 0.01@3359.151 SL3360.244 TP3356.965 → 10009
+2025-07-03 12:07:03,111 INFO    SL → BE+trail
+2025-07-03 12:07:03,467 INFO    TP/SL trailed further
+2025-07-03 12:07:04,696 INFO    SL → BE+trail
+2025-07-03 12:07:16,796 INFO    TP/SL trailed further
+2025-07-03 12:07:17,807 INFO    TP/SL trailed further
+2025-07-03 12:08:01,991 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.768
+2025-07-03 12:08:02,191 INFO    [ENTRY] PULSE SELL 0.01@3358.914 SL3360.067 TP3356.609 → 10009
+2025-07-03 12:08:18,573 INFO    TP/SL trailed further
+2025-07-03 12:08:27,486 INFO    TP/SL trailed further
+2025-07-03 12:08:48,850 INFO    SL → BE+trail
+2025-07-03 12:08:49,136 INFO    TP/SL trailed further
+2025-07-03 12:08:50,331 INFO    SL → BE+trail
+2025-07-03 12:09:01,403 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.710
+2025-07-03 12:10:01,775 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.695
+2025-07-03 12:10:15,863 INFO    TP/SL trailed further
+2025-07-03 12:11:01,048 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.657
+2025-07-03 12:11:01,253 INFO    [ENTRY] PULSE SELL 0.01@3357.647 SL3358.632 TP3355.676 → 10009
+2025-07-03 12:11:02,475 INFO    TP/SL trailed further
+2025-07-03 12:11:05,711 INFO    TP/SL trailed further
+2025-07-03 12:11:08,025 INFO    TP/SL trailed further
+2025-07-03 12:11:10,255 INFO    TP/SL trailed further
+2025-07-03 12:11:12,497 INFO    SL → BE+trail
+2025-07-03 12:11:12,724 INFO    TP/SL trailed further
+2025-07-03 12:11:19,034 INFO    SL → BE+trail
+2025-07-03 12:11:26,087 INFO    TP/SL trailed further
+2025-07-03 12:12:01,235 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.682
+2025-07-03 12:13:02,475 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.693
+2025-07-03 12:13:02,685 INFO    [ENTRY] PULSE SELL 0.01@3356.772 SL3357.812 TP3354.692 → 10009
+2025-07-03 12:13:04,911 INFO    TP/SL trailed further
+2025-07-03 12:13:14,224 INFO    TP/SL trailed further
+2025-07-03 12:13:19,256 INFO    TP/SL trailed further
+2025-07-03 12:14:01,437 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.718
+2025-07-03 12:14:01,773 INFO    [ENTRY] PULSE SELL 0.01@3357.342 SL3358.420 TP3355.187 → 10009
+2025-07-03 12:14:04,984 INFO    TP/SL trailed further
+2025-07-03 12:14:22,321 INFO    TP/SL trailed further
+2025-07-03 12:14:37,712 INFO    TP/SL trailed further
+2025-07-03 12:14:38,918 INFO    SL → BE+trail
+2025-07-03 12:15:01,051 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.739
+2025-07-03 12:15:08,444 INFO    TP/SL trailed further
+2025-07-03 12:15:09,456 INFO    TP/SL trailed further
+2025-07-03 12:16:01,708 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.728
+2025-07-03 12:17:00,982 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.771
+2025-07-03 12:18:01,269 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.783
+2025-07-03 12:19:01,528 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.766
+2025-07-03 12:20:00,782 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.717
+2025-07-03 12:21:01,015 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.737
+2025-07-03 12:21:01,313 INFO    [ENTRY] PULSE BUY 0.01@3357.755 SL3356.650 TP3359.965 → 10009
+2025-07-03 12:21:06,660 INFO    TP/SL trailed further
+2025-07-03 12:21:07,863 INFO    SL → BE+trail
+2025-07-03 12:21:08,076 INFO    TP/SL trailed further
+2025-07-03 12:21:09,290 INFO    SL → BE+trail
+2025-07-03 12:21:39,711 INFO    TP/SL trailed further
+2025-07-03 12:21:40,719 INFO    TP/SL trailed further
+2025-07-03 12:21:41,725 INFO    TP/SL trailed further
+2025-07-03 12:22:01,821 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.745
+2025-07-03 12:23:02,057 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.864
+2025-07-03 12:23:02,241 INFO    [ENTRY] PULSE BUY 0.01@3359.619 SL3358.324 TP3362.210 → 10009
+2025-07-03 12:23:03,440 INFO    TP/SL trailed further
+2025-07-03 12:23:27,966 INFO    TP/SL trailed further
+2025-07-03 12:24:01,174 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.823
+2025-07-03 12:24:11,441 INFO    TP/SL trailed further
+2025-07-03 12:24:34,803 INFO    TP/SL trailed further
+2025-07-03 12:24:39,049 INFO    TP/SL trailed further
+2025-07-03 12:24:43,283 INFO    TP/SL trailed further
+2025-07-03 12:24:46,497 INFO    TP/SL trailed further
+2025-07-03 12:25:01,571 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.824
+2025-07-03 12:26:01,900 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.832
+2025-07-03 12:27:02,343 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.802
+2025-07-03 12:27:02,651 INFO    [ENTRY] PULSE BUY 0.01@3361.140 SL3359.937 TP3363.546 → 10009
+2025-07-03 12:27:03,852 INFO    TP/SL trailed further
+2025-07-03 12:27:07,093 INFO    TP/SL trailed further
+2025-07-03 12:27:14,539 INFO    TP/SL trailed further
+2025-07-03 12:28:01,829 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.824
+2025-07-03 12:29:01,077 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.868
+2025-07-03 12:30:01,315 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.849
+2025-07-03 12:30:01,583 INFO    [ENTRY] PULSE BUY 0.01@3362.210 SL3360.937 TP3364.757 → 10009
+2025-07-03 12:30:06,866 INFO    TP/SL trailed further
+2025-07-03 12:30:08,107 INFO    TP/SL trailed further
+2025-07-03 12:30:18,398 INFO    TP/SL trailed further
+2025-07-03 12:30:19,669 INFO    TP/SL trailed further
+2025-07-03 12:30:22,907 INFO    TP/SL trailed further
+2025-07-03 12:30:32,209 INFO    SL → BE+trail
+2025-07-03 12:30:32,449 INFO    TP/SL trailed further
+2025-07-03 12:30:33,649 INFO    TP/SL trailed further
+2025-07-03 12:31:01,809 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.885
+2025-07-03 12:36:01,052 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.952
+2025-07-03 12:37:01,322 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.984
+2025-07-03 12:38:01,558 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.997
+2025-07-03 13:22:45,169 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.953
+2025-07-03 13:28:01,006 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.983
+2025-07-03 13:29:01,135 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.987
+2025-07-03 13:29:01,371 INFO    [ENTRY] PULSE SELL 0.01@3352.853 SL3354.333 TP3349.892 → 10009
+2025-07-03 13:29:02,638 INFO    TP/SL trailed further
+2025-07-03 13:29:23,927 INFO    TP/SL trailed further
+2025-07-03 13:29:28,157 INFO    TP/SL trailed further
+2025-07-03 13:30:01,238 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.977
+2025-07-03 13:32:02,499 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.958
+2025-07-03 13:33:01,620 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.964
+2025-07-03 13:34:01,743 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.968
+2025-07-03 13:35:01,873 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.956
+2025-07-03 13:36:03,293 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.897
+2025-07-03 13:36:03,595 INFO    [ENTRY] PULSE SELL 0.01@3353.210 SL3354.445 TP3350.407 → 10009
+2025-07-03 13:36:04,825 INFO    TP/SL trailed further
+2025-07-03 13:36:32,578 INFO    TP/SL trailed further
+2025-07-03 13:36:36,804 INFO    TP/SL trailed further
+2025-07-03 13:37:01,054 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.886
+2025-07-03 13:38:01,209 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.922
+2025-07-03 13:38:01,461 INFO    [ENTRY] PULSE SELL 0.01@3352.662 SL3354.045 TP3349.897 → 10009
+2025-07-03 13:38:06,755 INFO    TP/SL trailed further
+2025-07-03 13:38:40,070 INFO    TP/SL trailed further
+2025-07-03 13:39:02,146 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.841
+2025-07-03 13:39:20,542 INFO    TP/SL trailed further
+2025-07-03 13:39:27,783 INFO    TP/SL trailed further
+2025-07-03 13:40:01,853 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.741
+2025-07-03 13:41:00,982 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.717
+2025-07-03 13:42:03,131 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.670
+2025-07-03 13:43:02,255 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.649
+2025-07-03 13:44:01,378 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.623
+2025-07-03 13:45:01,515 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.653
+2025-07-03 13:46:01,646 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.625
+2025-07-03 13:47:02,778 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.567
+2025-07-03 13:48:00,900 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.565
+2025-07-03 13:49:02,045 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.585
+2025-07-03 13:50:01,165 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.581
+2025-07-03 13:51:01,289 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.615
+2025-07-03 13:51:01,882 INFO    [ENTRY] PULSE SELL 0.01@3352.339 SL3353.261 TP3350.495 → 10009
+2025-07-03 13:51:02,199 INFO    TP/SL trailed further
+2025-07-03 13:51:03,415 INFO    TP/SL trailed further
+2025-07-03 13:51:05,687 INFO    TP/SL trailed further
+2025-07-03 13:51:10,003 INFO    TP/SL trailed further
+2025-07-03 13:51:14,020 INFO    TP/SL trailed further
+2025-07-03 13:52:01,111 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.652
+2025-07-03 13:53:01,256 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.701
+2025-07-03 13:54:01,406 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.724
+2025-07-03 13:55:01,561 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.761
+2025-07-03 13:56:00,919 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.802
+2025-07-03 13:57:01,049 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.793
+2025-07-03 13:58:01,180 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.778
+2025-07-03 13:59:02,317 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.772
+2025-07-03 14:00:01,448 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.779
+2025-07-03 14:01:01,591 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.804
+2025-07-03 14:02:01,718 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.774
+2025-07-03 14:03:01,846 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.785
+2025-07-03 14:04:00,966 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.762
+2025-07-03 14:04:01,323 INFO    [ENTRY] PULSE BUY 0.01@3354.767 SL3353.624 TP3357.053 → 10009
+2025-07-03 14:04:04,630 INFO    TP/SL trailed further
+2025-07-03 14:04:15,075 INFO    TP/SL trailed further
+2025-07-03 14:04:25,333 INFO    TP/SL trailed further
+2025-07-03 14:04:41,580 INFO    SL → BE+trail
+2025-07-03 14:04:41,792 INFO    TP/SL trailed further
+2025-07-03 14:04:43,053 INFO    SL → BE+trail
+2025-07-03 14:04:54,312 INFO    TP/SL trailed further
+2025-07-03 14:05:01,336 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.764
+2025-07-03 14:05:09,846 INFO    TP/SL trailed further
+2025-07-03 14:05:11,053 INFO    TP/SL trailed further
+2025-07-03 14:05:13,069 INFO    TP/SL trailed further
+2025-07-03 14:05:27,337 INFO    TP/SL trailed further
+2025-07-03 14:05:31,543 INFO    TP/SL trailed further
+2025-07-03 14:05:41,778 INFO    TP/SL trailed further
+2025-07-03 14:06:01,834 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.737
+2025-07-03 14:06:02,750 INFO    [ENTRY] PULSE BUY 0.01@3356.299 SL3355.194 TP3358.509 → 10009
+2025-07-03 14:06:04,016 INFO    TP/SL trailed further
+2025-07-03 14:06:08,393 INFO    TP/SL trailed further
+2025-07-03 14:06:09,585 INFO    TP/SL trailed further
+2025-07-03 14:06:11,592 INFO    TP/SL trailed further
+2025-07-03 14:06:15,835 INFO    TP/SL trailed further
+2025-07-03 14:06:18,844 INFO    TP/SL trailed further
+2025-07-03 14:06:35,123 INFO    TP/SL trailed further
+2025-07-03 14:06:37,372 INFO    TP/SL trailed further
+2025-07-03 14:06:41,600 INFO    TP/SL trailed further
+2025-07-03 14:06:50,628 INFO    TP/SL trailed further
+2025-07-03 14:07:01,657 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.762
+2025-07-03 14:08:01,785 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.775
+2025-07-03 14:08:02,015 INFO    [ENTRY] PULSE SELL 0.01@3355.068 SL3356.230 TP3352.744 → 10009
+2025-07-03 14:08:04,248 INFO    TP/SL trailed further
+2025-07-03 14:08:08,596 INFO    TP/SL trailed further
+2025-07-03 14:08:23,865 INFO    SL → BE+trail
+2025-07-03 14:08:24,081 INFO    TP/SL trailed further
+2025-07-03 14:08:25,307 INFO    TP/SL trailed further
+2025-07-03 14:08:44,578 INFO    TP/SL trailed further
+2025-07-03 14:09:01,643 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.768
+2025-07-03 14:10:01,778 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.857
+2025-07-03 14:11:01,905 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.864
+2025-07-03 14:12:02,053 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.858
+2025-07-03 14:13:01,175 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.932
+2025-07-03 14:13:01,621 INFO    [ENTRY] PULSE BUY 0.01@3355.656 SL3354.259 TP3358.451 → 10009
+2025-07-03 14:13:02,844 INFO    TP/SL trailed further
+2025-07-03 14:13:06,162 INFO    TP/SL trailed further
+2025-07-03 14:13:17,447 INFO    TP/SL trailed further
+2025-07-03 14:13:39,719 INFO    SL → BE+trail
+2025-07-03 14:13:39,977 INFO    TP/SL trailed further
+2025-07-03 14:13:47,203 INFO    TP/SL trailed further
+2025-07-03 14:13:52,488 INFO    SL → BE+trail
+2025-07-03 14:13:52,716 INFO    TP/SL trailed further
+2025-07-03 14:13:53,923 INFO    TP/SL trailed further
+2025-07-03 14:13:56,196 INFO    TP/SL trailed further
+2025-07-03 14:13:57,398 INFO    TP/SL trailed further
+2025-07-03 14:14:08,658 INFO    TP/SL trailed further
+2025-07-03 14:14:11,894 INFO    TP/SL trailed further
+2025-07-03 14:14:21,151 INFO    TP/SL trailed further
+2025-07-03 14:14:46,927 INFO    TP/SL trailed further
+2025-07-03 14:24:01,520 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.976
+2025-07-03 14:25:01,660 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.954
+2025-07-03 14:26:01,794 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.870
+2025-07-03 14:27:01,940 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.790
+2025-07-03 14:28:02,103 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.766
+2025-07-03 14:29:01,220 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.756
+2025-07-03 14:30:01,351 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.739
+2025-07-03 14:30:01,569 INFO    [ENTRY] PULSE SELL 0.01@3356.069 SL3357.177 TP3353.853 → 10009
+2025-07-03 14:30:02,808 INFO    TP/SL trailed further
+2025-07-03 14:30:32,197 INFO    TP/SL trailed further
+2025-07-03 14:31:03,308 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.722
+2025-07-03 14:31:10,640 INFO    SL → BE+trail
+2025-07-03 14:31:10,889 INFO    TP/SL trailed further
+2025-07-03 14:31:12,119 INFO    SL → BE+trail
+2025-07-03 14:31:14,127 INFO    TP/SL trailed further
+2025-07-03 14:32:01,388 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.762
+2025-07-03 14:32:01,618 INFO    [ENTRY] PULSE SELL 0.01@3354.862 SL3356.006 TP3352.575 → 10009
+2025-07-03 14:32:02,832 INFO    TP/SL trailed further
+2025-07-03 14:32:07,117 INFO    TP/SL trailed further
+2025-07-03 14:32:14,445 INFO    TP/SL trailed further
+2025-07-03 14:32:25,476 INFO    TP/SL trailed further
+2025-07-03 14:32:27,700 INFO    TP/SL trailed further
+2025-07-03 14:32:59,017 INFO    TP/SL trailed further
+2025-07-03 14:33:01,023 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.732
+2025-07-03 14:33:23,376 INFO    TP/SL trailed further
+2025-07-03 14:33:29,642 INFO    TP/SL trailed further
+2025-07-03 14:33:44,895 INFO    TP/SL trailed further
+2025-07-03 14:33:47,137 INFO    TP/SL trailed further
+2025-07-03 14:33:55,171 INFO    TP/SL trailed further
+2025-07-03 14:34:02,191 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.752
+2025-07-03 14:34:05,411 INFO    TP/SL trailed further
+2025-07-03 14:34:10,427 INFO    TP/SL trailed further
+2025-07-03 14:34:17,737 INFO    TP/SL trailed further
+2025-07-03 14:35:01,844 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.795
+2025-07-03 14:35:02,070 INFO    [ENTRY] PULSE SELL 0.01@3354.611 SL3355.803 TP3352.226 → 10009
+2025-07-03 14:35:08,358 INFO    TP/SL trailed further
+2025-07-03 14:35:10,677 INFO    TP/SL trailed further
+2025-07-03 14:35:15,923 INFO    TP/SL trailed further
+2025-07-03 14:35:27,204 INFO    SL → BE+trail
+2025-07-03 14:35:27,440 INFO    TP/SL trailed further
+2025-07-03 14:35:28,654 INFO    SL → BE+trail
+2025-07-03 14:35:41,693 INFO    TP/SL trailed further
+2025-07-03 14:36:00,735 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.778
+2025-07-03 14:37:02,865 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.774
+2025-07-03 14:38:01,002 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.800
+2025-07-03 14:38:01,235 INFO    [ENTRY] PULSE SELL 0.01@3354.631 SL3355.831 TP3352.230 → 10009
+2025-07-03 14:38:02,505 INFO    TP/SL trailed further
+2025-07-03 14:38:12,761 INFO    TP/SL trailed further
+2025-07-03 14:38:15,998 INFO    TP/SL trailed further
+2025-07-03 14:38:18,227 INFO    TP/SL trailed further
+2025-07-03 14:38:30,466 INFO    TP/SL trailed further
+2025-07-03 14:39:02,540 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.793
+2025-07-03 14:40:02,681 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.833
+2025-07-03 14:41:00,809 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.816
+2025-07-03 14:42:01,019 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.808
+2025-07-03 14:43:01,169 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.802
+2025-07-03 14:44:02,299 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.769
+2025-07-03 14:45:01,423 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.749
+2025-07-03 14:46:01,553 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.775
+2025-07-03 14:47:01,678 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.720
+2025-07-03 14:48:01,804 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.690
+2025-07-03 14:49:01,926 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.679
+2025-07-03 14:50:01,054 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.702
+2025-07-03 14:51:01,186 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.699
+2025-07-03 14:52:02,318 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.782
+2025-07-03 14:52:02,594 INFO    [ENTRY] PULSE SELL 0.01@3351.687 SL3352.860 TP3349.341 → 10009
+2025-07-03 14:52:05,903 INFO    TP/SL trailed further
+2025-07-03 14:52:12,145 INFO    TP/SL trailed further
+2025-07-03 14:52:13,370 INFO    TP/SL trailed further
+2025-07-03 14:52:25,406 INFO    TP/SL trailed further
+2025-07-03 14:53:01,477 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.742
+2025-07-03 14:53:01,679 INFO    [ENTRY] PULSE SELL 0.01@3351.856 SL3352.969 TP3349.631 → 10009
+2025-07-03 14:53:03,905 INFO    TP/SL trailed further
+2025-07-03 14:53:11,149 INFO    TP/SL trailed further
+2025-07-03 14:54:01,299 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.759
+2025-07-03 14:54:01,533 INFO    [ENTRY] PULSE BUY 0.01@3352.857 SL3351.719 TP3355.133 → 10009
+2025-07-03 14:54:02,732 INFO    TP/SL trailed further
+2025-07-03 14:54:04,959 INFO    TP/SL trailed further
+2025-07-03 14:54:47,088 INFO    TP/SL trailed further
+2025-07-03 14:55:01,131 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.740
+2025-07-03 14:56:01,254 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.839
+2025-07-03 14:56:01,457 INFO    [ENTRY] PULSE SELL 0.01@3350.347 SL3351.605 TP3347.831 → 10009
+2025-07-03 14:56:28,755 INFO    TP/SL trailed further
+2025-07-03 14:56:33,771 INFO    TP/SL trailed further
+2025-07-03 14:56:34,999 INFO    TP/SL trailed further
+2025-07-03 14:57:02,079 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.889
+2025-07-03 14:57:03,396 INFO    TP/SL trailed further
+2025-07-03 14:57:10,689 INFO    TP/SL trailed further
+2025-07-03 14:57:28,737 INFO    TP/SL trailed further
+2025-07-03 14:58:00,806 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.873
+2025-07-03 14:58:01,024 INFO    [ENTRY] PULSE SELL 0.01@3350.366 SL3351.676 TP3347.746 → 10009
+2025-07-03 14:58:19,609 INFO    TP/SL trailed further
+2025-07-03 14:58:24,857 INFO    TP/SL trailed further
+2025-07-03 14:59:00,955 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.850
+2025-07-03 14:59:10,226 INFO    TP/SL trailed further
+2025-07-03 14:59:27,498 INFO    TP/SL trailed further
+2025-07-03 14:59:49,558 INFO    TP/SL trailed further
+2025-07-03 15:00:01,588 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.876
+2025-07-03 15:00:01,871 INFO    [ENTRY] PULSE SELL 0.01@3350.438 SL3351.751 TP3347.811 → 10009
+2025-07-03 15:00:13,162 INFO    TP/SL trailed further
+2025-07-03 15:00:18,443 INFO    TP/SL trailed further
+2025-07-03 15:00:31,686 INFO    TP/SL trailed further
+2025-07-03 15:00:33,691 INFO    TP/SL trailed further
+2025-07-03 15:00:35,892 INFO    TP/SL trailed further
+2025-07-03 15:01:00,960 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.886
+2025-07-03 15:01:09,304 INFO    TP/SL trailed further
+2025-07-03 15:01:11,542 INFO    TP/SL trailed further
+2025-07-03 15:01:14,553 INFO    TP/SL trailed further
+2025-07-03 15:02:02,653 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.907
+2025-07-03 15:03:01,761 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.870
+2025-07-03 15:04:01,874 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.917
+2025-07-03 15:05:01,998 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.862
+2025-07-03 15:06:01,104 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.925
+2025-07-03 15:06:01,345 INFO    [ENTRY] PULSE SELL 0.01@3348.435 SL3349.822 TP3345.661 → 10009
+2025-07-03 15:06:05,548 INFO    TP/SL trailed further
+2025-07-03 15:06:51,156 INFO    TP/SL trailed further
+2025-07-03 15:07:00,407 INFO    TP/SL trailed further
+2025-07-03 15:07:02,413 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.917
+2025-07-03 15:07:04,679 INFO    TP/SL trailed further
+2025-07-03 15:07:18,935 INFO    TP/SL trailed further
+2025-07-03 15:07:20,139 INFO    SL → BE+trail
+2025-07-03 15:07:20,372 INFO    TP/SL trailed further
+2025-07-03 15:07:25,716 INFO    TP/SL trailed further
+2025-07-03 15:07:33,958 INFO    TP/SL trailed further
+2025-07-03 15:07:42,224 INFO    TP/SL trailed further
+2025-07-03 15:28:01,652 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.988
+2025-07-03 15:29:01,771 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.910
+2025-07-03 15:30:01,886 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.914
+2025-07-03 15:31:00,996 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.927
+2025-07-03 15:32:01,107 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.868
+2025-07-03 15:33:01,225 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.873
+2025-07-03 15:34:02,338 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.889
+2025-07-03 15:35:01,457 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.854
+2025-07-03 15:36:01,581 DEBUG   [BAR] body_ok=True vol_ok=True side=SELL ATR=0.913
+2025-07-03 15:36:01,965 INFO    [ENTRY] PULSE SELL 0.01@3345.025 SL3346.395 TP3342.286 → 10009
+2025-07-03 15:36:03,252 INFO    TP/SL trailed further
+2025-07-03 15:37:02,407 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.901
+2025-07-03 15:38:01,538 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.913
+2025-07-03 15:39:01,656 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.885
+2025-07-03 15:40:01,771 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.844
+2025-07-03 15:41:00,885 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.859
+2025-07-03 15:42:02,005 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.900
+2025-07-03 15:43:02,122 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.890
+2025-07-03 15:44:01,244 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.845
+2025-07-03 15:44:01,972 INFO    [ENTRY] PULSE BUY 0.01@3346.786 SL3345.519 TP3349.320 → 10009
+2025-07-03 15:44:03,623 INFO    TP/SL trailed further
+2025-07-03 15:44:40,082 INFO    TP/SL trailed further
+2025-07-03 15:44:59,354 INFO    TP/SL trailed further
+2025-07-03 15:45:02,363 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.839
+2025-07-03 15:46:02,533 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.800
+2025-07-03 15:47:01,658 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.802
+2025-07-03 15:48:01,782 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.888
+2025-07-03 15:48:02,101 INFO    [ENTRY] PULSE BUY 0.01@3348.167 SL3346.835 TP3350.831 → 10009
+2025-07-03 15:48:07,356 INFO    TP/SL trailed further
+2025-07-03 15:48:53,703 INFO    TP/SL trailed further
+2025-07-03 15:49:01,727 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.806
+2025-07-03 15:49:03,736 INFO    TP/SL trailed further
+2025-07-03 15:50:00,855 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.813
+2025-07-03 15:51:01,996 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.808
+2025-07-03 15:51:02,234 INFO    [ENTRY] PULSE BUY 0.01@3348.683 SL3347.471 TP3351.107 → 10009
+2025-07-03 15:51:25,512 INFO    SL → BE+trail
+2025-07-03 15:51:25,753 INFO    TP/SL trailed further
+2025-07-03 15:51:26,978 INFO    SL → BE+trail
+2025-07-03 15:51:27,194 INFO    TP/SL trailed further
+2025-07-03 15:51:28,405 INFO    SL → BE+trail
+2025-07-03 15:51:30,683 INFO    TP/SL trailed further
+2025-07-03 15:51:32,924 INFO    TP/SL trailed further
+2025-07-03 15:51:36,937 INFO    TP/SL trailed further
+2025-07-03 15:52:01,990 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.835
+2025-07-03 15:52:02,221 INFO    [ENTRY] PULSE BUY 0.01@3349.669 SL3348.417 TP3352.173 → 10009
+2025-07-03 15:52:04,471 INFO    TP/SL trailed further
+2025-07-03 15:52:12,496 INFO    TP/SL trailed further
+2025-07-03 15:52:32,773 INFO    TP/SL trailed further
+2025-07-03 15:53:01,845 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.828
+2025-07-03 15:54:02,965 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.805
+2025-07-03 15:55:01,082 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.772
+2025-07-03 15:56:01,195 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.799
+2025-07-03 15:57:02,317 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.745
+2025-07-03 15:58:01,432 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.728
+2025-07-03 15:59:01,557 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.726
+2025-07-03 16:00:01,673 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.684
+2025-07-03 16:01:00,787 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.600
+2025-07-03 16:02:01,906 DEBUG   [BAR] body_ok=True vol_ok=True side=None ATR=0.608
+2025-07-03 16:03:02,017 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.588
+2025-07-03 16:04:01,136 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.595
+2025-07-03 16:04:01,383 INFO    [ENTRY] PULSE BUY 0.01@3350.544 SL3349.651 TP3352.330 → 10009
+2025-07-03 16:04:01,620 INFO    TP/SL trailed further
+2025-07-03 16:04:31,992 INFO    TP/SL trailed further
+2025-07-03 16:04:47,323 INFO    TP/SL trailed further
+2025-07-03 16:05:01,367 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.555
+2025-07-03 16:05:34,698 INFO    TP/SL trailed further
+2025-07-03 16:05:39,905 INFO    TP/SL trailed further
+2025-07-03 16:06:00,965 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.521
+2025-07-03 16:06:11,240 INFO    TP/SL trailed further
+2025-07-03 16:06:13,248 INFO    TP/SL trailed further
+2025-07-03 16:07:01,340 DEBUG   [BAR] body_ok=False vol_ok=False side=None ATR=0.506
+2025-07-03 16:08:01,461 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.496
+2025-07-03 16:09:01,578 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.480
+2025-07-03 16:10:02,695 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.480
+2025-07-03 16:11:00,816 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.547
+2025-07-03 16:11:01,024 INFO    [ENTRY] PULSE BUY 0.01@3351.963 SL3351.143 TP3353.603 → 10009
+2025-07-03 16:11:01,251 INFO    TP/SL trailed further
+2025-07-03 16:11:05,459 INFO    TP/SL trailed further
+2025-07-03 16:11:06,657 INFO    TP/SL trailed further
+2025-07-03 16:11:15,989 INFO    TP/SL trailed further
+2025-07-03 16:11:20,000 INFO    TP/SL trailed further
+2025-07-03 16:11:24,236 INFO    TP/SL trailed further
+2025-07-03 16:12:01,371 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.582
+2025-07-03 16:13:02,497 DEBUG   [BAR] body_ok=True vol_ok=True side=BUY ATR=0.599
+2025-07-03 16:13:02,736 INFO    [ENTRY] PULSE BUY 0.01@3352.831 SL3351.932 TP3354.629 → 10009
+2025-07-03 16:13:02,942 INFO    TP/SL trailed further
+2025-07-03 16:13:44,449 INFO    TP/SL trailed further
+2025-07-03 16:13:49,675 INFO    SL → BE+trail
+2025-07-03 16:13:49,952 INFO    TP/SL trailed further
+2025-07-03 16:13:51,181 INFO    SL → BE+trail
+2025-07-03 16:14:01,210 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.626
+2025-07-03 16:14:02,464 INFO    TP/SL trailed further
+2025-07-03 16:14:08,705 INFO    TP/SL trailed further
+2025-07-03 16:14:14,724 INFO    TP/SL trailed further
+2025-07-03 16:15:00,819 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.624
+2025-07-03 16:16:01,935 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.620
+2025-07-03 16:17:01,058 DEBUG   [BAR] body_ok=True vol_ok=False side=None ATR=0.603
+2025-07-03 16:18:01,184 DEBUG   [BAR] body_ok=False vol_ok=True side=None ATR=0.627
+2025-07-03 18:39:08,505 INFO    [CORE]  Re-connected to MT5
+2025-07-03 18:39:08,506 INFO    [CORE]  Pulse-Scalper single-pos started

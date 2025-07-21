@@ -1,0 +1,603 @@
+2025-07-02 15:59:31,450 INFO    [CORE]  Re-connected to MT5
+2025-07-02 15:59:31,451 INFO    [CORE]  Pulse-Scalper started
+2025-07-02 15:59:31,451 ERROR   Fatal
+Traceback (most recent call last):
+  File "C:\Users\mgial\OneDrive\Documents\ai_trading_employee\versions\bot_v3.py", line 238, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\mgial\OneDrive\Documents\ai_trading_employee\versions\bot_v3.py", line 137, in main
+    if not ensure_mt5(): time.sleep(5); continue
+           ~~~~~~~~~~^^
+  File "C:\Users\mgial\OneDrive\Documents\ai_trading_employee\versions\bot_v3.py", line 63, in ensure_mt5
+    if mt5.account_info() is None or mt5.connection_state()==mt5.TERMINATED:
+                                     ^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'MetaTrader5' has no attribute 'connection_state'
+2025-07-02 16:00:15,000 INFO    [CORE]  Re-connected to MT5
+2025-07-02 16:00:15,001 INFO    [CORE]  Pulse-Scalper started
+2025-07-02 16:00:15,037 ERROR   Fatal
+Traceback (most recent call last):
+  File "C:\Users\mgial\OneDrive\Documents\ai_trading_employee\versions\bot_v3.py", line 243, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\mgial\OneDrive\Documents\ai_trading_employee\versions\bot_v3.py", line 170, in main
+    cur_atr = atr(df)
+  File "C:\Users\mgial\OneDrive\Documents\ai_trading_employee\versions\bot_v3.py", line 89, in atr
+    return tr.rolling(ATR_LEN).mean().iloc[-1]
+           ^^^^^^^^^^
+AttributeError: 'numpy.ndarray' object has no attribute 'rolling'
+2025-07-02 16:00:59,024 INFO    [CORE]  Re-connected to MT5
+2025-07-02 16:00:59,025 INFO    [CORE]  Pulse-Scalper started
+2025-07-02 16:00:59,040 DEBUG   [CHK] 10:30:59.026449 body_ok=False vol_ok=False side=None ATR=0.662
+2025-07-02 16:01:00,044 DEBUG   [CHK] 10:31:00.042109 body_ok=False vol_ok=False side=None ATR=0.662
+2025-07-02 16:01:01,049 DEBUG   [CHK] 10:31:01.046742 body_ok=False vol_ok=True side=None ATR=0.610
+2025-07-02 16:01:02,052 DEBUG   [CHK] 10:31:02.050635 body_ok=False vol_ok=True side=None ATR=0.620
+2025-07-02 16:01:03,056 DEBUG   [CHK] 10:31:03.055366 body_ok=False vol_ok=True side=None ATR=0.620
+2025-07-02 16:01:04,061 DEBUG   [CHK] 10:31:04.059644 body_ok=False vol_ok=True side=None ATR=0.620
+2025-07-02 16:01:05,064 DEBUG   [CHK] 10:31:05.063089 body_ok=False vol_ok=True side=None ATR=0.620
+2025-07-02 16:01:06,067 DEBUG   [CHK] 10:31:06.065661 body_ok=False vol_ok=True side=None ATR=0.620
+2025-07-02 16:01:07,070 DEBUG   [CHK] 10:31:07.068753 body_ok=False vol_ok=True side=None ATR=0.645
+2025-07-02 16:01:08,074 DEBUG   [CHK] 10:31:08.072682 body_ok=False vol_ok=True side=None ATR=0.645
+2025-07-02 16:01:09,077 DEBUG   [CHK] 10:31:09.076123 body_ok=False vol_ok=True side=None ATR=0.645
+2025-07-02 16:01:10,081 DEBUG   [CHK] 10:31:10.078928 body_ok=False vol_ok=True side=None ATR=0.645
+2025-07-02 16:01:11,084 DEBUG   [CHK] 10:31:11.083053 body_ok=False vol_ok=True side=None ATR=0.645
+2025-07-02 16:01:12,087 DEBUG   [CHK] 10:31:12.085887 body_ok=False vol_ok=True side=None ATR=0.645
+2025-07-02 16:01:13,091 DEBUG   [CHK] 10:31:13.089537 body_ok=False vol_ok=True side=None ATR=0.646
+2025-07-02 16:01:14,094 DEBUG   [CHK] 10:31:14.092553 body_ok=False vol_ok=True side=None ATR=0.646
+2025-07-02 16:01:15,098 DEBUG   [CHK] 10:31:15.097031 body_ok=False vol_ok=True side=None ATR=0.646
+2025-07-02 16:01:16,101 DEBUG   [CHK] 10:31:16.100287 body_ok=False vol_ok=True side=None ATR=0.646
+2025-07-02 16:01:17,104 DEBUG   [CHK] 10:31:17.102980 body_ok=False vol_ok=True side=None ATR=0.646
+2025-07-02 16:01:18,108 DEBUG   [CHK] 10:31:18.106485 body_ok=False vol_ok=True side=None ATR=0.646
+2025-07-02 16:01:19,112 DEBUG   [CHK] 10:31:19.110845 body_ok=False vol_ok=True side=None ATR=0.646
+2025-07-02 16:01:20,116 DEBUG   [CHK] 10:31:20.114163 body_ok=False vol_ok=True side=None ATR=0.646
+2025-07-02 16:01:21,119 DEBUG   [CHK] 10:31:21.117720 body_ok=False vol_ok=True side=None ATR=0.646
+2025-07-02 16:01:22,122 DEBUG   [CHK] 10:31:22.120821 body_ok=False vol_ok=True side=None ATR=0.646
+2025-07-02 16:01:23,126 DEBUG   [CHK] 10:31:23.124432 body_ok=False vol_ok=True side=None ATR=0.649
+2025-07-02 16:01:24,129 DEBUG   [CHK] 10:31:24.127935 body_ok=False vol_ok=True side=None ATR=0.650
+2025-07-02 16:01:25,132 DEBUG   [CHK] 10:31:25.130762 body_ok=False vol_ok=True side=None ATR=0.650
+2025-07-02 16:01:26,135 DEBUG   [CHK] 10:31:26.133717 body_ok=False vol_ok=True side=None ATR=0.650
+2025-07-02 16:01:27,141 DEBUG   [CHK] 10:31:27.137946 body_ok=False vol_ok=True side=None ATR=0.650
+2025-07-02 16:01:28,145 DEBUG   [CHK] 10:31:28.144135 body_ok=False vol_ok=True side=None ATR=0.650
+2025-07-02 16:01:29,149 DEBUG   [CHK] 10:31:29.147388 body_ok=False vol_ok=True side=None ATR=0.650
+2025-07-02 16:01:30,152 DEBUG   [CHK] 10:31:30.151295 body_ok=False vol_ok=True side=None ATR=0.650
+2025-07-02 16:01:31,155 DEBUG   [CHK] 10:31:31.154034 body_ok=False vol_ok=True side=None ATR=0.650
+2025-07-02 16:01:32,158 DEBUG   [CHK] 10:31:32.156807 body_ok=False vol_ok=True side=None ATR=0.650
+2025-07-02 16:01:33,162 DEBUG   [CHK] 10:31:33.160292 body_ok=False vol_ok=True side=None ATR=0.650
+2025-07-02 16:01:34,165 DEBUG   [CHK] 10:31:34.163671 body_ok=False vol_ok=True side=None ATR=0.650
+2025-07-02 16:01:35,169 DEBUG   [CHK] 10:31:35.167482 body_ok=False vol_ok=True side=None ATR=0.650
+2025-07-02 16:01:36,172 DEBUG   [CHK] 10:31:36.170570 body_ok=False vol_ok=True side=None ATR=0.650
+2025-07-02 16:01:37,175 DEBUG   [CHK] 10:31:37.173541 body_ok=False vol_ok=True side=None ATR=0.650
+2025-07-02 16:01:38,178 DEBUG   [CHK] 10:31:38.177273 body_ok=False vol_ok=True side=None ATR=0.650
+2025-07-02 16:01:39,184 DEBUG   [CHK] 10:31:39.182180 body_ok=False vol_ok=True side=None ATR=0.650
+2025-07-02 16:01:40,188 DEBUG   [CHK] 10:31:40.185459 body_ok=False vol_ok=True side=None ATR=0.650
+2025-07-02 16:01:41,191 DEBUG   [CHK] 10:31:41.190300 body_ok=False vol_ok=True side=None ATR=0.650
+2025-07-02 16:01:42,196 DEBUG   [CHK] 10:31:42.193605 body_ok=False vol_ok=True side=None ATR=0.650
+2025-07-02 16:01:43,198 DEBUG   [CHK] 10:31:43.197382 body_ok=False vol_ok=True side=None ATR=0.650
+2025-07-02 16:01:44,201 DEBUG   [CHK] 10:31:44.200009 body_ok=False vol_ok=True side=None ATR=0.650
+2025-07-02 16:01:45,205 DEBUG   [CHK] 10:31:45.203328 body_ok=False vol_ok=True side=None ATR=0.650
+2025-07-02 16:01:46,208 DEBUG   [CHK] 10:31:46.206692 body_ok=False vol_ok=True side=None ATR=0.650
+2025-07-02 16:01:47,212 DEBUG   [CHK] 10:31:47.210540 body_ok=False vol_ok=True side=None ATR=0.650
+2025-07-02 16:01:48,215 DEBUG   [CHK] 10:31:48.213806 body_ok=False vol_ok=True side=None ATR=0.650
+2025-07-02 16:01:49,218 DEBUG   [CHK] 10:31:49.217061 body_ok=False vol_ok=True side=None ATR=0.650
+2025-07-02 16:01:50,221 DEBUG   [CHK] 10:31:50.220257 body_ok=False vol_ok=True side=None ATR=0.650
+2025-07-02 16:01:51,225 DEBUG   [CHK] 10:31:51.222968 body_ok=False vol_ok=True side=None ATR=0.650
+2025-07-02 16:01:52,228 DEBUG   [CHK] 10:31:52.227080 body_ok=False vol_ok=True side=None ATR=0.650
+2025-07-02 16:01:53,231 DEBUG   [CHK] 10:31:53.230178 body_ok=False vol_ok=True side=None ATR=0.650
+2025-07-02 16:01:54,235 DEBUG   [CHK] 10:31:54.233190 body_ok=False vol_ok=True side=None ATR=0.650
+2025-07-02 16:01:55,238 DEBUG   [CHK] 10:31:55.237295 body_ok=False vol_ok=True side=None ATR=0.650
+2025-07-02 16:01:56,242 DEBUG   [CHK] 10:31:56.240429 body_ok=False vol_ok=True side=None ATR=0.650
+2025-07-02 16:01:57,245 DEBUG   [CHK] 10:31:57.244162 body_ok=False vol_ok=True side=None ATR=0.650
+2025-07-02 16:01:58,249 DEBUG   [CHK] 10:31:58.247513 body_ok=False vol_ok=True side=None ATR=0.650
+2025-07-02 16:01:59,253 DEBUG   [CHK] 10:31:59.251332 body_ok=False vol_ok=True side=None ATR=0.650
+2025-07-02 16:02:00,257 DEBUG   [CHK] 10:32:00.255586 body_ok=False vol_ok=True side=None ATR=0.650
+2025-07-02 16:02:01,260 DEBUG   [CHK] 10:32:01.258700 body_ok=False vol_ok=True side=None ATR=0.650
+2025-07-02 16:02:02,263 DEBUG   [CHK] 10:32:02.261924 body_ok=False vol_ok=False side=None ATR=0.602
+2025-07-02 16:02:03,266 DEBUG   [CHK] 10:32:03.264938 body_ok=False vol_ok=False side=None ATR=0.602
+2025-07-02 16:02:04,269 DEBUG   [CHK] 10:32:04.267899 body_ok=False vol_ok=False side=None ATR=0.607
+2025-07-02 16:02:05,272 DEBUG   [CHK] 10:32:05.270761 body_ok=False vol_ok=False side=None ATR=0.607
+2025-07-02 16:02:06,276 DEBUG   [CHK] 10:32:06.274992 body_ok=False vol_ok=False side=None ATR=0.607
+2025-07-02 16:02:07,279 DEBUG   [CHK] 10:32:07.278100 body_ok=False vol_ok=False side=None ATR=0.607
+2025-07-02 16:02:08,283 DEBUG   [CHK] 10:32:08.281129 body_ok=False vol_ok=False side=None ATR=0.607
+2025-07-02 16:02:09,286 DEBUG   [CHK] 10:32:09.284742 body_ok=False vol_ok=False side=None ATR=0.607
+2025-07-02 16:02:10,289 DEBUG   [CHK] 10:32:10.287950 body_ok=False vol_ok=False side=None ATR=0.607
+2025-07-02 16:02:11,292 DEBUG   [CHK] 10:32:11.291353 body_ok=False vol_ok=False side=None ATR=0.607
+2025-07-02 16:02:12,295 DEBUG   [CHK] 10:32:12.293929 body_ok=False vol_ok=False side=None ATR=0.607
+2025-07-02 16:02:13,298 DEBUG   [CHK] 10:32:13.297347 body_ok=False vol_ok=False side=None ATR=0.607
+2025-07-02 16:02:14,302 DEBUG   [CHK] 10:32:14.300471 body_ok=False vol_ok=False side=None ATR=0.607
+2025-07-02 16:02:15,306 DEBUG   [CHK] 10:32:15.304613 body_ok=False vol_ok=False side=None ATR=0.607
+2025-07-02 16:02:16,309 DEBUG   [CHK] 10:32:16.307890 body_ok=False vol_ok=False side=None ATR=0.607
+2025-07-02 16:02:17,312 DEBUG   [CHK] 10:32:17.311251 body_ok=False vol_ok=False side=None ATR=0.607
+2025-07-02 16:02:18,317 DEBUG   [CHK] 10:32:18.315253 body_ok=False vol_ok=False side=None ATR=0.607
+2025-07-02 16:02:19,321 DEBUG   [CHK] 10:32:19.318935 body_ok=False vol_ok=False side=None ATR=0.607
+2025-07-02 16:02:20,324 DEBUG   [CHK] 10:32:20.322815 body_ok=False vol_ok=False side=None ATR=0.607
+2025-07-02 16:02:21,328 DEBUG   [CHK] 10:32:21.325585 body_ok=False vol_ok=False side=None ATR=0.607
+2025-07-02 16:02:22,331 DEBUG   [CHK] 10:32:22.329921 body_ok=False vol_ok=False side=None ATR=0.607
+2025-07-02 16:02:23,335 DEBUG   [CHK] 10:32:23.333347 body_ok=False vol_ok=False side=None ATR=0.607
+2025-07-02 16:02:24,339 DEBUG   [CHK] 10:32:24.337517 body_ok=False vol_ok=False side=None ATR=0.621
+2025-07-02 16:02:25,342 DEBUG   [CHK] 10:32:25.340287 body_ok=False vol_ok=False side=None ATR=0.621
+2025-07-02 16:02:26,345 DEBUG   [CHK] 10:32:26.343966 body_ok=False vol_ok=False side=None ATR=0.621
+2025-07-02 16:02:27,349 DEBUG   [CHK] 10:32:27.347196 body_ok=False vol_ok=False side=None ATR=0.621
+2025-07-02 16:02:28,352 DEBUG   [CHK] 10:32:28.350893 body_ok=False vol_ok=False side=None ATR=0.621
+2025-07-02 16:02:29,355 DEBUG   [CHK] 10:32:29.353495 body_ok=False vol_ok=False side=None ATR=0.621
+2025-07-02 16:02:30,358 DEBUG   [CHK] 10:32:30.356766 body_ok=False vol_ok=False side=None ATR=0.621
+2025-07-02 16:02:31,362 DEBUG   [CHK] 10:32:31.361435 body_ok=False vol_ok=False side=None ATR=0.621
+2025-07-02 16:02:32,365 DEBUG   [CHK] 10:32:32.364439 body_ok=False vol_ok=False side=None ATR=0.621
+2025-07-02 16:02:33,369 DEBUG   [CHK] 10:32:33.367205 body_ok=False vol_ok=False side=None ATR=0.621
+2025-07-02 16:02:34,372 DEBUG   [CHK] 10:32:34.371077 body_ok=False vol_ok=False side=None ATR=0.621
+2025-07-02 16:02:35,376 DEBUG   [CHK] 10:32:35.374426 body_ok=False vol_ok=False side=None ATR=0.621
+2025-07-02 16:02:36,379 DEBUG   [CHK] 10:32:36.378397 body_ok=False vol_ok=False side=None ATR=0.621
+2025-07-02 16:02:37,383 DEBUG   [CHK] 10:32:37.381998 body_ok=False vol_ok=False side=None ATR=0.621
+2025-07-02 16:02:38,387 DEBUG   [CHK] 10:32:38.385087 body_ok=False vol_ok=False side=None ATR=0.621
+2025-07-02 16:02:39,390 DEBUG   [CHK] 10:32:39.388708 body_ok=False vol_ok=False side=None ATR=0.621
+2025-07-02 16:02:40,393 DEBUG   [CHK] 10:32:40.391732 body_ok=False vol_ok=False side=None ATR=0.621
+2025-07-02 16:02:41,396 DEBUG   [CHK] 10:32:41.395033 body_ok=False vol_ok=False side=None ATR=0.621
+2025-07-02 16:02:42,400 DEBUG   [CHK] 10:32:42.398050 body_ok=False vol_ok=False side=None ATR=0.621
+2025-07-02 16:02:43,404 DEBUG   [CHK] 10:32:43.402833 body_ok=False vol_ok=False side=None ATR=0.621
+2025-07-02 16:02:44,408 DEBUG   [CHK] 10:32:44.406120 body_ok=False vol_ok=False side=None ATR=0.621
+2025-07-02 16:02:45,411 DEBUG   [CHK] 10:32:45.410016 body_ok=False vol_ok=False side=None ATR=0.621
+2025-07-02 16:02:46,415 DEBUG   [CHK] 10:32:46.412930 body_ok=False vol_ok=False side=None ATR=0.621
+2025-07-02 16:02:47,418 DEBUG   [CHK] 10:32:47.416771 body_ok=False vol_ok=False side=None ATR=0.621
+2025-07-02 16:02:48,422 DEBUG   [CHK] 10:32:48.420147 body_ok=False vol_ok=False side=None ATR=0.621
+2025-07-02 16:02:49,425 DEBUG   [CHK] 10:32:49.423318 body_ok=False vol_ok=False side=None ATR=0.621
+2025-07-02 16:02:50,428 DEBUG   [CHK] 10:32:50.426810 body_ok=False vol_ok=False side=None ATR=0.621
+2025-07-02 16:02:51,431 DEBUG   [CHK] 10:32:51.430153 body_ok=False vol_ok=False side=None ATR=0.621
+2025-07-02 16:02:52,435 DEBUG   [CHK] 10:32:52.433149 body_ok=False vol_ok=False side=None ATR=0.621
+2025-07-02 16:02:53,438 DEBUG   [CHK] 10:32:53.436920 body_ok=False vol_ok=False side=None ATR=0.621
+2025-07-02 16:02:54,441 DEBUG   [CHK] 10:32:54.440188 body_ok=False vol_ok=False side=None ATR=0.621
+2025-07-02 16:02:55,445 DEBUG   [CHK] 10:32:55.443882 body_ok=False vol_ok=False side=None ATR=0.621
+2025-07-02 16:02:56,449 DEBUG   [CHK] 10:32:56.447235 body_ok=False vol_ok=False side=None ATR=0.621
+2025-07-02 16:02:57,452 DEBUG   [CHK] 10:32:57.451100 body_ok=False vol_ok=False side=None ATR=0.621
+2025-07-02 16:02:58,457 DEBUG   [CHK] 10:32:58.456144 body_ok=False vol_ok=False side=None ATR=0.621
+2025-07-02 16:02:59,461 DEBUG   [CHK] 10:32:59.459495 body_ok=False vol_ok=False side=None ATR=0.621
+2025-07-02 16:03:00,465 DEBUG   [CHK] 10:33:00.463403 body_ok=False vol_ok=False side=None ATR=0.621
+2025-07-02 16:03:01,468 DEBUG   [CHK] 10:33:01.466806 body_ok=False vol_ok=False side=None ATR=0.602
+2025-07-02 16:03:02,472 DEBUG   [CHK] 10:33:02.470529 body_ok=False vol_ok=False side=None ATR=0.602
+2025-07-02 16:03:03,475 DEBUG   [CHK] 10:33:03.473554 body_ok=False vol_ok=False side=None ATR=0.602
+2025-07-02 16:03:04,479 DEBUG   [CHK] 10:33:04.477026 body_ok=False vol_ok=False side=None ATR=0.611
+2025-07-02 16:03:05,483 DEBUG   [CHK] 10:33:05.481427 body_ok=False vol_ok=False side=None ATR=0.611
+2025-07-02 16:03:06,485 DEBUG   [CHK] 10:33:06.484326 body_ok=False vol_ok=False side=None ATR=0.615
+2025-07-02 16:03:07,488 DEBUG   [CHK] 10:33:07.486881 body_ok=False vol_ok=False side=None ATR=0.615
+2025-07-02 16:03:08,492 DEBUG   [CHK] 10:33:08.490745 body_ok=False vol_ok=False side=None ATR=0.616
+2025-07-02 16:03:09,495 DEBUG   [CHK] 10:33:09.493675 body_ok=False vol_ok=False side=None ATR=0.616
+2025-07-02 16:03:10,499 DEBUG   [CHK] 10:33:10.497139 body_ok=False vol_ok=False side=None ATR=0.616
+2025-07-02 16:03:11,502 DEBUG   [CHK] 10:33:11.501392 body_ok=False vol_ok=False side=None ATR=0.616
+2025-07-02 16:03:12,505 DEBUG   [CHK] 10:33:12.504276 body_ok=False vol_ok=False side=None ATR=0.616
+2025-07-02 16:03:13,508 DEBUG   [CHK] 10:33:13.507266 body_ok=False vol_ok=False side=None ATR=0.620
+2025-07-02 16:03:14,511 DEBUG   [CHK] 10:33:14.510334 body_ok=False vol_ok=False side=None ATR=0.620
+2025-07-02 16:03:15,516 DEBUG   [CHK] 10:33:15.514557 body_ok=False vol_ok=False side=None ATR=0.622
+2025-07-02 16:03:16,522 DEBUG   [CHK] 10:33:16.520071 body_ok=False vol_ok=False side=None ATR=0.622
+2025-07-02 16:03:17,524 DEBUG   [CHK] 10:33:17.523257 body_ok=False vol_ok=False side=None ATR=0.622
+2025-07-02 16:03:18,529 DEBUG   [CHK] 10:33:18.526342 body_ok=False vol_ok=False side=None ATR=0.622
+2025-07-02 16:03:19,533 DEBUG   [CHK] 10:33:19.530830 body_ok=False vol_ok=False side=None ATR=0.622
+2025-07-02 16:03:20,536 DEBUG   [CHK] 10:33:20.534801 body_ok=False vol_ok=False side=None ATR=0.622
+2025-07-02 16:03:21,542 DEBUG   [CHK] 10:33:21.538018 body_ok=False vol_ok=False side=None ATR=0.622
+2025-07-02 16:03:22,545 DEBUG   [CHK] 10:33:22.543897 body_ok=False vol_ok=False side=None ATR=0.622
+2025-07-02 16:03:23,550 DEBUG   [CHK] 10:33:23.546910 body_ok=False vol_ok=False side=None ATR=0.622
+2025-07-02 16:03:24,553 DEBUG   [CHK] 10:33:24.551684 body_ok=False vol_ok=False side=None ATR=0.622
+2025-07-02 16:03:25,557 DEBUG   [CHK] 10:33:25.555656 body_ok=False vol_ok=False side=None ATR=0.622
+2025-07-02 16:03:26,561 DEBUG   [CHK] 10:33:26.558764 body_ok=False vol_ok=False side=None ATR=0.622
+2025-07-02 16:03:27,565 DEBUG   [CHK] 10:33:27.563124 body_ok=False vol_ok=False side=None ATR=0.622
+2025-07-02 16:03:28,571 DEBUG   [CHK] 10:33:28.568270 body_ok=False vol_ok=False side=None ATR=0.622
+2025-07-02 16:03:29,575 DEBUG   [CHK] 10:33:29.573526 body_ok=False vol_ok=False side=None ATR=0.622
+2025-07-02 16:03:30,578 DEBUG   [CHK] 10:33:30.577116 body_ok=False vol_ok=False side=None ATR=0.622
+2025-07-02 16:03:31,582 DEBUG   [CHK] 10:33:31.580619 body_ok=False vol_ok=False side=None ATR=0.622
+2025-07-02 16:03:32,585 DEBUG   [CHK] 10:33:32.583571 body_ok=False vol_ok=False side=None ATR=0.622
+2025-07-02 16:03:33,589 DEBUG   [CHK] 10:33:33.586949 body_ok=False vol_ok=False side=None ATR=0.622
+2025-07-02 16:03:34,593 DEBUG   [CHK] 10:33:34.591332 body_ok=False vol_ok=False side=None ATR=0.622
+2025-07-02 16:03:35,596 DEBUG   [CHK] 10:33:35.595177 body_ok=False vol_ok=False side=None ATR=0.622
+2025-07-02 16:03:36,599 DEBUG   [CHK] 10:33:36.598000 body_ok=False vol_ok=False side=None ATR=0.622
+2025-07-02 16:03:37,602 DEBUG   [CHK] 10:33:37.601290 body_ok=False vol_ok=False side=None ATR=0.622
+2025-07-02 16:03:38,607 DEBUG   [CHK] 10:33:38.604928 body_ok=False vol_ok=False side=None ATR=0.622
+2025-07-02 16:03:39,610 DEBUG   [CHK] 10:33:39.608523 body_ok=False vol_ok=False side=None ATR=0.622
+2025-07-02 16:03:40,615 DEBUG   [CHK] 10:33:40.612406 body_ok=False vol_ok=False side=None ATR=0.622
+2025-07-02 16:03:41,619 DEBUG   [CHK] 10:33:41.617671 body_ok=False vol_ok=False side=None ATR=0.622
+2025-07-02 16:03:42,623 DEBUG   [CHK] 10:33:42.620767 body_ok=False vol_ok=False side=None ATR=0.622
+2025-07-02 16:03:43,626 DEBUG   [CHK] 10:33:43.624732 body_ok=False vol_ok=False side=None ATR=0.622
+2025-07-02 16:03:44,631 DEBUG   [CHK] 10:33:44.628035 body_ok=False vol_ok=False side=None ATR=0.622
+2025-07-02 16:03:45,635 DEBUG   [CHK] 10:33:45.634108 body_ok=False vol_ok=False side=None ATR=0.622
+2025-07-02 16:03:46,639 DEBUG   [CHK] 10:33:46.636816 body_ok=False vol_ok=False side=None ATR=0.622
+2025-07-02 16:03:47,642 DEBUG   [CHK] 10:33:47.641182 body_ok=False vol_ok=False side=None ATR=0.622
+2025-07-02 16:03:48,645 DEBUG   [CHK] 10:33:48.644282 body_ok=False vol_ok=False side=None ATR=0.622
+2025-07-02 16:03:49,648 DEBUG   [CHK] 10:33:49.647244 body_ok=False vol_ok=False side=None ATR=0.622
+2025-07-02 16:03:50,651 DEBUG   [CHK] 10:33:50.650287 body_ok=False vol_ok=False side=None ATR=0.622
+2025-07-02 16:03:51,656 DEBUG   [CHK] 10:33:51.653424 body_ok=False vol_ok=False side=None ATR=0.622
+2025-07-02 16:03:52,663 DEBUG   [CHK] 10:33:52.660937 body_ok=False vol_ok=False side=None ATR=0.622
+2025-07-02 16:03:53,667 DEBUG   [CHK] 10:33:53.665584 body_ok=False vol_ok=False side=None ATR=0.622
+2025-07-02 16:03:54,673 DEBUG   [CHK] 10:33:54.671415 body_ok=False vol_ok=False side=None ATR=0.622
+2025-07-02 16:03:55,675 DEBUG   [CHK] 10:33:55.674346 body_ok=False vol_ok=False side=None ATR=0.622
+2025-07-02 16:03:56,682 DEBUG   [CHK] 10:33:56.679941 body_ok=False vol_ok=False side=None ATR=0.624
+2025-07-02 16:03:57,686 DEBUG   [CHK] 10:33:57.684699 body_ok=False vol_ok=False side=None ATR=0.624
+2025-07-02 16:03:58,690 DEBUG   [CHK] 10:33:58.687941 body_ok=False vol_ok=False side=None ATR=0.624
+2025-07-02 16:03:59,694 DEBUG   [CHK] 10:33:59.692285 body_ok=False vol_ok=False side=None ATR=0.624
+2025-07-02 16:04:00,696 DEBUG   [CHK] 10:34:00.695155 body_ok=False vol_ok=False side=None ATR=0.624
+2025-07-02 16:04:01,700 DEBUG   [CHK] 10:34:01.698324 body_ok=False vol_ok=True side=None ATR=0.599
+2025-07-02 16:04:02,705 DEBUG   [CHK] 10:34:02.702271 body_ok=False vol_ok=True side=None ATR=0.603
+2025-07-02 16:04:03,711 DEBUG   [CHK] 10:34:03.707640 body_ok=False vol_ok=True side=None ATR=0.603
+2025-07-02 16:04:04,715 DEBUG   [CHK] 10:34:04.712677 body_ok=False vol_ok=True side=None ATR=0.603
+2025-07-02 16:04:05,718 DEBUG   [CHK] 10:34:05.717282 body_ok=False vol_ok=True side=None ATR=0.603
+2025-07-02 16:04:06,722 DEBUG   [CHK] 10:34:06.720833 body_ok=False vol_ok=True side=None ATR=0.603
+2025-07-02 16:04:07,725 DEBUG   [CHK] 10:34:07.724066 body_ok=False vol_ok=True side=None ATR=0.603
+2025-07-02 16:04:08,729 DEBUG   [CHK] 10:34:08.727281 body_ok=False vol_ok=True side=None ATR=0.603
+2025-07-02 16:04:09,732 DEBUG   [CHK] 10:34:09.731114 body_ok=False vol_ok=True side=None ATR=0.603
+2025-07-02 16:04:10,736 DEBUG   [CHK] 10:34:10.734279 body_ok=False vol_ok=True side=None ATR=0.603
+2025-07-02 16:04:11,740 DEBUG   [CHK] 10:34:11.738387 body_ok=False vol_ok=True side=None ATR=0.603
+2025-07-02 16:04:12,743 DEBUG   [CHK] 10:34:12.741974 body_ok=False vol_ok=True side=None ATR=0.603
+2025-07-02 16:04:13,747 DEBUG   [CHK] 10:34:13.745459 body_ok=False vol_ok=True side=None ATR=0.603
+2025-07-02 16:04:14,750 DEBUG   [CHK] 10:34:14.748955 body_ok=False vol_ok=True side=None ATR=0.609
+2025-07-02 16:04:15,753 DEBUG   [CHK] 10:34:15.752004 body_ok=False vol_ok=True side=None ATR=0.615
+2025-07-02 16:04:16,756 DEBUG   [CHK] 10:34:16.754917 body_ok=False vol_ok=True side=None ATR=0.630
+2025-07-02 16:04:17,759 DEBUG   [CHK] 10:34:17.758283 body_ok=False vol_ok=True side=None ATR=0.630
+2025-07-02 16:04:18,763 DEBUG   [CHK] 10:34:18.761519 body_ok=False vol_ok=True side=None ATR=0.630
+2025-07-02 16:04:19,766 DEBUG   [CHK] 10:34:19.764801 body_ok=False vol_ok=True side=None ATR=0.630
+2025-07-02 16:04:20,769 DEBUG   [CHK] 10:34:20.767962 body_ok=False vol_ok=True side=None ATR=0.673
+2025-07-02 16:04:21,773 DEBUG   [CHK] 10:34:21.771482 body_ok=False vol_ok=True side=None ATR=0.673
+2025-07-02 16:04:22,776 DEBUG   [CHK] 10:34:22.775143 body_ok=False vol_ok=True side=None ATR=0.673
+2025-07-02 16:04:23,780 DEBUG   [CHK] 10:34:23.778569 body_ok=False vol_ok=True side=None ATR=0.673
+2025-07-02 16:04:24,786 DEBUG   [CHK] 10:34:24.782184 body_ok=False vol_ok=True side=None ATR=0.673
+2025-07-02 16:04:25,797 DEBUG   [CHK] 10:34:25.794592 body_ok=False vol_ok=True side=None ATR=0.673
+2025-07-02 16:04:26,802 DEBUG   [CHK] 10:34:26.799388 body_ok=False vol_ok=True side=None ATR=0.673
+2025-07-02 16:04:27,805 DEBUG   [CHK] 10:34:27.804306 body_ok=False vol_ok=True side=None ATR=0.673
+2025-07-02 16:04:28,809 DEBUG   [CHK] 10:34:28.807912 body_ok=False vol_ok=True side=None ATR=0.673
+2025-07-02 16:04:29,812 DEBUG   [CHK] 10:34:29.811077 body_ok=False vol_ok=True side=None ATR=0.673
+2025-07-02 16:04:30,815 DEBUG   [CHK] 10:34:30.813831 body_ok=False vol_ok=True side=None ATR=0.673
+2025-07-02 16:04:31,819 DEBUG   [CHK] 10:34:31.817934 body_ok=False vol_ok=True side=None ATR=0.673
+2025-07-02 16:04:32,824 DEBUG   [CHK] 10:34:32.822447 body_ok=False vol_ok=True side=None ATR=0.673
+2025-07-02 16:04:33,837 DEBUG   [CHK] 10:34:33.835161 body_ok=False vol_ok=True side=None ATR=0.673
+2025-07-02 16:04:36,538 INFO    [CORE]  Re-connected to MT5
+2025-07-02 16:04:36,539 INFO    [CORE]  Pulse-Scalper started
+2025-07-02 16:04:36,542 DEBUG   [CHK] 10:34:36.539820 body_ok=False vol_ok=True side=None ATR=0.673
+2025-07-02 16:04:37,553 DEBUG   [CHK] 10:34:37.546778 body_ok=False vol_ok=True side=None ATR=0.673
+2025-07-02 16:04:38,556 DEBUG   [CHK] 10:34:38.554354 body_ok=False vol_ok=True side=None ATR=0.673
+2025-07-02 16:04:39,560 DEBUG   [CHK] 10:34:39.558027 body_ok=False vol_ok=True side=None ATR=0.673
+2025-07-02 16:04:40,564 DEBUG   [CHK] 10:34:40.562017 body_ok=False vol_ok=True side=None ATR=0.673
+2025-07-02 16:04:41,567 DEBUG   [CHK] 10:34:41.565564 body_ok=False vol_ok=True side=None ATR=0.673
+2025-07-02 16:04:42,571 DEBUG   [CHK] 10:34:42.569038 body_ok=False vol_ok=True side=None ATR=0.673
+2025-07-02 16:04:43,574 DEBUG   [CHK] 10:34:43.572712 body_ok=False vol_ok=True side=None ATR=0.673
+2025-07-02 16:04:44,578 DEBUG   [CHK] 10:34:44.576208 body_ok=False vol_ok=True side=None ATR=0.673
+2025-07-02 16:04:45,581 DEBUG   [CHK] 10:34:45.579732 body_ok=False vol_ok=True side=None ATR=0.673
+2025-07-02 16:04:46,584 DEBUG   [CHK] 10:34:46.582421 body_ok=False vol_ok=True side=None ATR=0.673
+2025-07-02 16:04:47,588 DEBUG   [CHK] 10:34:47.586237 body_ok=False vol_ok=True side=None ATR=0.673
+2025-07-02 16:04:48,591 DEBUG   [CHK] 10:34:48.589791 body_ok=False vol_ok=True side=None ATR=0.673
+2025-07-02 16:04:49,594 DEBUG   [CHK] 10:34:49.592797 body_ok=False vol_ok=True side=None ATR=0.673
+2025-07-02 16:04:50,598 DEBUG   [CHK] 10:34:50.596175 body_ok=False vol_ok=True side=None ATR=0.673
+2025-07-02 16:04:51,601 DEBUG   [CHK] 10:34:51.599819 body_ok=False vol_ok=True side=None ATR=0.673
+2025-07-02 16:04:52,604 DEBUG   [CHK] 10:34:52.602959 body_ok=False vol_ok=True side=None ATR=0.673
+2025-07-02 16:04:53,608 DEBUG   [CHK] 10:34:53.606416 body_ok=False vol_ok=True side=None ATR=0.673
+2025-07-02 16:04:54,611 DEBUG   [CHK] 10:34:54.609517 body_ok=False vol_ok=True side=None ATR=0.673
+2025-07-02 16:04:55,614 DEBUG   [CHK] 10:34:55.612530 body_ok=False vol_ok=True side=None ATR=0.673
+2025-07-02 16:04:56,617 DEBUG   [CHK] 10:34:56.615678 body_ok=False vol_ok=True side=None ATR=0.673
+2025-07-02 16:04:57,619 DEBUG   [CHK] 10:34:57.618389 body_ok=False vol_ok=True side=None ATR=0.673
+2025-07-02 16:04:58,622 DEBUG   [CHK] 10:34:58.621141 body_ok=False vol_ok=True side=None ATR=0.673
+2025-07-02 16:04:59,625 DEBUG   [CHK] 10:34:59.624190 body_ok=False vol_ok=True side=None ATR=0.673
+2025-07-02 16:05:00,628 DEBUG   [CHK] 10:35:00.627263 body_ok=False vol_ok=True side=None ATR=0.673
+2025-07-02 16:05:01,632 DEBUG   [CHK] 10:35:01.630915 body_ok=False vol_ok=True side=None ATR=0.643
+2025-07-02 16:05:02,636 DEBUG   [CHK] 10:35:02.634277 body_ok=False vol_ok=True side=None ATR=0.644
+2025-07-02 16:05:03,641 DEBUG   [CHK] 10:35:03.639290 body_ok=False vol_ok=True side=None ATR=0.650
+2025-07-02 16:05:04,644 DEBUG   [CHK] 10:35:04.642814 body_ok=False vol_ok=True side=None ATR=0.651
+2025-07-02 16:05:05,648 DEBUG   [CHK] 10:35:05.646384 body_ok=False vol_ok=True side=None ATR=0.653
+2025-07-02 16:05:06,651 DEBUG   [CHK] 10:35:06.650486 body_ok=False vol_ok=True side=None ATR=0.653
+2025-07-02 16:05:07,655 DEBUG   [CHK] 10:35:07.653645 body_ok=False vol_ok=True side=None ATR=0.653
+2025-07-02 16:05:08,659 DEBUG   [CHK] 10:35:08.657888 body_ok=False vol_ok=True side=None ATR=0.658
+2025-07-02 16:05:09,664 DEBUG   [CHK] 10:35:09.661250 body_ok=False vol_ok=True side=None ATR=0.658
+2025-07-02 16:05:10,667 DEBUG   [CHK] 10:35:10.666257 body_ok=False vol_ok=True side=None ATR=0.658
+2025-07-02 16:05:11,670 DEBUG   [CHK] 10:35:11.668866 body_ok=False vol_ok=True side=None ATR=0.658
+2025-07-02 16:05:12,672 DEBUG   [CHK] 10:35:12.671527 body_ok=False vol_ok=True side=None ATR=0.658
+2025-07-02 16:05:13,676 DEBUG   [CHK] 10:35:13.675186 body_ok=False vol_ok=True side=None ATR=0.658
+2025-07-02 16:05:14,679 DEBUG   [CHK] 10:35:14.678064 body_ok=False vol_ok=True side=None ATR=0.658
+2025-07-02 16:05:15,682 DEBUG   [CHK] 10:35:15.681224 body_ok=False vol_ok=True side=None ATR=0.658
+2025-07-02 16:05:16,685 DEBUG   [CHK] 10:35:16.683955 body_ok=False vol_ok=True side=None ATR=0.658
+2025-07-02 16:05:17,688 DEBUG   [CHK] 10:35:17.687040 body_ok=False vol_ok=True side=None ATR=0.658
+2025-07-02 16:05:18,692 DEBUG   [CHK] 10:35:18.690745 body_ok=False vol_ok=True side=None ATR=0.676
+2025-07-02 16:05:19,696 DEBUG   [CHK] 10:35:19.694347 body_ok=False vol_ok=True side=None ATR=0.676
+2025-07-02 16:05:20,701 DEBUG   [CHK] 10:35:20.699749 body_ok=False vol_ok=True side=None ATR=0.676
+2025-07-02 16:05:21,706 DEBUG   [CHK] 10:35:21.704650 body_ok=False vol_ok=True side=None ATR=0.676
+2025-07-02 16:05:22,708 DEBUG   [CHK] 10:35:22.707288 body_ok=False vol_ok=True side=None ATR=0.676
+2025-07-02 16:05:23,711 DEBUG   [CHK] 10:35:23.710362 body_ok=False vol_ok=True side=None ATR=0.676
+2025-07-02 16:05:24,714 DEBUG   [CHK] 10:35:24.713110 body_ok=False vol_ok=True side=None ATR=0.676
+2025-07-02 16:05:25,719 DEBUG   [CHK] 10:35:25.717914 body_ok=False vol_ok=True side=None ATR=0.684
+2025-07-02 16:05:26,722 DEBUG   [CHK] 10:35:26.720999 body_ok=False vol_ok=True side=None ATR=0.686
+2025-07-02 16:05:27,726 DEBUG   [CHK] 10:35:27.725043 body_ok=False vol_ok=True side=None ATR=0.688
+2025-07-02 16:05:28,729 DEBUG   [CHK] 10:35:28.727919 body_ok=False vol_ok=True side=None ATR=0.697
+2025-07-02 16:05:29,732 DEBUG   [CHK] 10:35:29.731221 body_ok=False vol_ok=True side=None ATR=0.697
+2025-07-02 16:05:30,736 DEBUG   [CHK] 10:35:30.734054 body_ok=False vol_ok=True side=None ATR=0.705
+2025-07-02 16:05:31,740 DEBUG   [CHK] 10:35:31.738570 body_ok=False vol_ok=True side=None ATR=0.705
+2025-07-02 16:05:32,743 DEBUG   [CHK] 10:35:32.741475 body_ok=False vol_ok=True side=None ATR=0.705
+2025-07-02 16:05:33,746 DEBUG   [CHK] 10:35:33.745196 body_ok=False vol_ok=True side=None ATR=0.705
+2025-07-02 16:05:34,750 DEBUG   [CHK] 10:35:34.748480 body_ok=False vol_ok=True side=None ATR=0.705
+2025-07-02 16:05:35,753 DEBUG   [CHK] 10:35:35.751676 body_ok=False vol_ok=True side=None ATR=0.705
+2025-07-02 16:05:36,756 DEBUG   [CHK] 10:35:36.755193 body_ok=False vol_ok=True side=None ATR=0.705
+2025-07-02 16:05:37,759 DEBUG   [CHK] 10:35:37.758139 body_ok=False vol_ok=True side=None ATR=0.705
+2025-07-02 16:05:38,763 DEBUG   [CHK] 10:35:38.761389 body_ok=False vol_ok=True side=None ATR=0.705
+2025-07-02 16:05:39,766 DEBUG   [CHK] 10:35:39.765046 body_ok=False vol_ok=True side=None ATR=0.705
+2025-07-02 16:05:40,770 DEBUG   [CHK] 10:35:40.768509 body_ok=False vol_ok=True side=None ATR=0.705
+2025-07-02 16:05:41,773 DEBUG   [CHK] 10:35:41.771578 body_ok=False vol_ok=True side=None ATR=0.705
+2025-07-02 16:05:42,777 DEBUG   [CHK] 10:35:42.774699 body_ok=False vol_ok=True side=None ATR=0.705
+2025-07-02 16:05:43,780 DEBUG   [CHK] 10:35:43.778955 body_ok=False vol_ok=True side=None ATR=0.705
+2025-07-02 16:05:44,783 DEBUG   [CHK] 10:35:44.782132 body_ok=False vol_ok=True side=None ATR=0.705
+2025-07-02 16:05:45,786 DEBUG   [CHK] 10:35:45.785393 body_ok=False vol_ok=True side=None ATR=0.705
+2025-07-02 16:05:46,789 DEBUG   [CHK] 10:35:46.788400 body_ok=False vol_ok=True side=None ATR=0.705
+2025-07-02 16:05:47,792 DEBUG   [CHK] 10:35:47.791298 body_ok=False vol_ok=True side=None ATR=0.705
+2025-07-02 16:05:48,795 DEBUG   [CHK] 10:35:48.794237 body_ok=False vol_ok=True side=None ATR=0.705
+2025-07-02 16:05:49,799 DEBUG   [CHK] 10:35:49.797164 body_ok=False vol_ok=True side=None ATR=0.705
+2025-07-02 16:05:50,802 DEBUG   [CHK] 10:35:50.800916 body_ok=False vol_ok=True side=None ATR=0.705
+2025-07-02 16:05:51,806 DEBUG   [CHK] 10:35:51.804962 body_ok=False vol_ok=True side=None ATR=0.705
+2025-07-02 16:05:52,810 DEBUG   [CHK] 10:35:52.809129 body_ok=False vol_ok=True side=None ATR=0.705
+2025-07-02 16:05:53,814 DEBUG   [CHK] 10:35:53.812615 body_ok=False vol_ok=True side=None ATR=0.705
+2025-07-02 16:05:54,817 DEBUG   [CHK] 10:35:54.815516 body_ok=False vol_ok=True side=None ATR=0.705
+2025-07-02 16:05:55,820 DEBUG   [CHK] 10:35:55.818628 body_ok=False vol_ok=True side=None ATR=0.705
+2025-07-02 16:05:56,825 DEBUG   [CHK] 10:35:56.823918 body_ok=False vol_ok=True side=None ATR=0.705
+2025-07-02 16:05:57,830 DEBUG   [CHK] 10:35:57.827114 body_ok=False vol_ok=True side=None ATR=0.705
+2025-07-02 16:05:58,834 DEBUG   [CHK] 10:35:58.832440 body_ok=False vol_ok=True side=None ATR=0.705
+2025-07-02 16:05:59,838 DEBUG   [CHK] 10:35:59.836882 body_ok=False vol_ok=True side=None ATR=0.705
+2025-07-02 16:06:00,842 DEBUG   [CHK] 10:36:00.840323 body_ok=True vol_ok=True side=BUY ATR=0.649
+2025-07-02 16:06:01,064 INFO    [ENTRY] PULSE BUY 0.05@3343.964 SL3342.990 TP3345.912 → 10009
+2025-07-02 16:06:02,067 DEBUG   [CHK] 10:36:02.066198 body_ok=True vol_ok=True side=BUY ATR=0.649
+2025-07-02 16:06:02,278 INFO    [ENTRY] PULSE BUY 0.05@3343.964 SL3342.990 TP3345.912 → 10009
+2025-07-02 16:06:03,285 DEBUG   [CHK] 10:36:03.284042 body_ok=True vol_ok=True side=BUY ATR=0.649
+2025-07-02 16:06:03,550 INFO    [ENTRY] PULSE BUY 0.05@3343.964 SL3342.990 TP3345.912 → 10009
+2025-07-02 16:06:04,554 DEBUG   [CHK] 10:36:04.552500 body_ok=True vol_ok=True side=BUY ATR=0.660
+2025-07-02 16:06:04,780 INFO    [ENTRY] PULSE BUY 0.05@3344.075 SL3343.085 TP3346.056 → 10009
+2025-07-02 16:06:05,789 DEBUG   [CHK] 10:36:05.788351 body_ok=True vol_ok=True side=BUY ATR=0.660
+2025-07-02 16:06:06,795 DEBUG   [CHK] 10:36:06.793916 body_ok=True vol_ok=True side=BUY ATR=0.666
+2025-07-02 16:06:06,995 INFO    [TRAIL] 800836601 +0.25ATR
+2025-07-02 16:06:07,233 INFO    [TRAIL] 800836642 +0.25ATR
+2025-07-02 16:06:07,439 INFO    [TRAIL] 800836700 +0.25ATR
+2025-07-02 16:06:08,443 DEBUG   [CHK] 10:36:08.441424 body_ok=True vol_ok=True side=BUY ATR=0.666
+2025-07-02 16:06:09,447 DEBUG   [CHK] 10:36:09.445840 body_ok=True vol_ok=True side=BUY ATR=0.666
+2025-07-02 16:06:10,452 DEBUG   [CHK] 10:36:10.450444 body_ok=True vol_ok=True side=BUY ATR=0.666
+2025-07-02 16:06:11,457 DEBUG   [CHK] 10:36:11.455659 body_ok=True vol_ok=True side=BUY ATR=0.666
+2025-07-02 16:06:12,464 DEBUG   [CHK] 10:36:12.462447 body_ok=True vol_ok=True side=BUY ATR=0.666
+2025-07-02 16:06:13,474 DEBUG   [CHK] 10:36:13.471114 body_ok=True vol_ok=True side=BUY ATR=0.666
+2025-07-02 16:06:14,478 DEBUG   [CHK] 10:36:14.476492 body_ok=True vol_ok=True side=BUY ATR=0.666
+2025-07-02 16:06:15,481 DEBUG   [CHK] 10:36:15.480156 body_ok=True vol_ok=True side=BUY ATR=0.666
+2025-07-02 16:06:16,484 DEBUG   [CHK] 10:36:16.483328 body_ok=True vol_ok=True side=BUY ATR=0.666
+2025-07-02 16:06:17,488 DEBUG   [CHK] 10:36:17.486250 body_ok=True vol_ok=True side=BUY ATR=0.666
+2025-07-02 16:06:18,492 DEBUG   [CHK] 10:36:18.490664 body_ok=True vol_ok=True side=BUY ATR=0.666
+2025-07-02 16:06:19,495 DEBUG   [CHK] 10:36:19.493576 body_ok=True vol_ok=True side=BUY ATR=0.666
+2025-07-02 16:06:20,498 DEBUG   [CHK] 10:36:20.496675 body_ok=True vol_ok=True side=BUY ATR=0.666
+2025-07-02 16:06:21,501 DEBUG   [CHK] 10:36:21.500052 body_ok=True vol_ok=True side=BUY ATR=0.666
+2025-07-02 16:06:22,506 DEBUG   [CHK] 10:36:22.504538 body_ok=True vol_ok=True side=BUY ATR=0.666
+2025-07-02 16:06:23,509 DEBUG   [CHK] 10:36:23.507308 body_ok=True vol_ok=True side=BUY ATR=0.666
+2025-07-02 16:06:24,513 DEBUG   [CHK] 10:36:24.510542 body_ok=True vol_ok=True side=BUY ATR=0.666
+2025-07-02 16:06:25,517 DEBUG   [CHK] 10:36:25.515554 body_ok=True vol_ok=True side=BUY ATR=0.666
+2025-07-02 16:06:26,520 DEBUG   [CHK] 10:36:26.518731 body_ok=True vol_ok=True side=BUY ATR=0.666
+2025-07-02 16:06:27,523 DEBUG   [CHK] 10:36:27.521644 body_ok=True vol_ok=True side=BUY ATR=0.666
+2025-07-02 16:06:28,526 DEBUG   [CHK] 10:36:28.524862 body_ok=True vol_ok=True side=BUY ATR=0.666
+2025-07-02 16:06:29,529 DEBUG   [CHK] 10:36:29.528207 body_ok=True vol_ok=True side=BUY ATR=0.666
+2025-07-02 16:06:30,533 DEBUG   [CHK] 10:36:30.531319 body_ok=True vol_ok=True side=BUY ATR=0.666
+2025-07-02 16:06:31,537 DEBUG   [CHK] 10:36:31.535409 body_ok=True vol_ok=True side=BUY ATR=0.666
+2025-07-02 16:06:32,540 DEBUG   [CHK] 10:36:32.538597 body_ok=True vol_ok=True side=BUY ATR=0.666
+2025-07-02 16:06:33,543 DEBUG   [CHK] 10:36:33.541785 body_ok=True vol_ok=True side=BUY ATR=0.666
+2025-07-02 16:06:34,547 DEBUG   [CHK] 10:36:34.545871 body_ok=True vol_ok=True side=BUY ATR=0.666
+2025-07-02 16:06:35,551 DEBUG   [CHK] 10:36:35.549876 body_ok=True vol_ok=True side=BUY ATR=0.666
+2025-07-02 16:06:36,554 DEBUG   [CHK] 10:36:36.552812 body_ok=True vol_ok=True side=BUY ATR=0.666
+2025-07-02 16:06:37,556 DEBUG   [CHK] 10:36:37.555487 body_ok=True vol_ok=True side=BUY ATR=0.666
+2025-07-02 16:06:38,560 DEBUG   [CHK] 10:36:38.558210 body_ok=True vol_ok=True side=BUY ATR=0.666
+2025-07-02 16:06:39,568 DEBUG   [CHK] 10:36:39.567116 body_ok=True vol_ok=True side=BUY ATR=0.666
+2025-07-02 16:06:40,571 DEBUG   [CHK] 10:36:40.570252 body_ok=True vol_ok=True side=BUY ATR=0.666
+2025-07-02 16:06:41,575 DEBUG   [CHK] 10:36:41.573453 body_ok=True vol_ok=True side=BUY ATR=0.666
+2025-07-02 16:06:42,579 DEBUG   [CHK] 10:36:42.577795 body_ok=True vol_ok=True side=BUY ATR=0.666
+2025-07-02 16:06:43,583 DEBUG   [CHK] 10:36:43.581840 body_ok=True vol_ok=True side=BUY ATR=0.666
+2025-07-02 16:06:44,586 DEBUG   [CHK] 10:36:44.585091 body_ok=True vol_ok=True side=BUY ATR=0.666
+2025-07-02 16:06:45,589 DEBUG   [CHK] 10:36:45.588457 body_ok=True vol_ok=True side=BUY ATR=0.666
+2025-07-02 16:06:45,817 INFO    [TRAIL] 800836601 +0.25ATR
+2025-07-02 16:06:46,022 INFO    [TRAIL] 800836642 +0.25ATR
+2025-07-02 16:06:46,228 INFO    [TRAIL] 800836700 +0.25ATR
+2025-07-02 16:06:47,231 DEBUG   [CHK] 10:36:47.229998 body_ok=True vol_ok=True side=BUY ATR=0.666
+2025-07-02 16:06:48,235 DEBUG   [CHK] 10:36:48.233407 body_ok=True vol_ok=True side=BUY ATR=0.666
+2025-07-02 16:06:49,238 DEBUG   [CHK] 10:36:49.236540 body_ok=True vol_ok=True side=BUY ATR=0.666
+2025-07-02 16:06:50,243 DEBUG   [CHK] 10:36:50.242163 body_ok=True vol_ok=True side=BUY ATR=0.666
+2025-07-02 16:06:51,247 DEBUG   [CHK] 10:36:51.245764 body_ok=True vol_ok=True side=BUY ATR=0.666
+2025-07-02 16:06:52,253 DEBUG   [CHK] 10:36:52.249570 body_ok=True vol_ok=True side=BUY ATR=0.666
+2025-07-02 16:06:53,257 DEBUG   [CHK] 10:36:53.255047 body_ok=True vol_ok=True side=BUY ATR=0.666
+2025-07-02 16:06:54,261 DEBUG   [CHK] 10:36:54.259060 body_ok=True vol_ok=True side=BUY ATR=0.666
+2025-07-02 16:06:55,264 DEBUG   [CHK] 10:36:55.262666 body_ok=True vol_ok=True side=BUY ATR=0.666
+2025-07-02 16:06:56,268 DEBUG   [CHK] 10:36:56.266093 body_ok=True vol_ok=True side=BUY ATR=0.666
+2025-07-02 16:06:57,271 DEBUG   [CHK] 10:36:57.269826 body_ok=True vol_ok=True side=BUY ATR=0.666
+2025-07-02 16:06:58,275 DEBUG   [CHK] 10:36:58.274153 body_ok=True vol_ok=True side=BUY ATR=0.666
+2025-07-02 16:06:59,278 DEBUG   [CHK] 10:36:59.277005 body_ok=True vol_ok=True side=BUY ATR=0.666
+2025-07-02 16:07:00,281 DEBUG   [CHK] 10:37:00.280344 body_ok=True vol_ok=True side=BUY ATR=0.666
+2025-07-02 16:07:01,286 DEBUG   [CHK] 10:37:01.285194 body_ok=False vol_ok=False side=None ATR=0.630
+2025-07-02 16:07:02,290 DEBUG   [CHK] 10:37:02.288594 body_ok=False vol_ok=False side=None ATR=0.632
+2025-07-02 16:07:03,294 DEBUG   [CHK] 10:37:03.292068 body_ok=False vol_ok=False side=None ATR=0.634
+2025-07-02 16:07:04,299 DEBUG   [CHK] 10:37:04.296087 body_ok=False vol_ok=False side=None ATR=0.645
+2025-07-02 16:07:04,535 INFO    [TRAIL] 800836601 +0.25ATR
+2025-07-02 16:07:04,754 INFO    [TRAIL] 800836642 +0.25ATR
+2025-07-02 16:07:04,969 INFO    [TRAIL] 800836700 +0.25ATR
+2025-07-02 16:07:05,975 DEBUG   [CHK] 10:37:05.972489 body_ok=False vol_ok=False side=None ATR=0.645
+2025-07-02 16:07:06,979 DEBUG   [CHK] 10:37:06.977135 body_ok=False vol_ok=False side=None ATR=0.645
+2025-07-02 16:07:07,982 DEBUG   [CHK] 10:37:07.980388 body_ok=False vol_ok=False side=None ATR=0.646
+2025-07-02 16:07:08,188 INFO    [TRAIL] 800836767 +0.25ATR
+2025-07-02 16:07:09,193 DEBUG   [CHK] 10:37:09.191224 body_ok=False vol_ok=False side=None ATR=0.646
+2025-07-02 16:07:10,196 DEBUG   [CHK] 10:37:10.195208 body_ok=False vol_ok=False side=None ATR=0.646
+2025-07-02 16:07:11,200 DEBUG   [CHK] 10:37:11.198451 body_ok=False vol_ok=False side=None ATR=0.646
+2025-07-02 16:07:12,203 DEBUG   [CHK] 10:37:12.202386 body_ok=False vol_ok=False side=None ATR=0.646
+2025-07-02 16:07:13,207 DEBUG   [CHK] 10:37:13.205112 body_ok=False vol_ok=False side=None ATR=0.646
+2025-07-02 16:07:14,212 DEBUG   [CHK] 10:37:14.210095 body_ok=False vol_ok=False side=None ATR=0.646
+2025-07-02 16:07:15,219 DEBUG   [CHK] 10:37:15.216846 body_ok=False vol_ok=False side=None ATR=0.646
+2025-07-02 16:07:16,224 DEBUG   [CHK] 10:37:16.222518 body_ok=False vol_ok=False side=None ATR=0.646
+2025-07-02 16:07:17,228 DEBUG   [CHK] 10:37:17.226605 body_ok=False vol_ok=False side=None ATR=0.646
+2025-07-02 16:07:18,236 DEBUG   [CHK] 10:37:18.231955 body_ok=False vol_ok=False side=None ATR=0.646
+2025-07-02 16:07:19,240 DEBUG   [CHK] 10:37:19.238060 body_ok=False vol_ok=False side=None ATR=0.646
+2025-07-02 16:07:20,245 DEBUG   [CHK] 10:37:20.242832 body_ok=False vol_ok=False side=None ATR=0.646
+2025-07-02 16:07:21,249 DEBUG   [CHK] 10:37:21.247366 body_ok=False vol_ok=False side=None ATR=0.646
+2025-07-02 16:07:22,254 DEBUG   [CHK] 10:37:22.252115 body_ok=False vol_ok=False side=None ATR=0.646
+2025-07-02 16:07:23,257 DEBUG   [CHK] 10:37:23.255612 body_ok=False vol_ok=False side=None ATR=0.646
+2025-07-02 16:07:24,260 DEBUG   [CHK] 10:37:24.258737 body_ok=False vol_ok=False side=None ATR=0.646
+2025-07-02 16:07:25,264 DEBUG   [CHK] 10:37:25.262266 body_ok=False vol_ok=False side=None ATR=0.646
+2025-07-02 16:07:26,268 DEBUG   [CHK] 10:37:26.265823 body_ok=False vol_ok=False side=None ATR=0.646
+2025-07-02 16:07:27,274 DEBUG   [CHK] 10:37:27.271554 body_ok=False vol_ok=False side=None ATR=0.648
+2025-07-02 16:07:28,277 DEBUG   [CHK] 10:37:28.276033 body_ok=False vol_ok=False side=None ATR=0.649
+2025-07-02 16:07:29,282 DEBUG   [CHK] 10:37:29.279585 body_ok=False vol_ok=False side=None ATR=0.649
+2025-07-02 16:07:30,285 DEBUG   [CHK] 10:37:30.283989 body_ok=False vol_ok=False side=None ATR=0.668
+2025-07-02 16:07:30,506 INFO    [MAN] 800836601 SL → BE+0.25ATR
+2025-07-02 16:07:30,697 INFO    [TRAIL] 800836601 +0.25ATR
+2025-07-02 16:07:30,895 INFO    [MAN] 800836642 SL → BE+0.25ATR
+2025-07-02 16:07:31,091 INFO    [TRAIL] 800836642 +0.25ATR
+2025-07-02 16:07:31,307 INFO    [MAN] 800836700 SL → BE+0.25ATR
+2025-07-02 16:07:31,515 INFO    [TRAIL] 800836700 +0.25ATR
+2025-07-02 16:07:31,734 INFO    [MAN] 800836767 SL → BE+0.25ATR
+2025-07-02 16:07:31,947 INFO    [TRAIL] 800836767 +0.25ATR
+2025-07-02 16:07:32,951 DEBUG   [CHK] 10:37:32.949612 body_ok=False vol_ok=False side=None ATR=0.670
+2025-07-02 16:07:33,167 INFO    [MAN] 800836601 SL → BE+0.25ATR
+2025-07-02 16:07:33,382 INFO    [MAN] 800836642 SL → BE+0.25ATR
+2025-07-02 16:07:33,593 INFO    [MAN] 800836700 SL → BE+0.25ATR
+2025-07-02 16:07:33,801 INFO    [MAN] 800836767 SL → BE+0.25ATR
+2025-07-02 16:07:34,804 DEBUG   [CHK] 10:37:34.802741 body_ok=False vol_ok=False side=None ATR=0.672
+2025-07-02 16:07:35,808 DEBUG   [CHK] 10:37:35.805551 body_ok=False vol_ok=False side=None ATR=0.672
+2025-07-02 16:07:36,811 DEBUG   [CHK] 10:37:36.809626 body_ok=False vol_ok=False side=None ATR=0.672
+2025-07-02 16:07:37,814 DEBUG   [CHK] 10:37:37.812509 body_ok=False vol_ok=False side=None ATR=0.672
+2025-07-02 16:07:38,817 DEBUG   [CHK] 10:37:38.815817 body_ok=False vol_ok=False side=None ATR=0.672
+2025-07-02 16:07:39,820 DEBUG   [CHK] 10:37:39.818623 body_ok=False vol_ok=False side=None ATR=0.672
+2025-07-02 16:07:40,823 DEBUG   [CHK] 10:37:40.821952 body_ok=False vol_ok=False side=None ATR=0.682
+2025-07-02 16:07:41,029 INFO    [TRAIL] 800836601 +0.25ATR
+2025-07-02 16:07:41,239 INFO    [TRAIL] 800836642 +0.25ATR
+2025-07-02 16:07:41,440 INFO    [TRAIL] 800836700 +0.25ATR
+2025-07-02 16:07:41,630 INFO    [TRAIL] 800836767 +0.25ATR
+2025-07-02 16:07:42,634 DEBUG   [CHK] 10:37:42.631553 body_ok=False vol_ok=False side=None ATR=0.697
+2025-07-02 16:07:43,637 DEBUG   [CHK] 10:37:43.635390 body_ok=False vol_ok=False side=None ATR=0.697
+2025-07-02 16:07:44,640 DEBUG   [CHK] 10:37:44.638953 body_ok=False vol_ok=False side=None ATR=0.697
+2025-07-02 16:07:45,644 DEBUG   [CHK] 10:37:45.642187 body_ok=False vol_ok=False side=None ATR=0.697
+2025-07-02 16:07:45,778 INFO    [TRAIL] 800836601 +0.25ATR
+2025-07-02 16:07:45,779 INFO    [TRAIL] 800836642 +0.25ATR
+2025-07-02 16:07:45,779 INFO    [TRAIL] 800836700 +0.25ATR
+2025-07-02 16:07:45,779 INFO    [TRAIL] 800836767 +0.25ATR
+2025-07-02 16:07:46,782 DEBUG   [CHK] 10:37:46.780881 body_ok=False vol_ok=False side=None ATR=0.697
+2025-07-02 16:07:47,787 DEBUG   [CHK] 10:37:47.784779 body_ok=False vol_ok=False side=None ATR=0.697
+2025-07-02 16:07:48,790 DEBUG   [CHK] 10:37:48.789174 body_ok=False vol_ok=False side=None ATR=0.697
+2025-07-02 16:07:49,794 DEBUG   [CHK] 10:37:49.792163 body_ok=False vol_ok=False side=None ATR=0.697
+2025-07-02 16:07:50,797 DEBUG   [CHK] 10:37:50.795802 body_ok=False vol_ok=False side=None ATR=0.697
+2025-07-02 16:07:51,800 DEBUG   [CHK] 10:37:51.798996 body_ok=False vol_ok=False side=None ATR=0.697
+2025-07-02 16:07:52,805 DEBUG   [CHK] 10:37:52.801956 body_ok=False vol_ok=False side=None ATR=0.697
+2025-07-02 16:07:53,809 DEBUG   [CHK] 10:37:53.807566 body_ok=False vol_ok=False side=None ATR=0.697
+2025-07-02 16:07:54,814 DEBUG   [CHK] 10:37:54.810052 body_ok=False vol_ok=False side=None ATR=0.697
+2025-07-02 16:07:55,020 INFO    [TRAIL] 800836601 +0.25ATR
+2025-07-02 16:07:55,228 INFO    [TRAIL] 800836642 +0.25ATR
+2025-07-02 16:07:55,452 INFO    [TRAIL] 800836700 +0.25ATR
+2025-07-02 16:07:55,666 INFO    [TRAIL] 800836767 +0.25ATR
+2025-07-02 16:07:56,668 DEBUG   [CHK] 10:37:56.667313 body_ok=False vol_ok=False side=None ATR=0.697
+2025-07-02 16:07:57,672 DEBUG   [CHK] 10:37:57.670522 body_ok=False vol_ok=False side=None ATR=0.697
+2025-07-02 16:07:58,675 DEBUG   [CHK] 10:37:58.673577 body_ok=False vol_ok=False side=None ATR=0.697
+2025-07-02 16:07:59,677 DEBUG   [CHK] 10:37:59.675974 body_ok=False vol_ok=False side=None ATR=0.697
+2025-07-02 16:08:00,681 DEBUG   [CHK] 10:38:00.679467 body_ok=True vol_ok=True side=BUY ATR=0.667
+2025-07-02 16:08:01,684 DEBUG   [CHK] 10:38:01.682748 body_ok=True vol_ok=True side=BUY ATR=0.667
+2025-07-02 16:08:02,686 DEBUG   [CHK] 10:38:02.685350 body_ok=True vol_ok=True side=BUY ATR=0.668
+2025-07-02 16:08:03,693 DEBUG   [CHK] 10:38:03.691119 body_ok=True vol_ok=True side=BUY ATR=0.671
+2025-07-02 16:08:04,696 DEBUG   [CHK] 10:38:04.695091 body_ok=True vol_ok=True side=BUY ATR=0.671
+2025-07-02 16:08:05,699 DEBUG   [CHK] 10:38:05.698167 body_ok=True vol_ok=True side=BUY ATR=0.672
+2025-07-02 16:08:06,703 DEBUG   [CHK] 10:38:06.701262 body_ok=True vol_ok=True side=BUY ATR=0.678
+2025-07-02 16:08:07,706 DEBUG   [CHK] 10:38:07.704764 body_ok=True vol_ok=True side=BUY ATR=0.678
+2025-07-02 16:08:08,709 DEBUG   [CHK] 10:38:08.707998 body_ok=True vol_ok=True side=BUY ATR=0.678
+2025-07-02 16:08:09,713 DEBUG   [CHK] 10:38:09.711124 body_ok=True vol_ok=True side=BUY ATR=0.678
+2025-07-02 16:08:10,716 DEBUG   [CHK] 10:38:10.714241 body_ok=True vol_ok=True side=BUY ATR=0.678
+2025-07-02 16:08:11,720 DEBUG   [CHK] 10:38:11.717670 body_ok=True vol_ok=True side=BUY ATR=0.678
+2025-07-02 16:08:12,724 DEBUG   [CHK] 10:38:12.722637 body_ok=True vol_ok=True side=BUY ATR=0.678
+2025-07-02 16:08:13,728 DEBUG   [CHK] 10:38:13.726312 body_ok=True vol_ok=True side=BUY ATR=0.678
+2025-07-02 16:08:14,731 DEBUG   [CHK] 10:38:14.729724 body_ok=True vol_ok=True side=BUY ATR=0.678
+2025-07-02 16:08:15,734 DEBUG   [CHK] 10:38:15.733422 body_ok=True vol_ok=True side=BUY ATR=0.678
+2025-07-02 16:08:16,738 DEBUG   [CHK] 10:38:16.736395 body_ok=True vol_ok=True side=BUY ATR=0.678
+2025-07-02 16:08:17,742 DEBUG   [CHK] 10:38:17.740324 body_ok=True vol_ok=True side=BUY ATR=0.678
+2025-07-02 16:08:18,744 DEBUG   [CHK] 10:38:18.743290 body_ok=True vol_ok=True side=BUY ATR=0.678
+2025-07-02 16:08:19,748 DEBUG   [CHK] 10:38:19.746659 body_ok=True vol_ok=True side=BUY ATR=0.678
+2025-07-02 16:08:20,753 DEBUG   [CHK] 10:38:20.750065 body_ok=True vol_ok=True side=BUY ATR=0.678
+2025-07-02 16:08:21,757 DEBUG   [CHK] 10:38:21.755019 body_ok=True vol_ok=True side=BUY ATR=0.678
+2025-07-02 16:08:22,760 DEBUG   [CHK] 10:38:22.759528 body_ok=True vol_ok=True side=BUY ATR=0.678
+2025-07-02 16:08:23,764 DEBUG   [CHK] 10:38:23.763057 body_ok=True vol_ok=True side=BUY ATR=0.678
+2025-07-02 16:08:24,767 DEBUG   [CHK] 10:38:24.766101 body_ok=True vol_ok=True side=BUY ATR=0.678
+2025-07-02 16:08:25,771 DEBUG   [CHK] 10:38:25.769336 body_ok=True vol_ok=True side=BUY ATR=0.678
+2025-07-02 16:08:26,774 DEBUG   [CHK] 10:38:26.773011 body_ok=True vol_ok=True side=BUY ATR=0.678
+2025-07-02 16:08:27,777 DEBUG   [CHK] 10:38:27.776088 body_ok=True vol_ok=True side=BUY ATR=0.684
+2025-07-02 16:08:27,984 INFO    [TRAIL] 800836601 +0.25ATR
+2025-07-02 16:08:28,185 INFO    [TRAIL] 800836642 +0.25ATR
+2025-07-02 16:08:28,385 INFO    [TRAIL] 800836700 +0.25ATR
+2025-07-02 16:08:28,590 INFO    [TRAIL] 800836767 +0.25ATR
+2025-07-02 16:08:29,593 DEBUG   [CHK] 10:38:29.591813 body_ok=True vol_ok=True side=BUY ATR=0.684
+2025-07-02 16:08:30,599 DEBUG   [CHK] 10:38:30.597602 body_ok=True vol_ok=True side=BUY ATR=0.684
+2025-07-02 16:08:31,602 DEBUG   [CHK] 10:38:31.600993 body_ok=True vol_ok=True side=BUY ATR=0.684
+2025-07-02 16:08:32,606 DEBUG   [CHK] 10:38:32.603866 body_ok=True vol_ok=True side=BUY ATR=0.684
+2025-07-02 16:08:33,609 DEBUG   [CHK] 10:38:33.607483 body_ok=True vol_ok=True side=BUY ATR=0.684
+2025-07-02 16:08:33,818 INFO    [ENTRY] PULSE BUY 0.05@3344.792 SL3343.766 TP3346.844 → 10009
+2025-07-02 16:08:34,821 DEBUG   [CHK] 10:38:34.819639 body_ok=True vol_ok=True side=BUY ATR=0.684
+2025-07-02 16:08:35,824 DEBUG   [CHK] 10:38:35.822705 body_ok=True vol_ok=True side=BUY ATR=0.684
+2025-07-02 16:08:36,827 DEBUG   [CHK] 10:38:36.825687 body_ok=True vol_ok=True side=BUY ATR=0.684
+2025-07-02 16:08:37,830 DEBUG   [CHK] 10:38:37.828646 body_ok=True vol_ok=True side=BUY ATR=0.686
+2025-07-02 16:08:38,833 DEBUG   [CHK] 10:38:38.831893 body_ok=True vol_ok=True side=BUY ATR=0.686
+2025-07-02 16:08:39,836 DEBUG   [CHK] 10:38:39.835321 body_ok=True vol_ok=True side=BUY ATR=0.690
+2025-07-02 16:08:40,092 INFO    [TRAIL] 800847142 +0.25ATR
+2025-07-02 16:08:41,097 DEBUG   [CHK] 10:38:41.095409 body_ok=True vol_ok=True side=BUY ATR=0.690
+2025-07-02 16:08:42,100 DEBUG   [CHK] 10:38:42.099219 body_ok=True vol_ok=True side=BUY ATR=0.690
+2025-07-02 16:08:43,104 DEBUG   [CHK] 10:38:43.102540 body_ok=True vol_ok=True side=BUY ATR=0.690
+2025-07-02 16:08:44,106 DEBUG   [CHK] 10:38:44.105158 body_ok=True vol_ok=True side=BUY ATR=0.690
+2025-07-02 16:08:45,111 DEBUG   [CHK] 10:38:45.109466 body_ok=True vol_ok=True side=BUY ATR=0.690
+2025-07-02 16:08:46,114 DEBUG   [CHK] 10:38:46.112728 body_ok=True vol_ok=True side=BUY ATR=0.690
+2025-07-02 16:08:47,118 DEBUG   [CHK] 10:38:47.116702 body_ok=True vol_ok=True side=BUY ATR=0.690
+2025-07-02 16:08:48,126 DEBUG   [CHK] 10:38:48.125524 body_ok=True vol_ok=True side=BUY ATR=0.690
+2025-07-02 16:08:49,130 DEBUG   [CHK] 10:38:49.128626 body_ok=True vol_ok=True side=BUY ATR=0.690
+2025-07-02 16:08:50,133 DEBUG   [CHK] 10:38:50.131780 body_ok=True vol_ok=True side=BUY ATR=0.690
+2025-07-02 16:08:51,138 DEBUG   [CHK] 10:38:51.134949 body_ok=True vol_ok=True side=BUY ATR=0.690
+2025-07-02 16:08:52,143 DEBUG   [CHK] 10:38:52.140389 body_ok=True vol_ok=True side=BUY ATR=0.690
+2025-07-02 16:08:53,147 DEBUG   [CHK] 10:38:53.145631 body_ok=True vol_ok=True side=BUY ATR=0.690
+2025-07-02 16:08:54,150 DEBUG   [CHK] 10:38:54.148830 body_ok=True vol_ok=True side=BUY ATR=0.690
+2025-07-02 16:08:55,153 DEBUG   [CHK] 10:38:55.151911 body_ok=True vol_ok=True side=BUY ATR=0.690
+2025-07-02 16:08:56,156 DEBUG   [CHK] 10:38:56.155045 body_ok=True vol_ok=True side=BUY ATR=0.690
+2025-07-02 16:08:57,159 DEBUG   [CHK] 10:38:57.158295 body_ok=True vol_ok=True side=BUY ATR=0.690
+2025-07-02 16:08:58,163 DEBUG   [CHK] 10:38:58.161117 body_ok=True vol_ok=True side=BUY ATR=0.690
+2025-07-02 16:08:59,166 DEBUG   [CHK] 10:38:59.165002 body_ok=True vol_ok=True side=BUY ATR=0.690
+2025-07-02 16:09:00,172 DEBUG   [CHK] 10:39:00.168226 body_ok=True vol_ok=True side=BUY ATR=0.690
+2025-07-02 16:09:00,173 INFO    [TRAIL] 800836601 +0.25ATR
+2025-07-02 16:09:00,173 INFO    [TRAIL] 800836642 +0.25ATR
+2025-07-02 16:09:00,174 INFO    [TRAIL] 800836700 +0.25ATR
+2025-07-02 16:09:00,392 INFO    [TRAIL] 800847142 +0.25ATR
+2025-07-02 16:09:01,395 DEBUG   [CHK] 10:39:01.393820 body_ok=True vol_ok=True side=BUY ATR=0.690
+2025-07-02 16:09:02,398 DEBUG   [CHK] 10:39:02.396262 body_ok=False vol_ok=False side=None ATR=0.614
+2025-07-02 16:09:03,402 DEBUG   [CHK] 10:39:03.400711 body_ok=False vol_ok=False side=None ATR=0.614
+2025-07-02 16:09:04,404 DEBUG   [CHK] 10:39:04.403582 body_ok=False vol_ok=False side=None ATR=0.617
+2025-07-02 16:09:05,408 DEBUG   [CHK] 10:39:05.406592 body_ok=False vol_ok=False side=None ATR=0.617
+2025-07-02 16:09:06,410 DEBUG   [CHK] 10:39:06.409463 body_ok=False vol_ok=False side=None ATR=0.617
+2025-07-02 16:09:07,413 DEBUG   [CHK] 10:39:07.412249 body_ok=False vol_ok=False side=None ATR=0.617
+2025-07-02 16:09:08,416 DEBUG   [CHK] 10:39:08.415312 body_ok=False vol_ok=False side=None ATR=0.617
+2025-07-02 16:09:09,419 DEBUG   [CHK] 10:39:09.418102 body_ok=False vol_ok=False side=None ATR=0.617
+2025-07-02 16:09:10,423 DEBUG   [CHK] 10:39:10.421136 body_ok=False vol_ok=False side=None ATR=0.617
+2025-07-02 16:09:11,428 DEBUG   [CHK] 10:39:11.426441 body_ok=False vol_ok=False side=None ATR=0.617
+2025-07-02 16:09:12,431 DEBUG   [CHK] 10:39:12.429619 body_ok=False vol_ok=False side=None ATR=0.617
+2025-07-02 16:09:13,434 DEBUG   [CHK] 10:39:13.432332 body_ok=False vol_ok=False side=None ATR=0.632
+2025-07-02 16:09:13,658 INFO    [TRAIL] 800847142 +0.25ATR
+2025-07-02 16:09:14,664 DEBUG   [CHK] 10:39:14.662532 body_ok=False vol_ok=False side=None ATR=0.637
+2025-07-02 16:09:15,667 DEBUG   [CHK] 10:39:15.665383 body_ok=False vol_ok=False side=None ATR=0.637
+2025-07-02 16:09:16,670 DEBUG   [CHK] 10:39:16.668768 body_ok=False vol_ok=False side=None ATR=0.637
+2025-07-02 16:09:17,673 DEBUG   [CHK] 10:39:17.671685 body_ok=False vol_ok=False side=None ATR=0.638
+2025-07-02 16:09:18,676 DEBUG   [CHK] 10:39:18.675105 body_ok=False vol_ok=False side=None ATR=0.638
+2025-07-02 16:09:19,679 DEBUG   [CHK] 10:39:19.678330 body_ok=False vol_ok=False side=None ATR=0.638
+2025-07-02 16:09:20,684 DEBUG   [CHK] 10:39:20.682948 body_ok=False vol_ok=False side=None ATR=0.650
+2025-07-02 16:09:20,906 INFO    [TRAIL] 800847142 +0.25ATR
+2025-07-02 16:09:21,912 DEBUG   [CHK] 10:39:21.910764 body_ok=False vol_ok=False side=None ATR=0.652
+2025-07-02 16:09:22,916 DEBUG   [CHK] 10:39:22.914931 body_ok=False vol_ok=False side=None ATR=0.652
+2025-07-02 16:09:23,919 DEBUG   [CHK] 10:39:23.917875 body_ok=False vol_ok=False side=None ATR=0.652
+2025-07-02 16:09:24,923 DEBUG   [CHK] 10:39:24.920816 body_ok=False vol_ok=False side=None ATR=0.652
+2025-07-02 16:09:25,926 DEBUG   [CHK] 10:39:25.924610 body_ok=False vol_ok=False side=None ATR=0.652
+2025-07-02 16:09:26,931 DEBUG   [CHK] 10:39:26.928212 body_ok=False vol_ok=False side=None ATR=0.652
+2025-07-02 16:09:27,935 DEBUG   [CHK] 10:39:27.933517 body_ok=False vol_ok=False side=None ATR=0.652
+2025-07-02 16:09:28,938 DEBUG   [CHK] 10:39:28.936428 body_ok=False vol_ok=False side=None ATR=0.652
+2025-07-02 16:09:29,942 DEBUG   [CHK] 10:39:29.940671 body_ok=False vol_ok=False side=None ATR=0.652
+2025-07-02 16:09:30,946 DEBUG   [CHK] 10:39:30.943914 body_ok=False vol_ok=False side=None ATR=0.652
+2025-07-02 16:09:31,950 DEBUG   [CHK] 10:39:31.948291 body_ok=False vol_ok=False side=None ATR=0.652
+2025-07-02 16:09:32,954 DEBUG   [CHK] 10:39:32.952679 body_ok=False vol_ok=False side=None ATR=0.652
+2025-07-02 16:09:33,957 DEBUG   [CHK] 10:39:33.955872 body_ok=False vol_ok=False side=None ATR=0.652
+2025-07-02 16:09:34,960 DEBUG   [CHK] 10:39:34.959070 body_ok=False vol_ok=False side=None ATR=0.652
+2025-07-02 16:09:35,965 DEBUG   [CHK] 10:39:35.964310 body_ok=False vol_ok=False side=None ATR=0.652
+2025-07-02 16:09:36,969 DEBUG   [CHK] 10:39:36.967134 body_ok=False vol_ok=False side=None ATR=0.652
+2025-07-02 16:09:37,973 DEBUG   [CHK] 10:39:37.971387 body_ok=False vol_ok=False side=None ATR=0.652
+2025-07-02 16:09:38,976 DEBUG   [CHK] 10:39:38.975142 body_ok=False vol_ok=False side=None ATR=0.652
+2025-07-02 16:09:39,979 DEBUG   [CHK] 10:39:39.978305 body_ok=False vol_ok=False side=None ATR=0.652
+2025-07-02 16:09:40,983 DEBUG   [CHK] 10:39:40.980958 body_ok=False vol_ok=False side=None ATR=0.652
+2025-07-02 16:09:41,987 DEBUG   [CHK] 10:39:41.985528 body_ok=False vol_ok=False side=None ATR=0.652
+2025-07-02 16:09:42,990 DEBUG   [CHK] 10:39:42.988820 body_ok=False vol_ok=False side=None ATR=0.652
+2025-07-02 16:09:43,994 DEBUG   [CHK] 10:39:43.992069 body_ok=False vol_ok=False side=None ATR=0.652
+2025-07-02 16:09:44,998 DEBUG   [CHK] 10:39:44.996279 body_ok=False vol_ok=False side=None ATR=0.652
+2025-07-02 16:09:46,001 DEBUG   [CHK] 10:39:45.999605 body_ok=False vol_ok=False side=None ATR=0.652
+2025-07-02 16:09:47,005 DEBUG   [CHK] 10:39:47.003775 body_ok=False vol_ok=False side=None ATR=0.652
+2025-07-02 16:09:48,010 DEBUG   [CHK] 10:39:48.008457 body_ok=False vol_ok=False side=None ATR=0.652
+2025-07-02 16:09:49,017 DEBUG   [CHK] 10:39:49.015839 body_ok=False vol_ok=False side=None ATR=0.652
+2025-07-02 16:09:50,021 DEBUG   [CHK] 10:39:50.019477 body_ok=False vol_ok=False side=None ATR=0.652
+2025-07-02 16:09:51,024 DEBUG   [CHK] 10:39:51.022312 body_ok=False vol_ok=False side=None ATR=0.652
+2025-07-02 16:09:52,028 DEBUG   [CHK] 10:39:52.026583 body_ok=False vol_ok=False side=None ATR=0.652
+2025-07-02 16:09:53,030 DEBUG   [CHK] 10:39:53.029441 body_ok=False vol_ok=False side=None ATR=0.652

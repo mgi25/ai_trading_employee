@@ -1,0 +1,132 @@
+2025-07-01 22:39:36,901 INFO    TP trailed further
+2025-07-01 22:40:50,586 INFO    TP trailed further
+2025-07-01 22:41:08,865 INFO    TP trailed further
+2025-07-01 23:13:56,829 ERROR   Fatal error
+Traceback (most recent call last):
+  File "C:\Users\mgial\OneDrive\Documents\ai_trading_employee\versions\bot_v2.py", line 222, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\mgial\OneDrive\Documents\ai_trading_employee\versions\bot_v2.py", line 122, in main
+    if day_pl <= DAILY_STOP_PCT*mt5.account_info().balance:
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'balance'
+2025-07-02 13:17:14,233 INFO    TP trailed further
+2025-07-02 13:17:28,482 INFO    TP trailed further
+2025-07-02 13:17:42,722 INFO    TP trailed further
+2025-07-02 14:26:01,144 INFO    TP trailed further
+2025-07-02 14:30:01,143 INFO    TP trailed further
+2025-07-02 14:44:15,445 INFO    TP trailed further
+2025-07-02 14:45:15,196 INFO    TP trailed further
+2025-07-02 14:46:00,832 INFO    TP trailed further
+2025-07-02 14:46:12,087 INFO    TP trailed further
+2025-07-02 14:46:44,437 INFO    TP trailed further
+2025-07-02 14:48:14,034 INFO    TP trailed further
+2025-07-02 14:49:04,464 INFO    TP trailed further
+2025-07-02 14:49:24,764 INFO    TP trailed further
+2025-07-02 14:49:37,009 INFO    TP trailed further
+2025-07-02 14:50:02,298 INFO    TP trailed further
+2025-07-02 14:52:01,972 INFO    TP trailed further
+2025-07-02 14:53:01,390 INFO    TP trailed further
+2025-07-02 14:54:00,805 INFO    TP trailed further
+2025-07-02 14:56:01,542 INFO    TP trailed further
+2025-07-02 14:57:30,223 INFO    TP trailed further
+2025-07-02 14:57:54,593 INFO    TP trailed further
+2025-07-02 14:58:47,032 INFO    TP trailed further
+2025-07-02 14:59:02,307 INFO    TP trailed further
+2025-07-02 14:59:06,576 INFO    TP trailed further
+2025-07-02 14:59:55,019 INFO    TP trailed further
+2025-07-02 15:00:45,457 INFO    TP trailed further
+2025-07-02 15:00:51,863 INFO    TP trailed further
+2025-07-02 15:01:04,202 INFO    TP trailed further
+2025-07-02 15:01:19,481 INFO    TP trailed further
+2025-07-02 15:01:39,588 INFO    TP trailed further
+2025-07-02 15:01:41,687 INFO    TP trailed further
+2025-07-02 15:01:52,162 INFO    TP trailed further
+2025-07-02 15:02:33,526 INFO    TP trailed further
+2025-07-02 15:03:00,802 INFO    TP trailed further
+2025-07-02 15:03:31,108 INFO    TP trailed further
+2025-07-02 15:04:30,594 INFO    TP trailed further
+2025-07-02 15:04:32,795 INFO    TP trailed further
+2025-07-02 15:05:02,146 INFO    TP trailed further
+2025-07-02 15:05:25,436 INFO    TP trailed further
+2025-07-02 15:05:36,727 INFO    TP trailed further
+2025-07-02 15:05:48,995 INFO    TP trailed further
+2025-07-02 15:06:01,258 INFO    TP trailed further
+2025-07-02 15:17:01,229 INFO    TP trailed further
+2025-07-02 15:19:01,785 INFO    TP trailed further
+2025-07-02 15:21:01,423 INFO    TP trailed further
+2025-07-02 15:23:10,050 INFO    TP trailed further
+2025-07-02 15:24:54,608 INFO    TP trailed further
+2025-07-02 15:25:09,923 INFO    TP trailed further
+2025-07-02 15:25:40,247 INFO    TP trailed further
+2025-07-02 15:25:51,485 INFO    TP trailed further
+2025-07-02 15:25:54,685 INFO    TP trailed further
+2025-07-02 15:26:02,901 INFO    TP trailed further
+2025-07-02 15:26:35,218 INFO    TP trailed further
+2025-07-02 15:26:40,433 INFO    TP trailed further
+2025-07-02 15:27:00,721 INFO    TP trailed further
+2025-07-02 15:27:17,001 INFO    TP trailed further
+2025-07-02 15:27:37,437 INFO    TP trailed further
+2025-07-02 15:27:40,685 INFO    TP trailed further
+2025-07-02 15:28:01,995 INFO    TP trailed further
+2025-07-02 15:28:05,216 INFO    TP trailed further
+2025-07-02 15:29:42,965 INFO    TP trailed further
+2025-07-02 15:29:52,202 INFO    TP trailed further
+2025-07-02 15:30:01,454 INFO    TP trailed further
+2025-07-02 15:30:17,790 INFO    TP trailed further
+2025-07-02 15:30:42,077 INFO    TP trailed further
+2025-07-02 15:31:10,462 INFO    TP trailed further
+2025-07-02 15:32:56,047 INFO    TP trailed further
+2025-07-02 15:36:19,292 INFO    TP trailed further
+2025-07-02 15:37:22,062 INFO    TP trailed further
+2025-07-02 15:37:46,456 INFO    TP trailed further
+2025-07-02 15:38:03,795 INFO    TP trailed further
+2025-07-02 15:38:16,149 INFO    TP trailed further
+2025-07-02 15:39:31,234 INFO    TP trailed further
+2025-07-02 15:40:41,685 INFO    TP trailed further
+2025-07-02 15:41:00,954 INFO    TP trailed further
+2025-07-02 15:41:39,311 INFO    TP trailed further
+2025-07-02 15:42:15,874 INFO    TP trailed further
+2025-07-02 15:42:22,100 INFO    TP trailed further
+2025-07-02 15:42:36,362 INFO    TP trailed further
+2025-07-02 15:42:40,580 INFO    TP trailed further
+2025-07-02 15:42:42,778 INFO    TP trailed further
+2025-07-02 15:42:45,030 INFO    TP trailed further
+2025-07-02 15:42:48,312 INFO    TP trailed further
+2025-07-02 15:45:01,951 INFO    TP trailed further
+2025-07-02 15:46:11,372 INFO    TP trailed further
+2025-07-02 15:46:42,938 INFO    TP trailed further
+2025-07-02 15:47:44,318 INFO    TP trailed further
+2025-07-02 15:48:21,643 INFO    TP trailed further
+2025-07-02 15:48:59,984 INFO    TP trailed further
+2025-07-02 15:49:21,264 INFO    TP trailed further
+2025-07-02 15:49:27,488 INFO    TP trailed further
+2025-07-02 15:49:48,829 INFO    TP trailed further
+2025-07-02 15:50:59,282 INFO    TP trailed further
+2025-07-02 15:51:08,531 INFO    TP trailed further
+2025-07-02 15:52:33,017 INFO    TP trailed further
+2025-07-02 15:53:18,373 INFO    TP trailed further
+2025-07-02 15:55:16,031 INFO    TP trailed further
+2025-07-02 15:55:26,287 INFO    TP trailed further
+2025-07-02 15:57:08,826 INFO    TP trailed further
+2025-07-02 15:57:30,118 INFO    TP trailed further
+2025-07-02 15:58:26,526 INFO    TP trailed further
+2025-07-02 15:58:35,763 INFO    TP trailed further
+2025-07-02 19:18:29,996 ERROR   Fatal error
+Traceback (most recent call last):
+  File "C:\Users\mgial\OneDrive\Documents\ai_trading_employee\versions\bot_v2.py", line 222, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\mgial\OneDrive\Documents\ai_trading_employee\versions\bot_v2.py", line 122, in main
+    if day_pl <= DAILY_STOP_PCT*mt5.account_info().balance:
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'balance'
+2025-07-02 19:35:28,928 ERROR   Fatal error
+Traceback (most recent call last):
+  File "C:\Users\mgial\OneDrive\Documents\ai_trading_employee\versions\bot_v2.py", line 222, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\mgial\OneDrive\Documents\ai_trading_employee\versions\bot_v2.py", line 122, in main
+    if day_pl <= DAILY_STOP_PCT*mt5.account_info().balance:
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'balance'
